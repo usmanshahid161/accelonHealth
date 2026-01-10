@@ -2,6 +2,8 @@ import { Image } from 'antd';
 import React     from 'react';
 import "./cardComponents.scss";
 import ButtonComponent from '../button/Button';
+
+
 const CardComponent = ({heading, description, image, index, buttonText, buttonStyle}) => {
   return <div className={`cardComponent ${index % 2 !== 0 ? "reverse" : ""}`}>
         <div className={"left"}>
@@ -12,7 +14,9 @@ const CardComponent = ({heading, description, image, index, buttonText, buttonSt
               <p>{description}</p>
               <div className={"marginFromTop"}/>
               {
-                buttonText && <ButtonComponent style={buttonStyle}>
+                buttonText && <ButtonComponent
+                  style={buttonStyle}
+                >
                   { buttonText }
                 </ButtonComponent>
               }

@@ -7,7 +7,6 @@ import CardsWOBg          from '../../components/cardsWOBg/cardsWOBg';
 import ContentBox         from '../../components/contentBox/contentBox';
 import HeaderSection      from '../../components/header/HeaderSection';
 import HeadingDescription from '../../components/heading&description/heading&description';
-import image1             from "./assets/unnamed (5).jpg";
 import image2             from "./assets/unnamed (2).jpg";
 import image3             from "./assets/unnamed (1).jpg";
 import image4             from "./assets/unnamed.jpg";

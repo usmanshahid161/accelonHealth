@@ -1,12 +1,12 @@
-import React                                   from "react";
+import React                           from "react";
 import { Row, Col, Typography, Space } from "antd";
 import {
   PhoneOutlined,
   MailOutlined,
-}                                              from "@ant-design/icons";
+}                                      from "@ant-design/icons";
 import "./Footer.scss";
-import logo                                    from "../../assets/logo/logo blue.png";
-import ButtonComponent                         from '../../components/button/Button';
+import logo                            from "../../assets/logo/logo blue.png";
+import { ReactComponent as LinkedIn }  from '../AboutUs/assets/linkedIn.svg';
 
 const { Title, Text, Link } = Typography;
 
@@ -36,14 +36,7 @@ const Footer = () => {
               Egypt, and the US. Trust deeper. Rise higher.
             </Text>
 
-            <ButtonComponent
-              style={ {
-                height: 48,
-                background: "linear-gradient(to right, #1C2460, #0077C7)",
-                width:"80%"
-              } }>
-              LinkedIn
-            </ButtonComponent>
+            <LinkedIn/>
           </Space>
         </Col>
 

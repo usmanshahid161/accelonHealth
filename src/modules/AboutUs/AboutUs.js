@@ -9,6 +9,8 @@ import ChallengeCard      from '../CaseStudies/ChallengeCard/ChallengeCard';
 import image1             from "./assets/HeroImage.jpg"
 import Ceo                from "./assets/CEO.jpeg";
 import Coo                from "./assets/COO.jpeg";
+import { ReactComponent as LinkedInIcon } from "./assets/linkedIn.svg";
+import { ReactComponent as EmailIcon } from "./assets/email.svg";
 
 const AboutUs = () => {
   const data = [
@@ -138,34 +140,37 @@ const AboutUs = () => {
           <Col xs={ 24 } md={ 12 }>
             <ChallengeCard
               heading="Ayman Ibrahim"
-              description="Chief Executive Officer"
-              backImg={ Ceo }
+              description="CEO"
+              backImg={Ceo}
+              height={400}
               points={
                 <div className="profileCard">
-                  <p className="email">Email:
+                  <div className="contactRow">
                     <a
-                      href="https://mail.google.com/mail/?view=cm&fs=1&to=email@gmail.com"
+                      href="mailto:ayman.i@accelonhealth.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={ { color: "var(--primary-color)" } }
+                      // className="iconButton email"
+                      title="Send Email"
                     >
-                      ayman.i@accelonhealth.com</a></p>
-                  <div className="actions">
-                    <ButtonComponent
-                      color={ "linear-gradient(to right, #1C2460, #0077C7)" }
-                      onClick={ () => window.open(
-                        "https://www.linkedin.com/in/ayman-ibrahim-b2040421",
-                        "_blank",
-                        "noopener,noreferrer"
-                      ) }
-                    >
-                      LinkedIn
-                    </ButtonComponent>
+                      <EmailIcon />
+                    </a>
 
+                    <a
+                      href="https://www.linkedin.com/in/ayman-ibrahim-b2040421"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      // className="iconButton linkedin"
+                      title="View LinkedIn"
+                    >
+                      <LinkedInIcon style={{
+                        height:44,
+                        width:34
+                      }}/>
+                    </a>
                   </div>
                 </div>
               }
-              height={ 500 }
             />
 
           </Col>
@@ -173,35 +178,37 @@ const AboutUs = () => {
           <Col xs={ 24 } md={ 12 }>
             <ChallengeCard
               heading="Dr Ahmed Osama"
-              description="Chief Operating Officer"
+              description="COO"
               backImg={ Coo }
               points={
                 <div className="profileCard">
-
-                  <p className="email">
-                    Email: <a
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=email@gmail.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={ { color: "var(--primary-color)" } }
-                  >ahmed.o@accelonhealth.com</a>
-                  </p>
-                  <div className="actions">
-                    <ButtonComponent
-                      color={ "linear-gradient(to right, #1C2460, #0077C7)" }
-                      onClick={ () => window.open(
-                        "https://www.linkedin.com/in/ahmed-osama-bab0b1162",
-                        "_blank",
-                        "noopener,noreferrer"
-                      ) }
+                  <div className="contactRow">
+                    <a
+                      href="mailto:ahmed.o@accelonhealth.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      // className="iconButton email"
+                      title="Send Email"
                     >
-                      LinkedIn
-                    </ButtonComponent>
+                      <EmailIcon />
+                    </a>
 
+                    <a
+                      href="https://www.linkedin.com/in/ahmed-osama-bab0b1162"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      // className="iconButton linkedin"
+                      title="View LinkedIn"
+                    >
+                      <LinkedInIcon style={{
+                        height:44,
+                        width:34
+                      }}/>
+                    </a>
                   </div>
                 </div>
               }
-              height={ 500 }
+              height={ 400 }
             />
 
           </Col>

@@ -3,7 +3,6 @@ import { Menu, Button, Drawer } from "antd";
 import { MenuOutlined }         from "@ant-design/icons";
 import { Link, useLocation }    from "react-router-dom";
 import "./Navbar.scss";
-import logoWhite                from "../../assets/logo/Logo white.png";
 import logoBlue                 from "../../assets/logo/logo blue.png";
 
 const menuItems = [
@@ -83,7 +82,7 @@ const Navbar = () => {
       <Button
         className="mobile-menu-btn"
         icon={ <MenuOutlined/> }
-        onClick={ () => setOpen(true) }
+        onClick={ () => setOpen(!open) }
       />
 
       {/* Mobile Drawer */ }
@@ -114,6 +113,7 @@ const Navbar = () => {
             )
           ) }
         </Menu>
+
 
 
         <Button type="primary" block className="demo-btn-mobile" style={{

@@ -36,9 +36,6 @@ const ContactUs = () => {
         } } rows={ 4 } placeholder="Your Message"/>
 
         <ButtonComponent
-          size={ "large" }
-          height={ 60 }
-          color={"linear-gradient(to right, #1C2460, #0077C7)"}
         >Send
         </ButtonComponent>
       </div>

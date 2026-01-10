@@ -10,9 +10,12 @@ const HeroSection = () => {
           <h1>Accelon Health | End-to-End Healthcare Solutions & Precision RCM Partner</h1>
           <p>Leap beyond limits. Accelon Health fuses full-cycle RCM, BPO, consulting, and technology solutions to unlock revenue, ensure compliance, and scale operational excellence across Saudi Arabia, GCC, USA & Egypt. Book a demo.</p>
           <ButtonComponent
-            color={"linear-gradient(to right, #1C2460, #0077C7)"}
-            size={"large"}
-            className={"heroSectionButton"}
+            style={{
+              width: "100%",
+              height: 60,
+              background: "linear-gradient(to right, #1C2460, #0077C7)",
+              marginTop:80
+            }}
           >
             Unlock Your Growth Story
           </ButtonComponent>

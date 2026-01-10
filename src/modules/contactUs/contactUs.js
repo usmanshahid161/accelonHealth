@@ -46,7 +46,6 @@ const ContactUsPage = () => {
         <p>Wherever you are in your growth journey, we’ll help you leap forward. The first step toward transformation is
           a conversation.</p>
         <ButtonComponent className={ "endToEndRcmBtn" }
-                         size={ "large" }
                          style={ {
                            height: "60px",
                            marginTop: 60,
@@ -54,7 +53,6 @@ const ContactUsPage = () => {
                          } }>Book a Transformation Call</ButtonComponent>
         <ButtonComponent className={ "endToEndRcmBtn" }
                          color={ "white" }
-                         size={ "large" }
                          style={ {
                            height: "60px",
                            backgroundColor: "white",
