@@ -1,0 +1,93 @@
+.landingPageContainer {
+
+  .cardComponentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .quiteAutomationContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  .logos {
+    display: grid;
+    grid-template-columns: repeat(4, 16%);
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+/* =========================
+   Large screens ≤ 1200px
+========================= */
+@media (max-width: 1200px) {
+  .landingPageContainer {
+    .cardComponentContainer {
+      gap: 80px;
+    }
+
+    .quiteAutomationContainer {
+      gap: 40px;
+    }
+  }
+}
+
+/* =========================
+   Tablet ≤ 992px
+========================= */
+@media (max-width: 992px) {
+  .landingPageContainer {
+    .cardComponentContainer {
+      gap: 60px;
+    }
+
+    .quiteAutomationContainer {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+  }
+}
+
+/* =========================
+   Mobile ≤ 768px
+========================= */
+@media (max-width: 768px) {
+  .landingPageContainer {
+    .cardComponentContainer {
+      gap: 40px;
+    }
+
+    .quiteAutomationContainer {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .logos {
+      grid-template-columns: repeat(3, 30%);
+    }
+  }
+}
+
+/* =========================
+   Small Mobile ≤ 480px
+========================= */
+@media (max-width: 480px) {
+  .landingPageContainer {
+    .cardComponentContainer {
+      gap: 24px;
+    }
+
+    .quiteAutomationContainer {
+      gap: 20px;
+    }
+
+    .logos {
+      grid-template-columns: repeat(2, 40%);
+    }
+  }
+}

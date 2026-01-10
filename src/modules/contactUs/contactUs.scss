@@ -1,0 +1,35 @@
+.contactUsPageContainer {
+  .contactUsPageContent {
+    padding: 2rem;
+    border-radius: 8px;
+    background: #f7f7f7;
+    width: 60%;
+    margin: auto;
+
+    .scheduleBtn {
+      height: 56px;
+      background: var(--primary-color);
+      margin: auto;
+      width: 60%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .contactUsPageContainer {
+    .contactUsPageContent {
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contactUsPageContainer {
+    .contactUsPageContent {
+      width: auto;
+      .scheduleBtn {
+        width: 100%;
+      }
+    }
+  }
+}

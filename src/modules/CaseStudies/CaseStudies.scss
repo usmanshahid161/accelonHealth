@@ -1,0 +1,20 @@
+.caseStudiesContainer {
+  .caseStudyContent {
+    width: 80%;
+    margin: auto;
+    margin-bottom:80px;
+
+    :where(.css-dev-only-do-not-override-dbp7pc).ant-card .ant-card-body {
+      padding: 0 !important;
+      padding-top: 10px !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .caseStudiesContainer {
+    .caseStudyContent {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.footer {
+  background: #f7f7f5;
+  padding: 64px 80px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 160px;
+  height: auto;
+}
+
+.tagline {
+  font-size: 16px;
+}
+
+.description {
+  color: #595959;
+  line-height: 1.6;
+}
+
+.connect-text {
+  color: #595959;
+  line-height: 1.6;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 16px;
+}
+
+.footer-list li {
+  margin-bottom: 6px;
+  color: #595959;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 48px 24px;
+  }
+}
