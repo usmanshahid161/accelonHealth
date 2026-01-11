@@ -15,7 +15,9 @@ const CardComponent = ({heading, description, image, index, buttonText, buttonSt
               <div className={"marginFromTop"}/>
               {
                 buttonText && <ButtonComponent
-                  style={buttonStyle}
+                  style={{
+                    width: "100%",
+                  }}
                 >
                   { buttonText }
                 </ButtonComponent>

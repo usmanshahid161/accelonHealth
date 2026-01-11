@@ -7,22 +7,40 @@ const ButtonComponent = ({
                            size = "large",
                            shape = "round",
                            color = "linear-gradient(to right, #1C2460, #0077C7)",
-                           height=60,
+                           height = 60,
                            children,
+                           actionFunc,
                            style,
                            ...props
                          }) => {
+
+  const defaultAction = () => {
+    window.open(
+      "https://calendly.com/contact-accelonhealth/30min",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+
+  const handleClick = () => {
+    if (typeof actionFunc === "function") {
+      actionFunc();
+    } else {
+      defaultAction();
+    }
+  };
+
   return (
     <Button
       className="buttonComponent"
       type={type}
       size={size}
       shape={shape}
-      color={color}
-      style={ style || {
+      onClick={handleClick}
+      style={{
+        height:60,
         background: color,
-        borderColor: color,
-        height:height || 60,
+        ...style,
       }}
       {...props}
     >

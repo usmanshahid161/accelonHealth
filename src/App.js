@@ -1,4 +1,5 @@
 import './App.css';
+import ScrollToTop                      from './components/ScrollToTop/ScrollToTop';
 import AboutUs                          from './modules/AboutUs/AboutUs';
 import Audit                            from './modules/Audit/Audit';
 import Beauty                           from './modules/Beauty/Beauty';
@@ -17,19 +18,19 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return <BrowserRouter>
+    <ScrollToTop/>
     <Navbar/>
     <Routes>
       <Route path="/" element={ <LandingPage/> }/>
       <Route path="/about" element={ <AboutUs/> }/>
-      <Route path="/outsourcing/audit" element={ <Audit/> }/>
-      <Route path="/outsourcing/beauty" element={ <Beauty/> }/>
-      <Route path="/outsourcing/notes" element={ <Notes/> }/>
-      <Route path="/outsourcing/healthCare" element={ <HealthCare/> }/>
-      <Route path="/outsourcing/contactCenter" element={ <ContactCenter/> }/>
-      <Route path="/outsourcing/voice" element={ <Voice/> }/>
-      <Route path="/outsourcing/revenue" element={ <RevenueCycle/> }/>
-      <Route path="/outsourcing/code" element={ <Code/> }/>
-      {/*<Route path="/technology" element={<div>Technology</div>} />*/ }
+      <Route path="/technology/audit" element={ <Audit/> }/>
+      <Route path="/technology/beauty" element={ <Beauty/> }/>
+      <Route path="/technology/notes" element={ <Notes/> }/>
+      <Route path="/technology/voice" element={ <Voice/> }/>
+      <Route path="/technology/code" element={ <Code/> }/>
+      <Route path="/professional/healthCare" element={ <HealthCare/> }/>
+      <Route path="/professional/contactCenter" element={ <ContactCenter/> }/>
+      <Route path="/professional/revenue" element={ <RevenueCycle/> }/>
       <Route path="/case-studies" element={ <CaseStudies/> }/>
       <Route path="/contact" element={ <ContactUs/> }/>
     </Routes>

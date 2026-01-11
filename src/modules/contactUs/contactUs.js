@@ -46,16 +46,19 @@ const ContactUsPage = () => {
         <p>Wherever you are in your growth journey, we’ll help you leap forward. The first step toward transformation is
           a conversation.</p>
         <ButtonComponent className={ "endToEndRcmBtn" }
+                         color={"rgba(255,255,255,.2)"}
                          style={ {
-                           height: "60px",
                            marginTop: 60,
-                           backgroundColor: "rgba(255,255,255,.2)"
                          } }>Book a Transformation Call</ButtonComponent>
         <ButtonComponent className={ "endToEndRcmBtn" }
-                         color={ "white" }
+                         color={"rgba(255,255,255)"}
+                         actionFunc={() => {
+                           document
+                             .getElementById("contact-section")
+                             ?.scrollIntoView({ behavior: "smooth" });
+                         }}
                          style={ {
                            height: "60px",
-                           backgroundColor: "white",
                            marginTop: 10,
                            color: "var(--primary-color)"
                          } }>Send a Message</ButtonComponent>
@@ -194,6 +197,7 @@ const ContactUsPage = () => {
       </div>
     </div>
 
+    <div id="contact-section"/>
     <ContactUs/>
 
     <div className={ "contentWrapper" }>

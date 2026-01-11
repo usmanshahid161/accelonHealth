@@ -10,6 +10,7 @@ import HeadingDescription from '../../components/heading&description/heading&des
 import { Row, Col }       from "antd"
 import image1 from "./assets/unnamed (2).jpg";
 import image2 from "./assets/unnamed (5).jpg";
+import "./ContactCenter.scss";
 
 const ContactCenter = () => {
   const data = [{
@@ -67,7 +68,7 @@ const ContactCenter = () => {
 
   ]
 
-  return <div>
+  return <div className={"contactCenterContainer"}>
     <HeaderSection
       directionFromLeft={ true }
       backImg={ image2 }

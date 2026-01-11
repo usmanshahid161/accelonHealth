@@ -1,4 +1,6 @@
 .buttonComponent {
+  word-break: break-word !important;
+  white-space: normal !important;
   transition: transform 0.3s ease;
 
   &:hover {

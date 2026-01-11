@@ -6,7 +6,7 @@ const HeadingDescription = ({ heading, description }) => {
     <h1>{ heading }</h1>
     { description && <p>{ description }</p> }
     <hr style={ {
-      width: 200,
+      width: "10%",
       height: 4,
       backgroundColor: "var(--primary-color)",
       borderRadius: 2,

@@ -7,16 +7,24 @@ import {
 import "./Footer.scss";
 import logo                            from "../../assets/logo/logo blue.png";
 import { ReactComponent as LinkedIn }  from '../AboutUs/assets/linkedIn.svg';
+import {Link}                          from 'react-router-dom';
 
-const { Title, Text, Link } = Typography;
+const { Title, Text } = Typography;
 
 const Footer = () => {
+  const defaultAction = () => {
+    window.open(
+      "https://www.linkedin.com/company/accelon-health/?viewAsMember=true",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
   return (
     <footer className="footer">
-      <Row gutter={ [40, 32] }>
+      <Row gutter={ [40, 32] } className={"footerContent"}>
         {/* BRAND */ }
         <Col xs={ 24 } md={ 12 } lg={ 6 }>
-          <Space direction="vertical" size={ 16 }>
+          <Space direction="vertical" size={ 16 } className={"footerData"}>
             <div className="brand">
               <img
                 src={ logo }
@@ -36,13 +44,15 @@ const Footer = () => {
               Egypt, and the US. Trust deeper. Rise higher.
             </Text>
 
-            <LinkedIn/>
+            <LinkedIn title={"Click to open"}  style={{
+              cursor: "pointer"
+            }} onClick={()=>defaultAction()}/>
           </Space>
         </Col>
 
         {/* LOCATIONS */ }
-        <Col xs={ 24 } md={ 12 } lg={ 6 }>
-          <Title level={ 5 }>WHERE TO FIND US?</Title>
+        <Col xs={ 24 } md={ 12 } lg={ 6 } className={"footerData"}>
+          <Title level={ 5 } >WHERE TO FIND US?</Title>
 
           <Space direction="vertical" size={ 14 }>
             <Text>
@@ -66,10 +76,10 @@ const Footer = () => {
         </Col>
 
         {/* CONNECT */ }
-        <Col xs={ 24 } md={ 12 } lg={ 6 }>
+        <Col xs={ 24 } md={ 12 } lg={ 6 } className={"footerData"}>
           <Title level={ 5 }>LET’S CONNECT</Title>
 
-          <Text className="connect-text">
+          <Text className="connect-text ">
             Ready to Leap Beyond Limits?
             <br/>
             Tell us what you're building, solving,
@@ -97,29 +107,35 @@ const Footer = () => {
         </Col>
 
         {/* RESOURCES */ }
-        <Col xs={ 24 } md={ 12 } lg={ 6 }>
-          <Title level={ 5 }>RESOURCES</Title>
+        <Col xs={24} md={12} lg={6} className="footerData">
+          <Title level={5}>RESOURCES</Title>
 
-          <Title level={ 5 }>Outsourcing Services</Title>
+          <Title level={5}>Outsourcing Services</Title>
           <ul className="footer-list">
-            <li>Revenue Cycle Management</li>
-            <li>Healthcare Consulting</li>
-            <li>Medical Contact Center</li>
+            <li>
+              <Link to="/professional/revenue">Revenue Cycle Management</Link>
+            </li>
+            <li>
+              <Link to="/professional/healthCare">Healthcare Consulting</Link>
+            </li>
+            <li>
+              <Link to="/professional/contactCenter">Medical Contact Center</Link>
+            </li>
           </ul>
 
-          <Title level={ 5 }>Technology Services</Title>
+          <Title level={5}>Technology Services</Title>
           <ul className="footer-list">
-            <li>AccelonNote</li>
-            <li>AccelonCode</li>
-            <li>AccelonAudit</li>
-            <li>AccelonVoice</li>
-            <li>AccelonBeauty</li>
+            <li><Link to="/technology/notes">AccelonNote</Link></li>
+            <li><Link to="/technology/code">AccelonCode</Link></li>
+            <li><Link to="/technology/audit">AccelonAudit</Link></li>
+            <li><Link to="/technology/voice">AccelonVoice</Link></li>
+            <li><Link to="/technology/beauty">AccelonBeauty</Link></li>
           </ul>
 
-          <Title level={ 5 }>Company</Title>
+          <Title level={5}>Company</Title>
           <ul className="footer-list">
-            <li><Link>About Us</Link></li>
-            <li><Link>Contact Us</Link></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
           </ul>
         </Col>
       </Row>

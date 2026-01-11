@@ -1,0 +1,14 @@
+.contactCenterContainer {
+  .buttonComponent {
+    width: 50%;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactCenterContainer {
+    .buttonComponent {
+      width: 90%;
+    }
+  }
+}

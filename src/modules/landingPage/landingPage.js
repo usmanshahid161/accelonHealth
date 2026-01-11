@@ -197,7 +197,10 @@ const LandingPage = () => {
           justifyContent: "space-between",
           paddingLeft: 60,
           alignItems: "center",
-          color: "white"
+          color: "white",
+          width: "70%",
+          flexWrap: "wrap",
+          gap: 20
         } }>
           Which solution fits your operation?
           <ButtonComponent style={ {
@@ -295,15 +298,14 @@ const LandingPage = () => {
 
         <ButtonComponent className={ "endToEndRcmBtn" }
                          size={ "large" }
+                         color={"rgba(255,255,255,.2)"}
                          style={ {
-                           backgroundColor: "rgba(255,255,255,.2)",
                            marginTop: 100
                          } }>Speak with Our Solutions Team Today</ButtonComponent>
         <ButtonComponent className={ "endToEndRcmBtn" }
                          color={ "white" }
                          size={ "large" }
                          style={ {
-                           backgroundColor: "white",
                            marginTop: 10,
                            color: "var(--primary-color)"
                          } }>Book Your Free Operational Health Scan</ButtonComponent>

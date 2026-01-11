@@ -69,11 +69,8 @@ const AboutUs = () => {
           Accelon Health—the living healthcare engine that blends full-cycle RCM, consulting, and technology so revenue
           flows and care teams can finally breathe again.</p>
         <ButtonComponent className={ "endToEndRcmBtn" }
-                         color={ "white" }
-                         size={ "large" }
+                         color={"white"}
                          style={ {
-                           height: "60px",
-                           backgroundColor: "white",
                            marginTop: 60,
                            color: "var(--primary-color)"
                          } }>Book Your Complimentary Strategy Session</ButtonComponent>

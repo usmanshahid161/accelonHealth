@@ -5,27 +5,32 @@ import { Link, useLocation }    from "react-router-dom";
 import "./Navbar.scss";
 import logoBlue                 from "../../assets/logo/logo blue.png";
 
+
 const menuItems = [
   { key: "/", label: "Home" },
+  { key: "/case-studies", label: "Case Studies" },
   { key: "/about", label: "About Us" },
-
   {
-    key: "/outsourcing",
+    key: "/professional",
     label: "Professional Solutions",
     children: [
-      { key: "/outsourcing/audit", label: "Audit" },
-      { key: "/outsourcing/beauty", label: "Beauty" },
-      { key: "/outsourcing/notes", label: "Notes" },
-      { key: "/outsourcing/healthCare", label: "Health Care" },
-      { key: "/outsourcing/contactCenter", label: "Contact Center" },
-      { key: "/outsourcing/revenue", label: "Revenue Cycle" },
-      { key: "/outsourcing/voice", label: "Voice" },
-      { key: "/outsourcing/code", label: "Code" }
+      { key: "/professional/revenue", label: "Revenue Cycle Management" },
+      { key: "/professional/healthCare", label: "Health Care Consulting" },
+      { key: "/professional/contactCenter", label: "Medical Contact Center" },
     ],
   },
 
-  { key: "/technology", label: "Technology Solutions" },
-  { key: "/case-studies", label: "Case Studies" },
+  {
+    key: "/technology",
+    label: "Technology Solutions",
+    children: [
+      { key: "/technology/audit", label: "Accelon Audit" },
+      { key: "/technology/beauty", label: "Accelon Beauty" },
+      { key: "/technology/notes", label: "Accelon Notes" },
+      { key: "/technology/voice", label: "Accelon Voice" },
+      { key: "/technology/code", label: "Accelon Code" }
+    ]
+  },
   { key: "/contact", label: "Contact Us" },
 ];
 
@@ -33,7 +38,13 @@ const menuItems = [
 const Navbar = () => {
   const location = useLocation();
   const [open, setOpen] = useState(false);
-
+  const defaultAction = () => {
+    window.open(
+      "https://calendly.com/contact-accelonhealth/30min",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
   return (
     <header className={"navbarHeader"}>
       <div className="navbar">
@@ -70,7 +81,11 @@ const Navbar = () => {
 
 
       {/* CTA Button */ }
-      <Button type="primary" className="demo-btn desktop-menu" style={{
+      <Button
+      onClick={() => defaultAction()}
+        type="primary"
+        className="demo-btn desktop-menu"
+        style={{
         height:48,
         width:180,
         background:"linear-gradient(to right, #1C2460, #0077C7)",
@@ -116,7 +131,12 @@ const Navbar = () => {
 
 
 
-        <Button type="primary" block className="demo-btn-mobile" style={{
+        <Button
+          onClick={() => defaultAction()}
+          type="primary"
+          block
+          className="demo-btn-mobile"
+          style={{
           height:48,
           width:"100%",
           background:"linear-gradient(to right, #1C2460, #0077C7)",
