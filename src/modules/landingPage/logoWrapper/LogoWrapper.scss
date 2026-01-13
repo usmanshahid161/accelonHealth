@@ -1,0 +1,35 @@
+.logos-wrapper {
+  position: relative;
+}
+
+.logo-img {
+  height: 60px;
+  object-fit: contain;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Buttons */
+.logo-prev,
+.logo-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 22px;
+}
+
+.logo-prev {
+  left: -10px;
+}
+
+.logo-next {
+  right: -10px;
+}

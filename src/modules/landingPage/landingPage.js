@@ -6,6 +6,7 @@ import CardsWOBg          from '../../components/cardsWOBg/cardsWOBg';
 import ContentBox         from '../../components/contentBox/contentBox';
 import ContentImageBox    from '../../components/ContentImageBox/ContentImageBox';
 import HeadingDescription from '../../components/heading&description/heading&description';
+import LongButton         from '../../components/longButton/LongButton';
 import ContactUs          from './ContactUs/ContactUs';
 import HeroSection        from './heroSection/heroSection';
 import "./landingPage.scss";
@@ -26,10 +27,11 @@ import fourteen           from "../../assets/images/14.png";
 import fifteen            from "../../assets/images/15.png";
 import sixteen            from "../../assets/images/16.png";
 import contentImg         from "../../assets/images/ContentImageBg.png";
-import image1 from "./assets/Profit Killer.png"
-import image2 from "./assets/2 1.jpg"
-import image3 from "./assets/3 1.jpg"
-import successImage from "./assets/Celebrated Success.PNG";
+import image1             from "./assets/Profit Killer.png"
+import image2             from "./assets/2 1.jpg"
+import image3             from "./assets/3 1.jpg"
+import successImage       from "./assets/Celebrated Success.PNG";
+import LogoSlider         from './logoWrapper/LogoWrapper';
 
 const LandingPage = () => {
   const cardsData = [
@@ -66,7 +68,7 @@ const LandingPage = () => {
     },
     {
       heading: "AccelonCode",
-      description: "Autonomous coding at 95%+ accuracy, delivering consistent, 10x faster turnarounds."
+      description: "Autonomous coding at 95%+ accuracy, delivering consistent, 1000x faster turnarounds."
     },
     {
       heading: "AccelonAudit",
@@ -187,28 +189,7 @@ const LandingPage = () => {
         } }>
           Clinicians lead. Autopilot Automation powers performance.
         </div>
-        <div style={ {
-          background: "linear-gradient(to right, #1C2460, #0077C7)",
-          borderRadius: 60,
-          margin: "auto",
-          padding: "10px",
-          marginTop: 60,
-          display: "flex",
-          justifyContent: "space-between",
-          paddingLeft: 60,
-          alignItems: "center",
-          color: "white",
-          width: "70%",
-          flexWrap: "wrap",
-          gap: 20
-        } }>
-          Which solution fits your operation?
-          <ButtonComponent style={ {
-            background: "transparent",
-            border: "1px solid white",
-            color: "white",
-          } }>Find Out Now</ButtonComponent>
-        </div>
+        <LongButton text={"Which solution fits your operation?"} buttonTitle={"Find Out Now"}/>
       </div>
     </div>
 
@@ -272,6 +253,8 @@ const LandingPage = () => {
             } }/>)
           }
         </div>
+
+        {/*<LogoSlider/>*/ }
       </div>
       <div>
         <HeadingDescription heading={ <h1>Powered By Innovation <span style={ { color: "var(--primary-color)" } }>Backed By Compliance</span>
@@ -298,7 +281,7 @@ const LandingPage = () => {
 
         <ButtonComponent className={ "endToEndRcmBtn" }
                          size={ "large" }
-                         color={"rgba(255,255,255,.2)"}
+                         color={ "rgba(255,255,255,.2)" }
                          style={ {
                            marginTop: 100
                          } }>Speak with Our Solutions Team Today</ButtonComponent>

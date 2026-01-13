@@ -100,6 +100,7 @@ const Notes = () => {
       </div>
     </ContentImageBox>
 
+    <div className={"marginFromTop"}/>
     <div className={ "contentWrapper" }>
 
       <div>
@@ -111,7 +112,7 @@ const Notes = () => {
           margin: "auto"
         } }>
           {
-            data.map((item, index) => <Col xs={ 24 } md={ 12 }>
+            data.map((item) => <Col xs={ 24 } md={ 12 }>
                 <CardsWOBg heading={ item.heading }
                            description={ item.description }
                            background={ true }/>
@@ -129,7 +130,7 @@ const Notes = () => {
           margin: "auto"
         } }>
           {
-            data2.map((item, index) => <Col xs={ 24 } md={ 6 }>
+            data2.map((item) => <Col xs={ 24 } md={ 6 }>
                 <CardsWOBg heading={ item.heading }
                            description={ item.description }/>
               </Col>
@@ -149,7 +150,7 @@ const Notes = () => {
           margin: "auto"
         } }>
           {
-            data3.map((item, index) => <Col xs={ 24 } md={ 6 }>
+            data3.map((item) => <Col xs={ 24 } md={ 6 }>
                 <CardsWOBg heading={ item.heading }
                            description={ item.description }/>
               </Col>

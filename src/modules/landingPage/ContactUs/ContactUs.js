@@ -12,6 +12,8 @@ const ContactUs = () => {
     email: "",
     name: "",
     message: "",
+    phone: "",
+    title:"",
     disable: false, // consistent naming
   });
 
@@ -44,6 +46,8 @@ const ContactUs = () => {
         name: state.name.trim(),
         email: state.email.trim(),
         message: state.message.trim(),
+        phone: state.phone.trim(),
+        title: state.title.trim(),
       });
 
       if (response) {
@@ -82,7 +86,7 @@ const ContactUs = () => {
   };
 
   // Check if form is valid
-  const isFormInvalid = !state.name.trim() || !state.email.trim() || !state.message.trim() || state.disable || !isValidEmail(state.email);
+  const isFormInvalid = !state.name.trim() || !state.email.trim() || !state.message.trim() || !state.phone.trim() || !state.title.trim() || state.disable || !isValidEmail(state.email);
 
 
   return (
@@ -107,6 +111,24 @@ const ContactUs = () => {
             value={state.name}
             onChange={(e) => setState({ ...state, name: e.target.value })}
             placeholder="Your Name"
+            size="large"
+            style={{ height: 48, borderRadius: 24 }}
+          />
+
+          <Input
+            disabled={state.disable}
+            value={state.title}
+            onChange={(e) => setState({ ...state, title: e.target.value })}
+            placeholder="Title"
+            size="large"
+            style={{ height: 48, borderRadius: 24 }}
+          />
+
+          <Input
+            disabled={state.disable}
+            value={state.phone}
+            onChange={(e) => setState({ ...state, phone: e.target.value })}
+            placeholder="Phone"
             size="large"
             style={{ height: 48, borderRadius: 24 }}
           />

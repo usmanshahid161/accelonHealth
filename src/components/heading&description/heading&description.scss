@@ -1,6 +1,8 @@
 .HeadingDescriptionContainer {
   text-align: center;
   padding: 3rem;
+  width: 70%;
+  margin: auto;
 
   h1 {
     font-size: clamp(26px, 2.6vw, 42px);
@@ -45,8 +47,7 @@
 ========================= */
 @media (max-width: 480px) {
   .HeadingDescriptionContainer {
-    padding: 1.5rem;
-
+    padding: 1rem;
     h1 {
       font-size: 24px;
     }

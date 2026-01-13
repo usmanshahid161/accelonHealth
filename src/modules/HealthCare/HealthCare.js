@@ -167,36 +167,43 @@ const HealthCare = () => {
           Missteps mean delays, penalties, and leakage. We turn regulatory hurdles into growth momentum.</p>
       </div>
     </ContentImageBox>
-    <div className={ "contentWrapper" }>
-      <HeadingDescription
-        heading={ "Your Blueprint for Operational Excellence" }
-        description={ "We don’t just advise—we embed capability. Our portfolio is designed to build resilience, drive efficiency, and make compliance a habit across your organization." }
-      />
-      {
-        cardsData.map((card, index) => <CardComponent
-          heading={ card.heading }
-          description={ card.description }
-          image={ card.image }
-          index={ index }
-        />)
-      }
-
-      <div>
+    <div style={ {
+      backgroundColor: "rgba(28, 36, 96, .05 )"
+    } }>
+      <div className={ "contentWrapper" }>
         <HeadingDescription
-          heading={ <h1>Expertise That Feels Like An <span style={ {
-            color: 'var(--primary-color)',
-          } }>Extension of Your Team</span></h1> }
-          description={ "Other firms talk strategy. We build capability." }
+          heading={ "Your Blueprint for Operational Excellence" }
+          description={ "We don’t just advise—we embed capability. Our portfolio is designed to build resilience, drive efficiency, and make compliance a habit across your organization." }
         />
-        <Row gutter={ [24, 24] }>
-          {
-            data.map((item, index) => <Col xs={ 24 } md={ 8 }><CardsWOBg
-              heading={ item.heading }
-              description={ item.description }
-            /></Col>)
-          }
-        </Row>
+        {
+          cardsData.map((card, index) => <CardComponent
+            heading={ card.heading }
+            description={ card.description }
+            image={ card.image }
+            index={ index }
+          />)
+        }
       </div>
+    </div>
+    <div className={"marginFromTop"}/>
+    <div>
+      <HeadingDescription
+        heading={ <h1>Expertise That Feels Like An <span style={ {
+          color: 'var(--primary-color)',
+        } }>Extension of Your Team</span></h1> }
+        description={ "Other firms talk strategy. We build capability." }
+      />
+      <Row gutter={ [24, 24] } style={ {
+        width: "80%",
+        margin: "auto"
+      } }>
+        {
+          data.map((item, index) => <Col xs={ 24 } md={ 8 }><CardsWOBg
+            heading={ item.heading }
+            description={ item.description }
+          /></Col>)
+        }
+      </Row>
     </div>
     <div className={ "marginFromTop" }/>
     <div style={ {
@@ -220,16 +227,23 @@ const HealthCare = () => {
               <h2>
                 Our Role
               </h2>
-              <p>
+              <p style={ {
+                fontSize: "18px",
+                marginTop: 4
+              } }>
                 CDI training + RCM system renovation + compliance mapping.
               </p>
 
               <h2 style={ {
-                marginTop: 60
+                marginTop: 40
               } }>
                 The Result
               </h2>
-              <p>
+              <p style={ {
+                color: "black",
+                fontSize: "18px",
+                marginTop: 4
+              } }>
                 Successful accreditation, 20% faster reimbursement, and a team empowered for long-term excellence.
               </p>
             </div> }

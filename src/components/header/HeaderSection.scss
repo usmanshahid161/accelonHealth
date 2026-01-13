@@ -13,18 +13,21 @@
     .css-var-root.ant-image-css-var {
       display: flex;
       justify-content: center;
+      height: 70%;
     }
   }
 
   .right {
     width: 55%;
     padding: 3rem;
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .rightContent {
-      width: 70%;
+      width: 80%;
       margin: auto;
 
       h1 {
@@ -40,7 +43,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .headerContainer {
 
     .right {
@@ -49,9 +52,8 @@
 
       .rightContent {
         width: 100%;
-
         h1 {
-          font-size: 2.2rem;
+          font-size: 2.6rem;
         }
       }
     }
@@ -68,7 +70,7 @@
       width: 100%;
       padding: 0;
       text-align: center;
-
+      padding-right: 0;
       .rightContent {
         width: 100%;
 

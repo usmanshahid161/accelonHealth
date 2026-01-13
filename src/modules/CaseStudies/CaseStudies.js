@@ -360,7 +360,7 @@ const CaseStudies = () => {
             <HeadingDescription
               heading={ <h1>Cairo Hospital Group <span style={ {
                 color: 'var(--primary-color)',
-              } }>30% Cost Reduction While Scaling></span></h1> }
+              } }>30% Cost Reduction While Scaling</span></h1> }
             />
 
             <Row gutter={ [24, 24] }>

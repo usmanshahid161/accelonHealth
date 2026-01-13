@@ -148,7 +148,8 @@ const ContactCenter = () => {
             color: "var(--primary-color)"
           } }>Exceptional Experience.</span></h1> }
         />
-        <Row gutter={ [24, 24] } className={"filledCards"} style={ { margin: "auto"
+        <Row gutter={ [24, 24] } className={"filledCards"} style={ { margin: "auto",
+          justifyContent:"center"
         } }>
           { data.map((card, index) => <Col xs={ 24 } md={ 12 }><CardsWOBg
             heading={ card.heading }
@@ -158,6 +159,7 @@ const ContactCenter = () => {
         </Row>
       </div>
     </div>
+    <div className={"marginFromTop"}/>
     <div className={ "contentWrapper" }>
       <div className={ "centerEveryThing" }>
         <HeadingDescription
@@ -165,7 +167,9 @@ const ContactCenter = () => {
             color: "var(--primary-color)"
           } }>Patient Communication</span></h1> }
         />
-        <Row gutter={ [24, 24] }>
+        <Row gutter={ [24, 24] } style={{
+          justifyContent: "center"
+        }}>
           { data1.map((card, index) => <Col xs={ 24 } md={ 8 }><CardsWOBg
             heading={ card.heading }
             description={ card.description }
@@ -186,7 +190,9 @@ const ContactCenter = () => {
           } }>Practice Growth</span></h1> }
           description={ "We don’t just answer calls—we fill your schedule." }
         />
-        <Row gutter={ [24, 24] }>
+        <Row gutter={ [24, 24] } style={{
+          justifyContent:"center"
+        }}>
           { data2.map((card, index) => <Col xs={ 24 } md={ 8 }><CardsWOBg
             heading={ card.heading }
             description={ card.description }
@@ -201,7 +207,9 @@ const ContactCenter = () => {
           } }>Expertise You Can Hear</span></h1> }
           description={ "We don’t just answer calls—we fill your schedule." }
         />
-        <Row gutter={ [24, 24] }>
+        <Row gutter={ [24, 24] } style={{
+          justifyContent:"center"
+        }}>
           { data3.map((card, index) => <Col xs={ 24 } md={ 8 }><CardsWOBg
             heading={ card.heading }
             description={ card.description }
@@ -218,7 +226,8 @@ const ContactCenter = () => {
         <Row gutter={ [24, 24] }
              className={"filledCards"}
              style={ {
-          margin: "auto"
+          margin: "auto",
+               justifyContent: "center"
         } }>
           { faqs.map((card, index) => <Col xs={ 24 } md={ 24 }>
             <CardsWOBg

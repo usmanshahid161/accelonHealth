@@ -8,6 +8,7 @@ import ContentImageBox    from '../../components/ContentImageBox/ContentImageBox
 import HeadingDescription from '../../components/heading&description/heading&description';
 import image1 from "./assets/unnamed.jpg";
 import image2 from "./assets/backImg.jpg";
+import "./Audit.scss";
 
 const Audit = () => {
   const data = [
@@ -47,7 +48,7 @@ const Audit = () => {
       description: "Containerized options, private cloud/VPC, data-residency alignment.",
     }
   ]
-  return <>
+  return <div className={"auditContainer"}>
     <ContentImageBox backImg={ image2 } shaded={ true } fullHeight={true}>
       <div className={ "endToEndRcm" }>
         <h1>Turn Auditing Into a Revenue Protector</h1>
@@ -71,18 +72,20 @@ const Audit = () => {
         heading={ <h1>Audit at the Speed of Thought. <span style={ { color: "var(--primary-color)" } }>Trust-Grade Accuracy.</span>
         </h1> }
         description={
-          <>
+          <div style={{
+            color:"black"
+          }}>
             <p>
               Drop AccelonAudit into your workflow and it becomes an intelligent
               checkpoint—validating claims against clinical logic and payer
               requirements in real time.
             </p>
 
-            <h4 style={ { marginTop: "1rem", fontWeight: 600 } }>
+            <h4 style={ { marginTop: "1.4rem", fontWeight: 700, fontSize: "1.1rem" } }>
               What We Check in Real Time
             </h4>
 
-            <ul style={ { paddingLeft: "1.2rem" } }>
+            <ul style={ { paddingLeft: "1.2rem", fontSize: "1.1rem" } }>
               <li>
                 <strong>Diagnosis ↔ Procedure</strong> compatibility (crosswalks,
                 sequencing)
@@ -99,7 +102,7 @@ const Audit = () => {
               <li>Provider-specific billing rules</li>
               <li>Insurance contractual & technical rules</li>
             </ul>
-          </>
+          </div>
         }
         index={ 1 }
       />
@@ -110,7 +113,9 @@ const Audit = () => {
           heading={ <h1>Why AccelonAudit Catches What <span style={ { color: "var(--primary-color)" } }>Human Reviewers Miss</span>
           </h1> }
         />
-        <Row gutter={ [24, 24] }>
+        <Row gutter={ [24, 24] } style={{
+          justifyContent: "center",
+        }}>
           {
             data.map((item, index) => <Col xs={ 24 } md={ 6 }>
                 <CardsWOBg heading={ item.heading }
@@ -161,7 +166,7 @@ const Audit = () => {
                          } }>Schedule Your AccelonAudit Demo</ButtonComponent>
       </div>
     </ContentBox>
-  </>
+  </div>
 }
 
 export default Audit

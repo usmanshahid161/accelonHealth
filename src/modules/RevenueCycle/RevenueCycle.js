@@ -70,8 +70,8 @@ const RevenueCycle = () => {
       heading={ <h1>Your Complete Revenue Cycle, Mastered. <span style={ {
         color: 'var(--primary-color)',
       } }>Your Margins, Transformed.</span></h1> }
-      description={ "Leap beyond traditional outsourcing. Our all-inclusive RCM model operates as your strategic command center—from first patient call to cash in bank. We deliver measurable financial lift, not just task coverage." }
-      directionFromLeft={ true }
+      subheading={ "Leap beyond traditional outsourcing. Our all-inclusive RCM model operates as your strategic command center—from first patient call to cash in bank. We deliver measurable financial lift, not just task coverage." }
+      directionFromLeft={ false }
       buttonTitle={ "Stop Revenue Leakage. Start Here." }
       backImg={ image6 }
     />
@@ -86,11 +86,6 @@ const RevenueCycle = () => {
           } }>All-Inclusive, End-to-End.</span></h1> }
           description={ "We don’t “cover tasks.” We own outcomes. One subscription. One accountable team. One operating rhythm." }
         />
-        <div style={ {
-          display: "flex",
-          flexDirection: "column",
-          gap: 100
-        } }>
           {
             data.map((card, index) => <CardComponent
               heading={ <span style={ {
@@ -101,7 +96,7 @@ const RevenueCycle = () => {
               index={ index }
             />)
           }
-        </div>
+
         <div style={ {
           background: "linear-gradient(to right, #1C2460, #0077C7)",
           borderRadius: 60,
@@ -179,7 +174,8 @@ const RevenueCycle = () => {
     </div>
     <div className="marginFromTop"/>
     <div style={ {
-      backgroundColor: "rgba(28, 36, 96, .05 )"
+      backgroundColor: "rgba(28, 36, 96, .05 )",
+      paddingBottom: 80
     } }>
       <div className="contentWrapper">
         <div>
@@ -248,6 +244,7 @@ const RevenueCycle = () => {
         </div>
       </div>
     </div>
+
     <ContentBox>
       <div className={ "endToEndRcm" }>
         <i><h1>Ready to Turn Your Revenue Cycle into Your Strongest Asset?</h1></i>

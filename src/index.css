@@ -189,7 +189,6 @@ margin-top: 80px;
   }
 
   i {
-    margin-top: 60px;
     font-size: 24px;
   }
 }
@@ -205,6 +204,13 @@ margin-top: 80px;
     transform: scale(1.01);
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
   }
+}
+
+.officeHead {
+  display: flex;
+  gap:6px;
+  font-weight: 600;
+  align-items: center;
 }
 
 

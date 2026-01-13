@@ -262,7 +262,8 @@ const AboutUs = () => {
             description={ "We’re an investment in your growth, not an added cost. Streamlined operations accelerate profit. Strong compliance protects your reputation. Elevated engagement compounds lifetime value. Less friction. Smarter workflows. Happier patients." }
           />
           <b className={ "centerEveryThing" } style={ {
-            marginTop: 40
+            marginTop: 40,
+            fontSize:"1.2rem"
           } }>You will experience the Accelon difference through:</b>
 
           <Row gutter={ [24, 24] } style={ {
@@ -302,7 +303,7 @@ const AboutUs = () => {
                          } }>Book Your Complementary Strategy Session</ButtonComponent>
         <b style={ {
           fontSize: "1rem",
-          marginTop: 80
+          marginTop: 40
         } }>
           Accelon Health. Leap Beyond Limits.
         </b>

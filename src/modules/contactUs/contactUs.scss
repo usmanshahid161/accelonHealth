@@ -6,6 +6,12 @@
     width: 60%;
     margin: auto;
 
+    .officeHead {
+      display: flex;
+      gap:6px;
+      font-weight: 600;
+      align-items: center;
+    }
     .scheduleBtn {
       height: 56px;
       background: var(--primary-color);

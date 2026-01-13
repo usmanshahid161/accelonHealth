@@ -7,7 +7,10 @@ import {
 import "./Footer.scss";
 import logo                            from "../../assets/logo/logo blue.png";
 import { ReactComponent as LinkedIn }  from '../AboutUs/assets/linkedIn.svg';
-import {Link}                          from 'react-router-dom';
+import { Link }                        from 'react-router-dom';
+import { ReactComponent as Saudi }     from '../../assets/flags/saudi.svg';
+import { ReactComponent as USA }       from '../../assets/flags/usa.svg';
+import { ReactComponent as Egypt }     from '../../assets/flags/egypt.svg';
 
 const { Title, Text } = Typography;
 
@@ -21,10 +24,10 @@ const Footer = () => {
   };
   return (
     <footer className="footer">
-      <Row gutter={ [40, 32] } className={"footerContent"}>
+      <Row gutter={ [40, 32] } className={ "footerContent" }>
         {/* BRAND */ }
         <Col xs={ 24 } md={ 12 } lg={ 6 }>
-          <Space direction="vertical" size={ 16 } className={"footerData"}>
+          <Space direction="vertical" size={ 16 } className={ "footerData" }>
             <div className="brand">
               <img
                 src={ logo }
@@ -44,39 +47,55 @@ const Footer = () => {
               Egypt, and the US. Trust deeper. Rise higher.
             </Text>
 
-            <LinkedIn title={"Click to open"}  style={{
+            <LinkedIn title={ "Click to open" } style={ {
               cursor: "pointer"
-            }} onClick={()=>defaultAction()}/>
+            } } onClick={ () => defaultAction() }/>
           </Space>
         </Col>
 
         {/* LOCATIONS */ }
-        <Col xs={ 24 } md={ 12 } lg={ 6 } className={"footerData"}>
-          <Title level={ 5 } >WHERE TO FIND US?</Title>
+        <Col xs={ 24 } md={ 12 } lg={ 6 } className={ "footerData" }>
+          <Title level={ 5 }>WHERE TO FIND US?</Title>
 
           <Space direction="vertical" size={ 14 }>
-            <Text>
-              🇸🇦 <strong>KSA Office</strong><br/>
-              3279 Al-Amir Mamdouh bin Abdul,<br/>
-              Riyadh, KSA, 7273
-            </Text>
+            <div>
+              <Text className={ "officeHead" }>
+                <Saudi style={ {
+                  height: 18,
+                  width: 18
+                } }/> KSA Office (Riyadh)</Text>
+              <Text>
+                3279 Al-Amir Mamdouh bin Abdulaziz <br/>
+                Riyadh 7273, KSA
+              </Text>
+            </div>
 
-            <Text>
-              🇺🇸 <strong>US Office</strong><br/>
-              254 Chapman Rd, Ste 208,<br/>
-              Newark, DE 19702
-            </Text>
+            <div>
+              <Text className={ "officeHead" }> <USA style={ {
+                height: 18,
+                width: 18
+              } }/> USA Office</Text>
+              <Text>
+                254 Chapman Rd, Ste 208, <br/>
+                Newark, DE 19702
+              </Text>
+            </div>
 
-            <Text>
-              🇪🇬 <strong>Egypt Office</strong><br/>
-              41 Ahmed Tayseer, Nasr City,<br/>
-              Cairo 11757
-            </Text>
+            <div>
+              <Text className={ "officeHead" }> <Egypt style={ {
+                height: 18,
+                width: 18
+              } }/> Egypt Office</Text>
+              <Text>
+                41 Ahmed Tayseer, Nasr City, <br/>
+                Cairo 11757
+              </Text>
+            </div>
           </Space>
         </Col>
 
         {/* CONNECT */ }
-        <Col xs={ 24 } md={ 12 } lg={ 6 } className={"footerData"}>
+        <Col xs={ 24 } md={ 12 } lg={ 6 } className={ "footerData" }>
           <Title level={ 5 }>LET’S CONNECT</Title>
 
           <Text className="connect-text ">
@@ -107,10 +126,10 @@ const Footer = () => {
         </Col>
 
         {/* RESOURCES */ }
-        <Col xs={24} md={12} lg={6} className="footerData">
-          <Title level={5}>RESOURCES</Title>
+        <Col xs={ 24 } md={ 12 } lg={ 6 } className="footerData">
+          <Title level={ 5 }>RESOURCES</Title>
 
-          <Title level={5}>Outsourcing Services</Title>
+          <Title level={ 5 }>Outsourcing Services</Title>
           <ul className="footer-list">
             <li>
               <Link to="/professional/revenue">Revenue Cycle Management</Link>
@@ -123,7 +142,7 @@ const Footer = () => {
             </li>
           </ul>
 
-          <Title level={5}>Technology Services</Title>
+          <Title level={ 5 }>Technology Services</Title>
           <ul className="footer-list">
             <li><Link to="/technology/notes">AccelonNote</Link></li>
             <li><Link to="/technology/code">AccelonCode</Link></li>
@@ -132,7 +151,7 @@ const Footer = () => {
             <li><Link to="/technology/beauty">AccelonBeauty</Link></li>
           </ul>
 
-          <Title level={5}>Company</Title>
+          <Title level={ 5 }>Company</Title>
           <ul className="footer-list">
             <li><Link to="/about">About Us</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>

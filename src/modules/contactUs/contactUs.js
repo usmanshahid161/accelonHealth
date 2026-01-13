@@ -16,6 +16,9 @@ import {
   BankOutlined,
 }                                               from "@ant-design/icons";
 import ContactUs                                from '../landingPage/ContactUs/ContactUs';
+import {ReactComponent as Saudi}                         from '../../assets/flags/saudi.svg';
+import {ReactComponent as USA}                         from '../../assets/flags/usa.svg';
+import {ReactComponent as Egypt}                         from '../../assets/flags/egypt.svg';
 
 const { Title, Text } = Typography;
 
@@ -40,23 +43,23 @@ const ContactUsPage = () => {
 
   ]
   return <div className={ "contactUsPageContainer" }>
-    <ContentImageBox backImg={ backImg } shaded={ true } fullHeight={true}>
+    <ContentImageBox backImg={ backImg } shaded={ true } fullHeight={ true }>
       <div className={ "endToEndRcm" }>
         <h1>Let’s Build a Healthier, Stronger Future—Together </h1>
         <p>Wherever you are in your growth journey, we’ll help you leap forward. The first step toward transformation is
           a conversation.</p>
         <ButtonComponent className={ "endToEndRcmBtn" }
-                         color={"rgba(255,255,255,.2)"}
+                         color={ "rgba(255,255,255,.2)" }
                          style={ {
                            marginTop: 60,
                          } }>Book a Transformation Call</ButtonComponent>
         <ButtonComponent className={ "endToEndRcmBtn" }
-                         color={"rgba(255,255,255)"}
-                         actionFunc={() => {
+                         color={ "rgba(255,255,255)" }
+                         actionFunc={ () => {
                            document
                              .getElementById("contact-section")
                              ?.scrollIntoView({ behavior: "smooth" });
-                         }}
+                         } }
                          style={ {
                            height: "60px",
                            marginTop: 10,
@@ -64,8 +67,11 @@ const ContactUsPage = () => {
                          } }>Send a Message</ButtonComponent>
       </div>
     </ContentImageBox>
+    <div className={ "marginFromTop" }/>
+
     <HeadingDescription
       heading={ <h1>Reach Us <span style={ { color: "var(--primary-color)" } }>Your Way</span></h1> }/>
+
     <div className={ "contactUsPageContent" }
     >
       {/* Top Section */ }
@@ -144,8 +150,10 @@ const ContactUsPage = () => {
             <Space align="start">
               <BankOutlined style={ { fontSize: 24 } }/>
               <div>
-                <Text strong>KSA Office (Riyadh)</Text>
-                <br/>
+                <Text className={ "officeHead" }> <Saudi style={ {
+                  height: 18,
+                  width: 18
+                } }/> KSA Office (Riyadh)</Text>
                 <Text>
                   3279 Al-Amir Mamdouh bin Abdulaziz <br/>
                   Riyadh 7273, KSA
@@ -159,11 +167,13 @@ const ContactUsPage = () => {
             <Space align="start">
               <BankOutlined style={ { fontSize: 24 } }/>
               <div>
-                <Text strong>USA Office</Text>
-                <br/>
+                <Text className={ "officeHead" }> <USA style={ {
+                  height: 18,
+                  width: 18
+                } }/> USA Office</Text>
                 <Text>
-                  3279 Al-Amir Mamdouh bin Abdulaziz <br/>
-                  Riyadh 7273, KSA
+                  254 Chapman Rd, Ste 208, <br/>
+                  Newark, DE 19702
                 </Text>
               </div>
             </Space>
@@ -174,18 +184,20 @@ const ContactUsPage = () => {
             <Space align="start">
               <BankOutlined style={ { fontSize: 24 } }/>
               <div>
-                <Text strong>Egypt Office</Text>
-                <br/>
+                <Text className={ "officeHead" }> <Egypt style={ {
+                  height: 18,
+                  width: 18
+                } }/> Egypt Office</Text>
                 <Text>
-                  3279 Al-Amir Mamdouh bin Abdulaziz <br/>
-                  Riyadh 7273, KSA
+                  41 Ahmed Tayseer, Nasr City, <br/>
+                  Cairo 11757
                 </Text>
               </div>
             </Space>
           </Col>
         </Row>
 
-        <HeadingDescription heading={ "Preferred To Schedule?" }/>
+        <HeadingDescription heading={ "Let’s Schedule The Meeting?" }/>
         <div style={ {
           display: "flex",
           justifyContent: "center"
@@ -197,8 +209,11 @@ const ContactUsPage = () => {
       </div>
     </div>
 
+    <div className={ "marginFromTop" }/>
+
     <div id="contact-section"/>
     <ContactUs/>
+    <div className={ "marginFromTop" }/>
 
     <div className={ "contentWrapper" }>
       <div>
@@ -214,6 +229,8 @@ const ContactUsPage = () => {
         </div>
       </div>
     </div>
+
+    <div className={ "marginFromTop" }/>
 
     <ContentBox>
       <div className={ "endToEndRcm" } style={ {

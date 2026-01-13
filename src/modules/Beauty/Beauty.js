@@ -94,6 +94,7 @@ const Beauty = () => {
     } }>
       <div className={ "contentWrapper" }>
         <div>
+          <div className={ "marginFromTop" }/>
           <HeadingDescription
             heading={ <h1>Two Technologies, <span style={ { color: "var(--primary-color)" } }>One Transformative Experience</span>
             </h1> }
@@ -195,6 +196,7 @@ const Beauty = () => {
             /></Col>)
           }
         </Row>
+        <div className={ "marginFromTop" }/>
       </div>
     </div>
     <div className={ "marginFromTop" }/>

@@ -8,29 +8,28 @@ import logoBlue                 from "../../assets/logo/logo blue.png";
 
 const menuItems = [
   { key: "/", label: "Home" },
-  { key: "/case-studies", label: "Case Studies" },
   { key: "/about", label: "About Us" },
   {
     key: "/professional",
     label: "Professional Solutions",
     children: [
       { key: "/professional/revenue", label: "Revenue Cycle Management" },
-      { key: "/professional/healthCare", label: "Health Care Consulting" },
+      { key: "/professional/healthCare", label: "Healthcare Consulting" },
       { key: "/professional/contactCenter", label: "Medical Contact Center" },
     ],
   },
-
   {
     key: "/technology",
     label: "Technology Solutions",
     children: [
-      { key: "/technology/audit", label: "Accelon Audit" },
-      { key: "/technology/beauty", label: "Accelon Beauty" },
-      { key: "/technology/notes", label: "Accelon Notes" },
-      { key: "/technology/voice", label: "Accelon Voice" },
-      { key: "/technology/code", label: "Accelon Code" }
+      { key: "/technology/audit", label: "AccelonAudit" },
+      { key: "/technology/beauty", label: "AccelonBeauty" },
+      { key: "/technology/notes", label: "AccelonNotes" },
+      { key: "/technology/voice", label: "AccelonVoice" },
+      { key: "/technology/code", label: "AccelonCode" }
     ]
   },
+  { key: "/case-studies", label: "Case Studies" },
   { key: "/contact", label: "Contact Us" },
 ];
 

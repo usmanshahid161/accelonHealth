@@ -49,19 +49,36 @@ const Code = () => {
       backImg={ image2 }
       heading={ <h1>Medical Coding That Never Sleeps. <span style={ { color: "var(--primary-color)" } }>Accuracy You Can Trust</span>
       </h1> }
-      subheading={ "Imagine charts coded in seconds—clean, consistent, and compliant—while your experts focus on the tough cases. AccelonCode turns documentation into revenue-ready codes, day or night, across KSA/GCC, Egypt, and the U.S." }
+      subheading={ <p>Imagine charts coded in seconds—clean, consistent, and compliant—while your experts focus on the
+        tough cases. AccelonCode turns documentation into revenue-ready codes, day or night, across <strong> KSA/GCC,
+          Egypt, and the U.S.</strong></p> }
       buttonTitle={ "Automate Your Coding" }
     />
 
     <div className={ "momentYouFeelContainer" }>
       <div className={ "left" }>
-        <ContentBox>
-          <h1>The Moment You Feel the Shift</h1>
-          <p>Backlogs stop breathing down your neck. Rejections stop ping-ponging. Cash stops waiting for medical coding
+        <ContentBox style={{
+          display: "flex",
+          flexDirection:"column",
+          justifyContent: "space-around",
+        }}>
+          <div>
+          <h1 style={{
+            paddingTop: 0
+          }}>The Moment You Feel the Shift</h1>
+          <p style={ {
+            color: "#D8D8D8"
+          } }>Backlogs stop breathing down your neck. Rejections stop ping-ponging. Cash stops waiting for medical
+            coding
             delays.</p>
-
-          <h3>The work doesn’t get louder—it gets cleaner.</h3>
+          </div>
+          <div>
+          <h3 style={{
+            fontSize: '1.5rem',
+            fontWeight: 550
+          }}>The work doesn’t get louder—it gets cleaner.</h3>
           <h5>That’s the AccelonCode effect.</h5>
+          </div>
         </ContentBox>
       </div>
       <div className={ "right" }>
@@ -71,6 +88,7 @@ const Code = () => {
         } }/>
       </div>
     </div>
+    <div className={ "marginFromTop" }/>
 
     <div className={ "contentWrapper" }>
       <div>
@@ -80,7 +98,7 @@ const Code = () => {
           description={ "AccelonCode blends deep healthcare expertise with cutting-edge AI—so routine charts code themselves and your team handles exceptions." }/>
         <Row gutter={ [24, 24] }>
           {
-            data.map((item, index) => <Col xs={ 24 } md={ 8 }>
+            data.map((item) => <Col xs={ 24 } md={ 8 }>
                 <CardsWOBg heading={ item.heading }
                            description={ item.description }
                            background={ true }/>
@@ -97,21 +115,22 @@ const Code = () => {
           </h1> }/>
         <Row gutter={ [24, 24] }>
           {
-            partnership.map((item, index) => <Col xs={ 24 } md={ 6 }><CardsWOBg heading={ item.heading }
-                                                                                description={ item.description }/></Col>)
+            partnership.map((item) => <Col xs={ 24 } md={ 6 }><CardsWOBg heading={ item.heading }
+                                                                         description={ item.description }/></Col>)
           }
         </Row>
       </div>
     </div>
+    <div className={ "marginFromTop" }/>
     <ContentBox>
       <div className={ "endToEndRcm" } style={ {
         marginTop: 0,
       } }>
         <i><h1>Ready to Code at the Speed of Thought?</h1></i>
-        <h2>
+        <p>
           Every day a claim sits in coding is a day you're voluntarily delaying your own cash flow. Every coding error
           is revenue you'll fight for months to recover, if you recover it at all.
-        </h2>
+        </p>
         <ButtonComponent className={ "endToEndRcmBtn" }
                          color={ "white" }
                          size={ "large" }
