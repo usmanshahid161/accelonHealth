@@ -1,3 +1,4 @@
+import React, {useEffect} from 'react';
 import './App.css';
 import ScrollToTop                      from './components/ScrollToTop/ScrollToTop';
 import AboutUs                          from './modules/AboutUs/AboutUs';
@@ -15,8 +16,18 @@ import Notes                            from './modules/Notes/Notes';
 import RevenueCycle                     from './modules/RevenueCycle/RevenueCycle';
 import Voice                            from './modules/Voice/voice';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import 'aos/dist/aos.css';
+import AOS from "aos";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 900,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 120,
+    });
+  }, []);
   return <BrowserRouter>
     <ScrollToTop/>
     <Navbar/>

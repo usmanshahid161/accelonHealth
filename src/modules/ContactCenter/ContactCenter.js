@@ -1,5 +1,4 @@
 import React              from 'react';
-import backImg            from '../../assets/images/herosection.png';
 import ButtonComponent    from '../../components/button/Button';
 import CardComponent      from '../../components/cardsComponents/cardsComponents';
 import CardsWOBg          from '../../components/cardsWOBg/cardsWOBg';
@@ -81,24 +80,19 @@ const ContactCenter = () => {
         } }> Accelon Health’s medical contact center answers every time—multilingual, 24/7/365.</span></p> }
       buttonTitle={ "See Patient Experience in Action" }
     />
-    <ContentImageBox backImg={ backImg } shaded={ true }>
+    <ContentImageBox shaded={ true }>
       <div className={ "endToEndRcm" }>
         <h1>Your Patients Can’t Wait. Your Competitors Won’t.</h1>
         <p>As you read this, potential patients in your area are reaching out to providers. The ones who answer first
-          win. The ones who don’t often lose them for good.
-          Your front desk is slammed. Appointment requests stack up. Insurance questions interrupt clinical work.
-          Follow-ups never happen. No-shows climb. Patient reviews start saying “hard to reach” more than “great
-          care.”</p>
-        <p> Your front desk is slammed. Appointment requests stack up. Insurance questions interrupt clinical work.
-          Follow-ups never happen. No-shows climb. Patient reviews start saying “hard to reach” more than “great
-          care.”</p>
-        <p>Missed calls and long holds translate into lost bookings, late follow-ups, and preventable customer
-          attrition. Whether you run a clinic, a retail, or a service operation, voice is still the trust channel.
-          AccelonVoice makes it scalable.</p>
-        <h5>
+          win. The ones who don’t often lose them for good.</p>
+        <p>
+          Your front desk is slammed. Appointment requests stack up. Insurance questions interrupt clinical work. Follow-ups never happen. No-shows climb. Patient reviews start saying “hard to reach” more than “great care.”
+        </p>
+        <div className={"marginFromTop"}/>
+        <b>
           Every missed call risk meaningful lifetime revenue. Multiply that by the calls you miss each week, and a
           material slice of annual revenue drifts to whoever simply picked up.
-        </h5>
+        </b>
       </div>
     </ContentImageBox>
     <div style={ {

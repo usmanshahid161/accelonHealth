@@ -4,7 +4,10 @@ import ButtonComponent from '../button/Button';
 import "./HeaderSection.scss";
 
 const HeaderSection = ({ backImg, heading, subheading, buttonFunc, buttonTitle, directionFromLeft }) => {
-  return (<div className={ "headerContainer" } style={ {
+  return (<div
+    data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom"
+    className={ "headerContainer" } style={ {
     flexDirection: directionFromLeft ? 'row-reverse' : 'row',
   } }>
     <div className={ "left" }>

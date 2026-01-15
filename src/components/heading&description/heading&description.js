@@ -2,7 +2,10 @@ import React from 'react';
 import "./heading&description.scss";
 
 const HeadingDescription = ({ heading, description }) => {
-  return <div className={"HeadingDescriptionContainer"}>
+  return <div
+    data-aos="fade-up"
+    data-aos-once="false"
+    className={"HeadingDescriptionContainer"}>
     <h1>{ heading }</h1>
     { description && <p>{ description }</p> }
     <hr style={ {

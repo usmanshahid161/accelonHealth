@@ -10,18 +10,6 @@ import LongButton         from '../../components/longButton/LongButton';
 import ContactUs          from './ContactUs/ContactUs';
 import HeroSection        from './heroSection/heroSection';
 import "./landingPage.scss";
-import one                from "../../assets/images/One.png";
-import two                from "../../assets/images/two.png";
-import three              from "../../assets/images/three.png";
-import four               from "../../assets/images/four.png";
-import five               from "../../assets/images/five.png";
-import six                from "../../assets/images/six.png";
-import seven              from "../../assets/images/seven.png";
-import eight              from "../../assets/images/eight.png";
-import nine               from "../../assets/images/nine.png";
-import ten                from "../../assets/images/10.png";
-import eleven             from "../../assets/images/11.png";
-import twelve             from "../../assets/images/12.png";
 import thirteen           from "../../assets/images/13.png";
 import fourteen           from "../../assets/images/14.png";
 import fifteen            from "../../assets/images/15.png";
@@ -31,7 +19,8 @@ import image1             from "./assets/Profit Killer.png"
 import image2             from "./assets/2 1.jpg"
 import image3             from "./assets/3 1.jpg"
 import successImage       from "./assets/Celebrated Success.PNG";
-import LogoSlider         from './logoWrapper/LogoWrapper';
+import LogoSlider from './logoWrapper/LogoWrapper';
+import Counter      from '../../components/Counter/Counter';
 
 const LandingPage = () => {
   const cardsData = [
@@ -95,12 +84,24 @@ const LandingPage = () => {
     }
 
   ]
-  const logos = [
-    one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve
-  ]
 
   const secondLogos = [
-    thirteen, fourteen, fifteen, sixteen
+    {
+      img:thirteen,
+      link:"https://www.chi.gov.sa/en/Pages/home.aspx"
+    },
+    {
+      img:fourteen,
+      link:"https://nphies.sa/"
+    },
+    {
+      img:fifteen,
+      link:"https://www.aapc.com/?srsltid=AfmBOopSBbzNO1JcndX0YdmWBWaVtbhDi7O0itN8qslx8os21_Oqh0vP"
+    },
+    {
+      img:sixteen,
+      link:"https://www.hhs.gov/hipaa/index.html"
+    }
   ]
   return <div className="landingPageContainer">
 
@@ -131,30 +132,32 @@ const LandingPage = () => {
           eligibility, precision medical coding, pre-submission auditing and clean claim submission, payment
           reconciliation, and denial recovery.</p>
 
-        <div className={ "numbers" }>
+        <div className="numbers">
           <div>
-            <h3>99+</h3>
+            <Counter end={99} suffix="+" />
             <p>Clean Claims</p>
           </div>
 
           <div>
-            <h3>95%+</h3>
+            <Counter end={95} suffix="%+" />
             <p>Net Collections</p>
           </div>
 
           <div>
-            <h3>40–50%</h3>
+            <Counter end={40} suffix={<Counter end={50} suffix="%" />} addBetween={" - "} />
             <p>Reduction in A/R</p>
           </div>
         </div>
 
+
+        <div className={ "marginFromTop" }/>
         <i>These are real operational results from field deployments — not hypothetical projections.</i>
       </div>
     </ContentBox>
 
     <ContentImageBox backImg={ contentImg }>
       <div className={ "endToEndRcm" }>
-        <h1 style={ {
+      <h1 style={ {
           color: "var(--primary-text-color)"
         } }>Strategic Consulting for <span
           style={ { color: "var(--primary-color)" } }> Compliance & Operational Growth</span>
@@ -245,26 +248,18 @@ const LandingPage = () => {
       <div>
         <HeadingDescription
           heading={ <h1>Experience <span style={ { color: "var(--primary-color)" } }>Across Borders</span></h1> }/>
-        <div className={ "logos" }>
-          {
-            logos.map(item => <Image preview={ false } src={ item } style={ {
-              backgroundSize: "cover",
-              padding: "10px",
-            } }/>)
-          }
-        </div>
 
-        {/*<LogoSlider/>*/ }
+        <LogoSlider/>
       </div>
       <div>
         <HeadingDescription heading={ <h1>Powered By Innovation <span style={ { color: "var(--primary-color)" } }>Backed By Compliance</span>
         </h1> }/>
         <div className={ "logos" }>
           {
-            secondLogos.map(item => <Image preview={ false } src={ item } style={ {
+            secondLogos.map(item => <a href={item.link} target="_blank" rel="noreferrer"><Image preview={ false } src={ item.img } style={ {
               backgroundSize: "cover",
               padding: "10px",
-            } }/>)
+            } }/></a>)
           }
         </div>
       </div>

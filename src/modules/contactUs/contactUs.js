@@ -197,13 +197,13 @@ const ContactUsPage = () => {
           </Col>
         </Row>
 
-        <HeadingDescription heading={ "Let’s Schedule The Meeting?" }/>
+        <HeadingDescription heading={ "Ready To Leap Beyond Limits" }/>
         <div style={ {
           display: "flex",
           justifyContent: "center"
         } }>
           <ButtonComponent size={ "large" } className={ "scheduleBtn" }>
-            Book a 30-minute call
+            Book a 30 Minutes Strategy Call
           </ButtonComponent>
         </div>
       </div>

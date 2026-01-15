@@ -1,15 +1,30 @@
 .CardsWOBgContainer {
   text-align: center;
   color: var(--primary-color);
-  padding: 30px;
-  transition: transform 0.3s ease;
 
+  /* Smooth transitions for hover */
+  transition: transform 0.3s ease,
+  box-shadow 0.3s ease,
+  filter 0.3s ease;
+
+  /* Hover effect */
   &:hover {
-    transform: scale(1.01);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05) translateY(-5px); /* zoom + lift */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.05); /* subtle brightening */
   }
+
+  h2 {
+    padding: 30px;
+    padding-bottom: 0px;
+  }
+
   p {
     margin-top: 10px;
     font-size: 16px;
+    padding: 30px;
+    padding-top: 0;
   }
+
+
 }

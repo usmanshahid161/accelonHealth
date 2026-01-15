@@ -8,7 +8,10 @@ const ContentImageBox = ({ children, backImg, fullHeight, shaded }) => {
       className={`contentImageBox ${fullHeight && shaded ? "fullHeightShaded"  : fullHeight ? "fullHeight": shaded ? "shaded" : ""}`}
       style={{ backgroundImage: `url(${backImg || defaultImage})` }}
     >
-      <div className="content">
+      <div className="content"
+           data-aos="zoom-in"
+           data-aos-once="false"
+      >
         {children}
       </div>
     </div>

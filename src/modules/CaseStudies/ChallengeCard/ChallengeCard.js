@@ -13,6 +13,8 @@ const ChallengeCard = ({
                        }) => {
   return (
     <Card
+      data-aos="fade-up"
+      data-aos-once="false"
       hoverable
       className="ChallengeCard"
       style={ {

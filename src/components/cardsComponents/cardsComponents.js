@@ -5,7 +5,9 @@ import ButtonComponent from '../button/Button';
 
 
 const CardComponent = ({heading, description, image, index, buttonText, buttonStyle}) => {
-  return <div className={`cardComponent ${index % 2 !== 0 ? "reverse" : ""}`}>
+  return <div data-aos="fade-up"
+              data-aos-once="false"
+              className={`cardComponent ${index % 2 !== 0 ? "reverse" : ""}`}>
         <div className={"left"}>
           <div className={"leftContent"}>
             <hr/>

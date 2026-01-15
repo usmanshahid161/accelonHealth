@@ -1,6 +1,6 @@
 import { Row, Col }       from 'antd';
 import React              from 'react';
-import backImg            from '../../assets/images/herosection.png';
+import backImg            from './assets/information-case-study-research-verification-analysis-sketch.jpg';
 import ButtonComponent    from '../../components/button/Button';
 import CardComponent      from '../../components/cardsComponents/cardsComponents';
 import ContentImageBox    from '../../components/ContentImageBox/ContentImageBox';
@@ -41,7 +41,7 @@ const CaseStudies = () => {
   const data2 = [
     {
       title: "$2.3 M",
-      val: "Leaking annually due coding inconsistencies",
+      val: "Leaking annually due to coding inconsistencies",
     },
     {
       title: "Denial cascades"
@@ -55,8 +55,8 @@ const CaseStudies = () => {
   ]
   const data3 = [
     {
-      title: "40% of billing capacity reconciliation",
-      val: "Local insurance complexity and manual consumed",
+      title: "40% of billing capacity consumed",
+      val: "Local insurance complexity and manual reconcilaition",
     },
     {
       title: "Growth plans delayed due to resource constraints."

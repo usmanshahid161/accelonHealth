@@ -60,6 +60,7 @@ const Navbar = () => {
           mode="horizontal"
           selectedKeys={ [location.pathname] }
           className="menu desktop-menu"
+          triggerSubMenuAction="hover" // crucial
         >
           { menuItems.map(item =>
             item.children ? (

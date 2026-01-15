@@ -1,7 +1,7 @@
 import { Col, Row }       from 'antd';
 import React              from 'react';
 import "./HealthCare.scss";
-import backImg            from '../../assets/images/herosection.png';
+import backImg            from './assets/back.jpg';
 import ButtonComponent    from '../../components/button/Button';
 import CardComponent      from '../../components/cardsComponents/cardsComponents';
 import CardsWOBg          from '../../components/cardsWOBg/cardsWOBg';

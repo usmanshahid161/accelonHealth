@@ -1,16 +1,17 @@
-import { Col, Row }       from 'antd';
-import React              from 'react';
-import ButtonComponent    from '../../components/button/Button';
-import CardsWOBg          from '../../components/cardsWOBg/cardsWOBg';
-import ContentBox         from '../../components/contentBox/contentBox';
-import ContentImageBox    from '../../components/ContentImageBox/ContentImageBox';
-import HeadingDescription from '../../components/heading&description/heading&description';
-import ChallengeCard      from '../CaseStudies/ChallengeCard/ChallengeCard';
-import image1             from "./assets/HeroImage.jpg"
-import Ceo                from "./assets/CEO.jpeg";
-import Coo                from "./assets/COO.jpeg";
+import { Col, Row }                       from 'antd';
+import React                              from 'react';
+import ButtonComponent                    from '../../components/button/Button';
+import CardsWOBg                          from '../../components/cardsWOBg/cardsWOBg';
+import ContentBox                         from '../../components/contentBox/contentBox';
+import ContentImageBox                    from '../../components/ContentImageBox/ContentImageBox';
+import HeadingDescription                 from '../../components/heading&description/heading&description';
+import ChallengeCard                      from '../CaseStudies/ChallengeCard/ChallengeCard';
+import image1                             from "./assets/HeroImage.jpg"
+import Ceo                                from "./assets/CEO.jpeg";
+import Coo                                from "./assets/COO.jpeg";
 import { ReactComponent as LinkedInIcon } from "./assets/linkedIn.svg";
-import { ReactComponent as EmailIcon } from "./assets/email.svg";
+import { ReactComponent as EmailIcon }    from "./assets/email.svg";
+import "./AboutUs.scss";
 
 const AboutUs = () => {
   const data = [
@@ -34,18 +35,17 @@ const AboutUs = () => {
   ]
   const data1 = [
     {
-      heading: "Egypt",
-      description: "As a key delivery hub, we operate with an intimate understanding of the Egyptian healthcare market and UHIA regulations—delivering cost-effective excellence without compromising quality."
-    },
-    {
       heading: "Saudi Arabia & GCC",
       description: "We possess deep, firsthand knowledge of the Saudi Council for Health Insurance (CHI) regulations, NPHIES, and SBS coding. We don't just follow rules; we master them, ensuring your operations are compliant by design."
     },
     {
       heading: "United States",
       description: "We translate global best practices into the U.S. context, guiding providers through a complex billing ecosystem with clarity, consistency, and control."
+    },
+    {
+      heading: "Egypt",
+      description: "As a key delivery hub, we operate with an intimate understanding of the Egyptian healthcare market and UHIA regulations—delivering cost-effective excellence without compromising quality."
     }
-
   ]
   const data2 = [
     {
@@ -61,7 +61,7 @@ const AboutUs = () => {
       description: "Data-driven insights that guide your smartest decisions."
     },
   ]
-  return <>
+  return <div className={"aboutUsContainer"}>
     <ContentImageBox backImg={ image1 } shaded={ true } fullHeight={ true }>
       <div className={ "endToEndRcm" }>
         <h1>The Heartbeat of Modern Healthcare, Powered by Partnership.</h1>
@@ -69,7 +69,7 @@ const AboutUs = () => {
           Accelon Health—the living healthcare engine that blends full-cycle RCM, consulting, and technology so revenue
           flows and care teams can finally breathe again.</p>
         <ButtonComponent className={ "endToEndRcmBtn" }
-                         color={"white"}
+                         color={ "white" }
                          style={ {
                            marginTop: 60,
                            color: "var(--primary-color)"
@@ -131,15 +131,15 @@ const AboutUs = () => {
             color: 'var(--primary-color)',
           } }>Our Leadership</h1> }
         />
-        <Row gutter={ [24, 24] } className={"filledCards"} style={{
-          margin:"auto"
-        }}>
+        <Row gutter={ [24, 24] } className={ "filledCards" } style={ {
+          margin: "auto"
+        } }>
           <Col xs={ 24 } md={ 12 }>
             <ChallengeCard
               heading="Ayman Ibrahim"
               description="CEO"
-              backImg={Ceo}
-              height={400}
+              backImg={ Ceo }
+              height={ 400 }
               points={
                 <div className="profileCard">
                   <div className="contactRow">
@@ -150,7 +150,7 @@ const AboutUs = () => {
                       // className="iconButton email"
                       title="Send Email"
                     >
-                      <EmailIcon />
+                      <EmailIcon/>
                     </a>
 
                     <a
@@ -160,10 +160,10 @@ const AboutUs = () => {
                       // className="iconButton linkedin"
                       title="View LinkedIn"
                     >
-                      <LinkedInIcon style={{
-                        height:44,
-                        width:34
-                      }}/>
+                      <LinkedInIcon style={ {
+                        height: 44,
+                        width: 34
+                      } }/>
                     </a>
                   </div>
                 </div>
@@ -187,7 +187,7 @@ const AboutUs = () => {
                       // className="iconButton email"
                       title="Send Email"
                     >
-                      <EmailIcon />
+                      <EmailIcon/>
                     </a>
 
                     <a
@@ -197,10 +197,10 @@ const AboutUs = () => {
                       // className="iconButton linkedin"
                       title="View LinkedIn"
                     >
-                      <LinkedInIcon style={{
-                        height:44,
-                        width:34
-                      }}/>
+                      <LinkedInIcon style={ {
+                        height: 44,
+                        width: 34
+                      } }/>
                     </a>
                   </div>
                 </div>
@@ -263,7 +263,7 @@ const AboutUs = () => {
           />
           <b className={ "centerEveryThing" } style={ {
             marginTop: 40,
-            fontSize:"1.2rem"
+            fontSize: "1.2rem"
           } }>You will experience the Accelon difference through:</b>
 
           <Row gutter={ [24, 24] } style={ {
@@ -310,6 +310,6 @@ const AboutUs = () => {
       </div>
     </ContentBox>
 
-  </>
+  </div>
 }
 export default AboutUs;
