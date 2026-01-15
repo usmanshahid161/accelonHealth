@@ -1,6 +1,6 @@
 .contactUsContainer {
   display: flex;
-  height: 95vh;
+  height: 85vh;
   align-items: center;
   .left {
     width: 60%;
@@ -8,6 +8,7 @@
     .css-var-root.ant-image-css-var {
       height: 100%;
       width: 100%;
+      object-fit: cover;
     }
   }
   .right {
@@ -19,7 +20,7 @@
     .contactUsForm {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 12px;
       margin-top: 20px;
     }
 

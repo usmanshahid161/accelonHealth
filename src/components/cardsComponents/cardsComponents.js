@@ -26,7 +26,9 @@ const CardComponent = ({heading, description, image, index, buttonText, buttonSt
           </div>
         </div>
         <div className={"right"}>
-        <Image preview={false} className={"imageRight"} src={`${image}`}/>
+        <Image preview={false} className={"imageRight"} src={`${image}`} style={{
+          objectFit: 'cover',
+        }}/>
         </div>
   </div>
 }

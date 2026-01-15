@@ -31,7 +31,7 @@
       margin: auto;
 
       h1 {
-        font-size: 3.4rem;
+        font-size: clamp(1.25rem, 2.8vw, 7.3rem);
       }
 
       p {
@@ -53,7 +53,7 @@
       .rightContent {
         width: 100%;
         h1 {
-          font-size: 2.6rem;
+          font-size: clamp(1.25rem, 3vw, 7.3rem);
         }
       }
     }

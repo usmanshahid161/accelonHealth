@@ -8,7 +8,11 @@ const HeaderSection = ({ backImg, heading, subheading, buttonFunc, buttonTitle, 
     flexDirection: directionFromLeft ? 'row-reverse' : 'row',
   } }>
     <div className={ "left" }>
-      <Image src={ `${ backImg }` } preview={ false } style={ { width: "100%", borderRadius: 20 } }/>
+      <Image src={ `${ backImg }` } preview={ false } style={ {
+        width: "100%",
+        borderRadius: 20,
+        objectFit: "cover"
+      } }/>
     </div>
     <div className={ "right" }>
       <div className={ "rightContent" }>

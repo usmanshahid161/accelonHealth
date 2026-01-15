@@ -1,9 +1,9 @@
 import { Image, Input, notification } from 'antd';
-import React, { useState } from 'react';
+import React, { useState }            from 'react';
 import "./ContactUs.scss";
-import { sendEmail } from '../../../api/api';
-import contactUsBg from '../assets/letsConnect.png';
-import ButtonComponent from '../../../components/button/Button';
+import { sendEmail }                  from '../../../api/api';
+import contactUsBg                    from '../assets/letsConnect.png';
+import ButtonComponent                from '../../../components/button/Button';
 
 const { TextArea } = Input;
 
@@ -13,7 +13,7 @@ const ContactUs = () => {
     name: "",
     message: "",
     phone: "",
-    title:"",
+    title: "",
     disable: false, // consistent naming
   });
 
@@ -63,14 +63,16 @@ const ContactUs = () => {
           message: "",
           disable: false,
         });
-      } else {
+      }
+      else {
         openFailureNotification(
           "Email not sent!",
           "Please try again."
         );
         setState(prev => ({ ...prev, disable: false }));
       }
-    } catch (e) {
+    }
+    catch (e) {
       openFailureNotification(
         "Error!",
         "Something went wrong. Please try again."
@@ -93,70 +95,70 @@ const ContactUs = () => {
     <div className="contactUsContainer">
       <div className="left">
         <Image
-          preview={false}
-          src={contactUsBg}
-          style={{ width: "100%", height: "100%", backgroundSize: "cover" }}
+          preview={ false }
+          src={ contactUsBg }
+          style={ { width: "100%", height: "100%", objectFit: "cover" } }
         />
       </div>
       <div className="right">
         <div>
           <p>Contact Us</p>
           <h3>
-            Send Us <span style={{ color: "var(--primary-color)" }}>A Message</span>
+            Send Us <span style={ { color: "var(--primary-color)" } }>A Message</span>
           </h3>
         </div>
         <div className="contactUsForm">
           <Input
-            disabled={state.disable}
-            value={state.name}
-            onChange={(e) => setState({ ...state, name: e.target.value })}
+            disabled={ state.disable }
+            value={ state.name }
+            onChange={ (e) => setState({ ...state, name: e.target.value }) }
             placeholder="Your Name"
             size="large"
-            style={{ height: 48, borderRadius: 24 }}
+            style={ { height: 48, borderRadius: 24 } }
           />
 
           <Input
-            disabled={state.disable}
-            value={state.title}
-            onChange={(e) => setState({ ...state, title: e.target.value })}
+            disabled={ state.disable }
+            value={ state.title }
+            onChange={ (e) => setState({ ...state, title: e.target.value }) }
             placeholder="Title"
             size="large"
-            style={{ height: 48, borderRadius: 24 }}
+            style={ { height: 48, borderRadius: 24 } }
           />
 
           <Input
-            disabled={state.disable}
-            value={state.phone}
-            onChange={(e) => setState({ ...state, phone: e.target.value })}
+            disabled={ state.disable }
+            value={ state.phone }
+            onChange={ (e) => setState({ ...state, phone: e.target.value }) }
             placeholder="Phone"
             size="large"
-            style={{ height: 48, borderRadius: 24 }}
+            style={ { height: 48, borderRadius: 24 } }
           />
 
           <Input
-            disabled={state.disable}
-            value={state.email}
-            onChange={(e) => setState({ ...state, email: e.target.value })}
+            disabled={ state.disable }
+            value={ state.email }
+            onChange={ (e) => setState({ ...state, email: e.target.value }) }
             placeholder="Your Email"
             size="large"
-            style={{ height: 48, borderRadius: 24 }}
-            status={state.email && !isValidEmail(state.email) ? "error" : ""}
+            style={ { height: 48, borderRadius: 24 } }
+            status={ state.email && !isValidEmail(state.email) ? "error" : "" }
           />
 
           <TextArea
-            disabled={state.disable}
-            value={state.message}
-            onChange={(e) => setState({ ...state, message: e.target.value })}
-            style={{ height: 300 }}
-            rows={4}
+            disabled={ state.disable }
+            value={ state.message }
+            onChange={ (e) => setState({ ...state, message: e.target.value }) }
+            style={ { height: 300 } }
+            rows={ 4 }
             placeholder="Your Message"
           />
 
           <ButtonComponent
-            actionFunc={submit}
-            disabled={isFormInvalid}
+            actionFunc={ submit }
+            disabled={ isFormInvalid }
           >
-            {state.disable ? "Sending..." : "Send"}
+            { state.disable ? "Sending..." : "Send" }
           </ButtonComponent>
         </div>
       </div>
