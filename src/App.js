@@ -27,6 +27,8 @@ function App() {
       once: true,
       offset: 120,
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, []);
   return <BrowserRouter>
     <ScrollToTop/>

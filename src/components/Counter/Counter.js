@@ -18,6 +18,7 @@ const Counter = ({ end, suffix , duration = 1000, addBetween }) => {
 
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const animate = () => {
