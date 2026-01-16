@@ -14,11 +14,11 @@ const Code = () => {
   const data = [
     {
       heading: "Zero Human Intervention, Maximum Accuracy",
-      description: "95%+ accuracy with up to 10× (1000%) faster turnaround. 85%+ of charts are auto coded with zero manual review needed."
+      description: "95%+ accuracy with up to 1000x as agreed faster turnaround. 85%+ of charts are auto coded with zero manual review needed."
     },
     {
       heading: "Built for Your Region, Ready for the World",
-      description: "1. Pre-loaded with ICD-10-AM/CM, SBS, CPT/HCPCS coding guidelines. Fully aligned to NPHIES, CHI, and global requirements."
+      description: "1. Pre-loaded with ICD-10-AM/CM, SBS, CPT/HCPCS coding guidelines. Fully aligned to CMS, NPHIES & global requirements."
     },
     {
       heading: "Full Specialty Coverage",
@@ -49,10 +49,8 @@ const Code = () => {
       backImg={ image2 }
       heading={ <h1>Medical Coding That Never Sleeps. <span style={ { color: "var(--primary-color)" } }>Accuracy You Can Trust</span>
       </h1> }
-      subheading={ <p>Imagine charts coded in seconds—clean, consistent, and compliant—while your experts focus on the
-        tough cases. AccelonCode turns documentation into revenue-ready codes, day or night, across <strong> KSA/GCC,
-          Egypt, and the U.S.</strong></p> }
-      buttonTitle={ "Automate Your Coding" }
+      subheading={ <p>Charts coded in seconds—clean, consistent, and compliant with ICD-10, CPT, and regional payer rules—so your experts can focus on the toughest cases. AccelonCode turns clinical documentation into revenue-ready codes, 24/7, across <strong> KSA/GCC, Egypt, the U.S., and beyond.</strong></p> }
+      buttonTitle={ "Start Autonomous Medical Coding" }
     />
 
     <div className={ "momentYouFeelContainer" }>

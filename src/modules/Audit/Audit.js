@@ -37,7 +37,7 @@ const Audit = () => {
   const data1 = [
     {
       heading: "Native By Market: KSA/GCC , Egypt, & U.S.",
-      description: "Commercial/government insurance policies ",
+      description: "Commercial/Government Insurance Policies Compliance",
     },
     {
       heading: "Security & privacy",
