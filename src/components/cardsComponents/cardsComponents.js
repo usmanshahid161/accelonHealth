@@ -5,10 +5,11 @@ import ButtonComponent from '../button/Button';
 
 
 const CardComponent = ({heading, description, image, index, buttonText, buttonStyle}) => {
-  return <div data-aos="fade-up"
-              data-aos-once="false"
-              className={`cardComponent ${index % 2 !== 0 ? "reverse" : ""}`}>
-        <div className={"left"}>
+  return <div className={`cardComponent ${index % 2 !== 0 ? "reverse" : ""}`}>
+        <div className={"left"}
+             data-aos="fade-up"
+             data-aos-once="false"
+        >
           <div className={"leftContent"}>
             <hr/>
             <div className={"data"}>
@@ -27,7 +28,10 @@ const CardComponent = ({heading, description, image, index, buttonText, buttonSt
             </div>
           </div>
         </div>
-        <div className={"right"}>
+        <div className={"right"}
+             data-aos="fade-up"
+             data-aos-once="false"
+        >
         <Image preview={false} className={"imageRight"} src={`${image}`} style={{
           objectFit: 'cover',
         }}/>

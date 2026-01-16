@@ -19,8 +19,8 @@ import image1             from "./assets/Profit Killer.png"
 import image2             from "./assets/2 1.jpg"
 import image3             from "./assets/3 1.jpg"
 import successImage       from "./assets/Celebrated Success.PNG";
-import LogoSlider from './logoWrapper/LogoWrapper';
-import Counter      from '../../components/Counter/Counter';
+import LogoSlider         from './logoWrapper/LogoWrapper';
+import Counter            from '../../components/Counter/Counter';
 
 const LandingPage = () => {
   const cardsData = [
@@ -87,20 +87,20 @@ const LandingPage = () => {
 
   const secondLogos = [
     {
-      img:thirteen,
-      link:"https://www.chi.gov.sa/en/Pages/home.aspx"
+      img: thirteen,
+      link: "https://www.chi.gov.sa/en/Pages/home.aspx"
     },
     {
-      img:fourteen,
-      link:"https://nphies.sa/"
+      img: fourteen,
+      link: "https://nphies.sa/"
     },
     {
-      img:fifteen,
-      link:"https://www.aapc.com/?srsltid=AfmBOopSBbzNO1JcndX0YdmWBWaVtbhDi7O0itN8qslx8os21_Oqh0vP"
+      img: fifteen,
+      link: "https://www.aapc.com/?srsltid=AfmBOopSBbzNO1JcndX0YdmWBWaVtbhDi7O0itN8qslx8os21_Oqh0vP"
     },
     {
-      img:sixteen,
-      link:"https://www.hhs.gov/hipaa/index.html"
+      img: sixteen,
+      link: "https://www.hhs.gov/hipaa/index.html"
     }
   ]
   return <div className="landingPageContainer">
@@ -134,17 +134,17 @@ const LandingPage = () => {
 
         <div className="numbers">
           <div>
-            <Counter end={99} suffix="+" />
+            <Counter end={ 99 } suffix="+"/>
             <p>Clean Claims</p>
           </div>
 
           <div>
-            <Counter end={95} suffix="%+" />
+            <Counter end={ 95 } suffix="%+"/>
             <p>Net Collections</p>
           </div>
 
           <div>
-            <Counter end={40} suffix={<Counter end={50} suffix="%" />} addBetween={" - "} />
+            <Counter end={ 40 } suffix={ <Counter end={ 50 } suffix="%"/> } addBetween={ " - " }/>
             <p>Reduction in A/R</p>
           </div>
         </div>
@@ -157,7 +157,7 @@ const LandingPage = () => {
 
     <ContentImageBox backImg={ contentImg }>
       <div className={ "endToEndRcm" }>
-      <h1 style={ {
+        <h1 style={ {
           color: "var(--primary-text-color)"
         } }>Strategic Consulting for <span
           style={ { color: "var(--primary-color)" } }> Compliance & Operational Growth</span>
@@ -170,7 +170,7 @@ const LandingPage = () => {
           operational excellence becomes a habit, not a milestone.</p>
       </div>
     </ContentImageBox>
-
+    <div className={ "marginFromTop" }/>
     <div className={ "contentWrapper" }>
       <div>
         <HeadingDescription
@@ -192,7 +192,7 @@ const LandingPage = () => {
         } }>
           Clinicians lead. Autopilot Automation powers performance.
         </div>
-        <LongButton text={"Which solution fits your operation?"} buttonTitle={"Find Out Now"}/>
+        <LongButton text={ "Which solution fits your operation?" } buttonTitle={ "Find Out Now" }/>
       </div>
     </div>
 
@@ -243,8 +243,6 @@ const LandingPage = () => {
         image={ successImage }
         index={ 0 }
       />
-
-
       <div>
         <HeadingDescription
           heading={ <h1>Experience <span style={ { color: "var(--primary-color)" } }>Across Borders</span></h1> }/>
@@ -256,10 +254,12 @@ const LandingPage = () => {
         </h1> }/>
         <div className={ "logos" }>
           {
-            secondLogos.map(item => <a href={item.link} target="_blank" rel="noreferrer"><Image preview={ false } src={ item.img } style={ {
-              backgroundSize: "cover",
-              padding: "10px",
-            } }/></a>)
+            secondLogos.map(item => <a href={ item.link } target="_blank" rel="noreferrer"><Image preview={ false }
+                                                                                                  src={ item.img }
+                                                                                                  style={ {
+                                                                                                    backgroundSize: "cover",
+                                                                                                    padding: "10px",
+                                                                                                  } }/></a>)
           }
         </div>
       </div>

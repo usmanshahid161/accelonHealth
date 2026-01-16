@@ -13,7 +13,6 @@ const HeaderSection = ({ backImg, heading, subheading, buttonFunc, buttonTitle, 
     <div className={ "left" }>
       <Image src={ `${ backImg }` } preview={ false } style={ {
         width: "100%",
-        borderRadius: 20,
         objectFit: "cover"
       } }/>
     </div>
@@ -25,7 +24,6 @@ const HeaderSection = ({ backImg, heading, subheading, buttonFunc, buttonTitle, 
           style={ {
             height: 60,
             width: "100%",
-            marginTop: 80,
             background: "linear-gradient(to right, #1C2460, #0077C7)"
           } }>
           { buttonTitle }

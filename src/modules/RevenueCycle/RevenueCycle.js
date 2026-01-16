@@ -80,6 +80,7 @@ const RevenueCycle = () => {
       backgroundColor: "rgba(28, 36, 96, .05 )"
     } }>
       <div className="contentWrapper">
+        <div/>
         <HeadingDescription
           heading={ <h1>Accelon’s Blueprint for Flawless Revenue Operations <span style={ {
             color: 'var(--primary-color)',

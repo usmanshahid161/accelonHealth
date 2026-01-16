@@ -1,14 +1,19 @@
 .headerContainer {
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 68px);
   width: 90%;
   margin: auto;
+  position: relative;
 
   .left {
     width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    img {
+      border-radius: 20px;
+    }
 
     .css-var-root.ant-image-css-var {
       display: flex;
@@ -39,6 +44,10 @@
         margin-top: 24px;
         line-height: 24px;
       }
+
+      .buttonComponent {
+        margin-top: 80px;
+      }
     }
   }
 }
@@ -53,7 +62,7 @@
       .rightContent {
         width: 100%;
         h1 {
-          font-size: clamp(1.25rem, 3vw, 7.3rem);
+          font-size: clamp(1.25rem, 4vw, 7.3rem);
         }
       }
     }
@@ -62,35 +71,72 @@
 
 @media (max-width: 768px) {
   .headerContainer {
+    height: 100vh;
+    width: 100%;
+
     .left {
-      display: none;
+      display: block;
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+
+      .css-var-root.ant-image-css-var {
+        height: 100%;
+        width: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 0;
+        }
+      }
+    }
+
+    /* White overlay */
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.85);
+      z-index: 2;
     }
 
     .right {
-      width: 100%;
+      position: relative;
+      z-index: 3;
+      width: 90%;
       padding: 0;
       text-align: center;
-      padding-right: 0;
+      margin: auto;
+
       .rightContent {
         width: 100%;
 
         h1 {
-          font-size: 2.2rem;
+          font-size: clamp(1.25rem, 6.8vw, 7.3rem);
         }
-      }
-    }
-  }
-}
 
-@media (max-width: 480px) {
-  .headerContainer {
-    .right {
-
-      .rightContent {
         .buttonComponent {
-          font-size: 12px;
+          margin-top: 40px;
         }
       }
     }
   }
 }
+
+
+//@media (max-width: 480px) {
+//  .headerContainer {
+//    .right {
+//
+//      .rightContent {
+//        .buttonComponent {
+//          font-size: 12px;
+//        }
+//      }
+//    }
+//  }
+//}

@@ -1,4 +1,4 @@
-import { useState }             from "react";
+import { useState, useEffect }  from "react";
 import { Menu, Button, Drawer } from "antd";
 import { MenuOutlined }         from "@ant-design/icons";
 import { Link, useLocation }    from "react-router-dom";
@@ -8,7 +8,6 @@ import logoBlue                 from "../../assets/logo/logo blue.png";
 
 const menuItems = [
   { key: "/", label: "Home" },
-  { key: "/about", label: "About Us" },
   {
     key: "/professional",
     label: "Professional Solutions",
@@ -29,6 +28,7 @@ const menuItems = [
       { key: "/technology/beauty", label: "AccelonBeauty" }
     ]
   },
+  { key: "/about", label: "About Us" },
   { key: "/case-studies", label: "Case Studies" },
   { key: "/contact", label: "Contact Us" },
 ];
@@ -37,6 +37,8 @@ const menuItems = [
 const Navbar = () => {
   const location = useLocation();
   const [open, setOpen] = useState(false);
+  const [isFixed, setIsFixed] = useState(false);
+
   const defaultAction = () => {
     window.open(
       "https://calendly.com/contact-accelonhealth/30min",
@@ -44,8 +46,19 @@ const Navbar = () => {
       "noopener,noreferrer"
     );
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const triggerPoint = window.innerHeight; // 100vh
+      setIsFixed(window.scrollY > triggerPoint);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className={ "navbarHeader" }>
+    <header className={ `navbarHeader ${isFixed ? "fixed" : ""}` }>
       <div className="navbar">
         {/* Logo */ }
 

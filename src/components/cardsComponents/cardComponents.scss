@@ -56,8 +56,14 @@
 ========================= */
 @media (max-width: 992px) {
   .cardComponent {
+    flex-direction: column-reverse;
+
+    &.reverse {
+      flex-direction: column-reverse;
+    }
     .left {
       width: 100%;
+      margin-top: 40px;
       .leftContent {
 
         .data {
@@ -70,7 +76,7 @@
     }
 
     .right {
-      display: none;
+      width: 100%;
     }
   }
 }
@@ -92,10 +98,6 @@
         }
       }
     }
-
-    .right {
-      display: none;
-    }
   }
 }
 
@@ -114,10 +116,6 @@
           }
         }
       }
-    }
-
-    .right {
-      display: none;
     }
   }
 }
