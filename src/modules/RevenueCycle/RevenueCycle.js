@@ -7,6 +7,7 @@ import CardsWOBg          from '../../components/cardsWOBg/cardsWOBg';
 import ContentBox         from '../../components/contentBox/contentBox';
 import HeaderSection      from '../../components/header/HeaderSection';
 import HeadingDescription from '../../components/heading&description/heading&description';
+import LongButton         from '../../components/longButton/LongButton';
 import image2             from "./assets/unnamed (2).jpg";
 import image3             from "./assets/unnamed (1).jpg";
 import image4             from "./assets/unnamed.jpg";
@@ -98,28 +99,7 @@ const RevenueCycle = () => {
             />)
           }
 
-        <div style={ {
-          background: "linear-gradient(to right, #1C2460, #0077C7)",
-          borderRadius: 60,
-          margin: "auto",
-          padding: "10px",
-          marginTop: 60,
-          display: "flex",
-          justifyContent: "space-between",
-          paddingLeft: 60,
-          alignItems: "center",
-          color: "white",
-          width: "70%",
-          flexWrap: "wrap",
-          gap: 20
-        } }>
-          Which challenge is costing you most?
-          <ButtonComponent style={ {
-            background: "transparent",
-            border: "1px solid white",
-            color: "white",
-          } }>Get a custom solution</ButtonComponent>
-        </div>
+        <LongButton buttonTitle={"Get a custom solution"} text={"Which challenge is costing you most?"}/>
         <div/>
       </div>
     </div>

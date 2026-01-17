@@ -1,25 +1,52 @@
 .longButtonContainer {
   background: linear-gradient(to right, #1C2460, #0077C7);
-  border-radius: 60px;
+  border-radius: 18px;
   margin: auto;
   margin-top: 60px;
-  padding: 10px;
-  padding-left: 60px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   color: white;
-  width: 70%;
   flex-wrap: wrap;
   gap: 20px;
+  width: 100%;
+
+  p {
+    margin-left: 60px;
+    text-align: center;
+  }
+
+  .buttonComponent {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0 20px 0 20px;
+    margin-right: 60px;
+  }
 }
 
 @media (max-width: 480px) {
-.longButtonContainer {
-  width: 100%;
-  justify-content: center;
-  padding-left: 0;
-}
+  .longButtonContainer {
+    width: 100%;
+    justify-content: center;
+    padding-left: 0;
+    flex-direction: column;
+
+    p {
+      margin: 10px;
+    }
+
+    .buttonComponent {
+      margin: auto;
+      width: 90%;
+      padding: 0 !important;
+    }
+  }
 }
