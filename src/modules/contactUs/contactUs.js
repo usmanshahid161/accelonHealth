@@ -3,9 +3,9 @@ import "./contactUs.scss";
 import ButtonComponent                          from '../../components/button/Button';
 import CardsWOBg                                from '../../components/cardsWOBg/cardsWOBg';
 import ContentBox                               from '../../components/contentBox/contentBox';
-import ContentImageBox    from '../../components/ContentImageBox/ContentImageBox';
-import backImg            from "./assets/HeroImage.jpeg";
-import HeadingDescription from '../../components/heading&description/heading&description';
+import ContentImageBox                          from '../../components/ContentImageBox/ContentImageBox';
+import backImg                                  from "./assets/HeroImage.jpeg";
+import HeadingDescription                       from '../../components/heading&description/heading&description';
 import { Row, Col, Typography, Space, Divider } from "antd";
 import {
   PhoneOutlined,
@@ -16,9 +16,9 @@ import {
   BankOutlined,
 }                                               from "@ant-design/icons";
 import ContactUs                                from '../landingPage/ContactUs/ContactUs';
-import {ReactComponent as Saudi}                         from '../../assets/flags/saudi.svg';
-import {ReactComponent as USA}                         from '../../assets/flags/usa.svg';
-import {ReactComponent as Egypt}                         from '../../assets/flags/egypt.svg';
+import { ReactComponent as Saudi }              from '../../assets/flags/saudi.svg';
+import { ReactComponent as USA }                from '../../assets/flags/usa.svg';
+import { ReactComponent as Egypt }              from '../../assets/flags/egypt.svg';
 
 const { Title, Text } = Typography;
 
@@ -82,7 +82,9 @@ const ContactUsPage = () => {
             <div>
               <Text strong>Main Line</Text>
               <br/>
-              <Text>+966 59 869 8532</Text>
+              <a href="tel:+966598698532">
+                <Text>+966 59 869 8532</Text>
+              </a>
             </div>
           </Space>
         </Col>
@@ -93,7 +95,14 @@ const ContactUsPage = () => {
             <div>
               <Text strong>General Email</Text>
               <br/>
-              <Text>contact@accelonhealth.com</Text>
+              <a
+                href="mailto:contact@accelonhealth.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Send Email"
+              >
+                <Text>contact@accelonhealth.com</Text>
+              </a>
             </div>
           </Space>
         </Col>

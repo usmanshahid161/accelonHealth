@@ -147,7 +147,6 @@ const AboutUs = () => {
                       href="mailto:ayman.i@accelonhealth.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      // className="iconButton email"
                       title="Send Email"
                     >
                       <EmailIcon/>

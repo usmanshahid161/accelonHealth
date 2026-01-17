@@ -110,18 +110,31 @@ const Footer = () => {
           </Title>
 
           <Space direction="vertical">
-            <Text>
-              <PhoneOutlined/> KSA +966 59 869 8532
-            </Text>
-            <Text>
-              <PhoneOutlined/> US +1 (551) 312-7257
-            </Text>
-            <Text>
-              <PhoneOutlined/> Egypt +20 110 200 1134
-            </Text>
-            <Text>
-              <MailOutlined/> contact@accelonhealth.com
-            </Text>
+            <a href="tel:+966598698532">
+              <Text>
+                <PhoneOutlined/> KSA +966 59 869 8532
+              </Text>
+            </a>
+            <a href="tel:+15513127257">
+              <Text>
+                <PhoneOutlined/> US +1 (551) 312-7257
+              </Text>
+            </a>
+            <a href="tel:+201102001134">
+              <Text>
+                <PhoneOutlined/> Egypt +20 110 200 1134
+              </Text>
+            </a>
+            <a
+              href="mailto:contact@accelonhealth.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Send Email"
+            >
+              <Text>
+                <MailOutlined/> contact@accelonhealth.com
+              </Text>
+            </a>
           </Space>
         </Col>
 
