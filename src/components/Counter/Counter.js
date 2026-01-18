@@ -1,16 +1,21 @@
 import { useEffect, useRef, useState } from "react";
 
-const Counter = ({ end, suffix , duration = 1000, addBetween }) => {
+const Counter = ({ end, suffix, duration = 1000, addBetween }) => {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
-  const started = useRef(false);
+  const animating = useRef(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !started.current) {
-          started.current = true;
+        if (entry.isIntersecting && !animating.current) {
+          animating.current = true;
           animate();
+        }
+
+        if (!entry.isIntersecting) {
+          animating.current = false;
+          setCount(0); // reset when leaving viewport
         }
       },
       { threshold: 0.6 }
@@ -25,8 +30,11 @@ const Counter = ({ end, suffix , duration = 1000, addBetween }) => {
     const start = performance.now();
 
     const step = (now) => {
+      if (!animating.current) return; // stop if out of view
+
       const progress = Math.min((now - start) / duration, 1);
       setCount(Math.floor(progress * end));
+
       if (progress < 1) requestAnimationFrame(step);
     };
 
@@ -34,9 +42,7 @@ const Counter = ({ end, suffix , duration = 1000, addBetween }) => {
   };
 
   return (
-    <h3 ref={ref} style={{
-      display: 'flex'
-    }}>
+    <h3 ref={ref} style={{ display: "flex" }}>
       {count}
       {addBetween || ""}
       {suffix || ""}

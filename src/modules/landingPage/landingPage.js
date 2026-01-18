@@ -254,12 +254,22 @@ const LandingPage = () => {
         </h1> }/>
         <div className={ "logos" }>
           {
-            secondLogos.map(item => <a href={ item.link } target="_blank" rel="noreferrer"><Image preview={ false }
-                                                                                                  src={ item.img }
-                                                                                                  style={ {
-                                                                                                    backgroundSize: "cover",
-                                                                                                    padding: "10px",
-                                                                                                  } }/></a>)
+            secondLogos.map((item, idx) => <a
+              href={ item.link }
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display:"flex",
+                justifyContent: idx === 0 && "end",
+              }}
+            >
+              <Image preview={ false }
+                     src={ item.img }
+                     style={ {
+                       padding: "10px",
+                       height: 120,
+                       objectFit: "contain"
+                     } }/></a>)
           }
         </div>
       </div>

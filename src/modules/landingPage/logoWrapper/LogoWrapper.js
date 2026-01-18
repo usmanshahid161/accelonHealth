@@ -57,7 +57,10 @@ const LogoSlider = () => {
         }}
       >
         {logos.map((item, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} style={{
+            display:"flex",
+            justifyContent:"center",
+          }}>
             <a
               href={item.link}
               target="_blank"
@@ -67,6 +70,10 @@ const LogoSlider = () => {
                 preview={false}
                 src={item.img}
                 className="logo-img"
+                height={160}
+                style={{
+                  background:"white"
+                }}
               />
             </a>
           </SwiperSlide>
