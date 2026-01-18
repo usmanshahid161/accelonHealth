@@ -142,7 +142,7 @@ const Footer = () => {
         <Col xs={ 24 } md={ 12 } lg={ 6 } className="footerData">
           <Title level={ 5 }>RESOURCES</Title>
 
-          <Title level={ 5 }>Outsourcing Services</Title>
+          <Title level={ 5 }>Professional Solutions</Title>
           <ul className="footer-list">
             <li>
               <Link to="/professional/revenue">Revenue Cycle Management</Link>
@@ -155,9 +155,9 @@ const Footer = () => {
             </li>
           </ul>
 
-          <Title level={ 5 }>Technology Services</Title>
+          <Title level={ 5 }>Technology Solutions</Title>
           <ul className="footer-list">
-            <li><Link to="/technology/notes">AccelonNote</Link></li>
+            <li><Link to="/technology/notes">AccelonNotes</Link></li>
             <li><Link to="/technology/code">AccelonCode</Link></li>
             <li><Link to="/technology/audit">AccelonAudit</Link></li>
             <li><Link to="/technology/voice">AccelonVoice</Link></li>

@@ -118,7 +118,7 @@ const Navbar = () => {
           placement="right"
           open={ open }
           onClose={ () => setOpen(false) }
-          width={ 280 }
+          width={ "100%" }
         >
           <Menu
             mode="inline"
