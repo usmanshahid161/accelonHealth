@@ -4,10 +4,13 @@ import "./ContactUs.scss";
 import { sendEmail }                  from '../../../api/api';
 import contactUsBg                    from '../assets/letsConnect.png';
 import ButtonComponent                from '../../../components/button/Button';
+import {useTranslation}                  from 'react-i18next';
 
 const { TextArea } = Input;
 
 const ContactUs = () => {
+  const { t } = useTranslation();
+
   const [state, setState] = useState({
     email: "",
     name: "",
@@ -102,9 +105,12 @@ const ContactUs = () => {
       </div>
       <div className="right">
         <div>
-          <p>Contact Us</p>
+          <p>{ t("landingPage.contactUs.heading") }</p>
           <h3>
-            Send Us <span style={ { color: "var(--primary-color)" } }>A Message</span>
+            { t("landingPage.contactUs.subHeadingPart1") }{ " " }
+            <span style={ { color: "var(--primary-color)" } }>
+            { t("landingPage.contactUs.subHeadingPart2") }
+          </span>
           </h3>
         </div>
         <div className="contactUsForm">
@@ -112,7 +118,7 @@ const ContactUs = () => {
             disabled={ state.disable }
             value={ state.name }
             onChange={ (e) => setState({ ...state, name: e.target.value }) }
-            placeholder="Your Name"
+            placeholder={ t("landingPage.contactUs.placeholders.name") }
             size="large"
             style={ { height: 48, borderRadius: 24 } }
           />
@@ -121,7 +127,7 @@ const ContactUs = () => {
             disabled={ state.disable }
             value={ state.title }
             onChange={ (e) => setState({ ...state, title: e.target.value }) }
-            placeholder="Title"
+            placeholder={ t("landingPage.contactUs.placeholders.title") }
             size="large"
             style={ { height: 48, borderRadius: 24 } }
           />
@@ -130,7 +136,7 @@ const ContactUs = () => {
             disabled={ state.disable }
             value={ state.phone }
             onChange={ (e) => setState({ ...state, phone: e.target.value }) }
-            placeholder="Phone"
+            placeholder={ t("landingPage.contactUs.placeholders.phone") }
             size="large"
             style={ { height: 48, borderRadius: 24 } }
           />
@@ -139,7 +145,7 @@ const ContactUs = () => {
             disabled={ state.disable }
             value={ state.email }
             onChange={ (e) => setState({ ...state, email: e.target.value }) }
-            placeholder="Your Email"
+            placeholder={ t("landingPage.contactUs.placeholders.email") }
             size="large"
             style={ { height: 48, borderRadius: 24 } }
             status={ state.email && !isValidEmail(state.email) ? "error" : "" }
@@ -151,14 +157,13 @@ const ContactUs = () => {
             onChange={ (e) => setState({ ...state, message: e.target.value }) }
             style={ { height: 300 } }
             rows={ 4 }
-            placeholder="Your Message"
+            placeholder={ t("landingPage.contactUs.placeholders.message") }
           />
 
-          <ButtonComponent
-            actionFunc={ submit }
-            disabled={ isFormInvalid }
-          >
-            { state.disable ? "Sending..." : "Send" }
+          <ButtonComponent actionFunc={ submit } disabled={ isFormInvalid }>
+            { state.disable
+              ? t("landingPage.contactUs.button.sending")
+              : t("landingPage.contactUs.button.send") }
           </ButtonComponent>
         </div>
       </div>

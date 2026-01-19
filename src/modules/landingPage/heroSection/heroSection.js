@@ -1,22 +1,29 @@
-import React           from 'react';
+import React from 'react';
 import "./heroSection.scss";
 import ButtonComponent from '../../../components/button/Button';
-import {ChevronDown}   from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const HeroSection = () => {
-  return <div className={"landingPageHeroSectionHero"}>
-    <div className="landingPageHeroSection">
-        <div data-aos="fade-right"  className="heroSectionContent">
-          <h4>#1 Healthcare Solutions Partner</h4>
-          <h1>Accelon Health | End-to-End Healthcare Solutions & Precision RCM Partner</h1>
-          <p>Leap beyond limits. Accelon Health fuses full-cycle RCM, BPO, consulting, and technology solutions to unlock revenue, ensure compliance, and scale operational excellence across Saudi Arabia, GCC, USA & Egypt. Book a demo.</p>
+  const { t } = useTranslation();
+
+  return (
+    <div className={"landingPageHeroSectionHero"}>
+      <div className="landingPageHeroSection">
+        <div data-aos="fade-right" className="heroSectionContent">
+          <h4>{t('landingPage.heroSection.tagline')}</h4>
+          <h1>{t('landingPage.heroSection.heading')}</h1>
+          <p>{t('landingPage.heroSection.description')}</p>
           <ButtonComponent>
-            Unlock Your Growth Story
+            {t('landingPage.heroSection.buttonText')}
           </ButtonComponent>
         </div>
-      <h5 className={"scrollDown"}>Scroll Down <ChevronDown/></h5>
-  </div>
-  </div>
+        <h5 className={"scrollDown"}>
+          {t('landingPage.heroSection.scrollDown')} <ChevronDown />
+        </h5>
+      </div>
+    </div>
+  );
 }
 
 export default HeroSection;

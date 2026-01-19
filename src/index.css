@@ -27,6 +27,8 @@ code {
   display: flex;
   flex-direction: column;
   gap: 80px;
+  padding-bottom: 80px;
+  padding-top: 80px;
 }
 
 .marginFromTop {

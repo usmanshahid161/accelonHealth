@@ -1,0 +1,1137 @@
+{
+  "common": {
+    "buttons": {
+      "findOutNow": "Find Out Now",
+      "speakWithTeam": "Speak with Our Solutions Team Today",
+      "bookScan": "Book Your Free Operational Health Scan"
+    }
+  },
+  "landingPage": {
+    "contactUs": {
+      "heading": "Contact Us",
+      "subHeadingPart1": "Send Us",
+      "subHeadingPart2": "A Message",
+      "placeholders": {
+        "name": "Your Name",
+        "title": "Title",
+        "phone": "Phone",
+        "email": "Your Email",
+        "message": "Your Message"
+      },
+      "button": {
+        "send": "Send",
+        "sending": "Sending..."
+      }
+    },
+    "heroSection": {
+      "tagline": "#1 Healthcare Solutions Partner",
+      "heading": "Accelon Health | End-to-End Healthcare Solutions & Precision RCM Partner",
+      "description": "Leap beyond limits. Accelon Health fuses full-cycle RCM, BPO, consulting, and technology solutions to unlock revenue, ensure compliance, and scale operational excellence across Saudi Arabia, GCC, USA & Egypt. Book a demo.",
+      "buttonText": "Unlock Your Growth Story",
+      "scrollDown": "Scroll Down"
+    },
+    "cards": {
+      "card1_headingPart1": "Every Healthcare Provider Faces the Same Invisible",
+      "card1_headingPart2": "Profit Killer",
+      "card1_description": "You’re not losing money for lack of patients—you’re losing it to a payment ecosystem of delays, denials, and administrative drag. From Riyadh to Dubai, Cairo to New York, the pattern is universal: administrative work expands, denials persist, revenue turns uncertain. Different markets—one revenue choke point. We cut it loose.",
+      "card2_headingPart1": "The Accelon Difference: Beyond Ordinary.",
+      "card2_headingPart2": "An Operational DNA.",
+      "card2_description": "RCM has long been fragmented with uncertain returns. We ended that. Accelon Health installs a seamless revenue engine—not a cost center, but the operating backbone that sharpens efficiency, lifts net collections, and accelerates profitability. You’re not paying for another service. You’re investing in guaranteed operational transformation.",
+      "card3_headingPart1": "The Accelon",
+      "card3_headingPart2": "Healthcare Engine",
+      "card3_description": "Our operating framework isn’t static; it’s a living ecosystem built to scale. It adapts and expands with you—whether you’re a single clinic optimizing flow or a multi-region network pursuing global ambitions."
+    },
+    "quietAutomation": {
+      "heading1": "AccelonNote",
+      "description1": "Faster clinical notes and pre-visit abstracts with zero disruption to patient care.",
+      "heading2": "AccelonCode",
+      "description2": "Autonomous coding at 95%+ accuracy, delivering consistent, 1000x faster turnarounds.",
+      "heading3": "AccelonAudit",
+      "description3": "Re-submission checks that prevent rejections before they happen.",
+      "heading4": "AccelonVoice",
+      "description4": "24/7 patient communication automation in Arabic/English across 20+ dialects."
+    },
+    "whyUs": {
+      "headingWoSpan": "Why Leading Providers Choose",
+      "headingWSpan": "Accelon Health?",
+      "heading1": "Born Native. Built for Scale",
+      "description1": "Our teams live and breathe the regulatory landscapes of the MENA region and key global markets. We have deep knowledge of every local payer’s rule, ensuring every claim is compliant by design. This multinational expertise is baked into everything we do.",
+      "heading2": "We Drive Financial Thrive, Not Just Operational Survival.",
+      "description2": "Our goal is to make you more profitable. We are never an added cost. Our model is built on delivering a clear, measurable ROI—higher collections, reduced administrative hassle, and significant cost savings. We measure success in your gains.",
+      "heading3": "The Power of \"And\": Deep Expertise AND Cutting-Edge Tech.",
+      "description3": "You don’t have to choose between a seasoned consulting or BPO firm and a flashy AI startup. Accelon Health delivers both. Our certified RCM team are empowered by our proprietary AI, creating an unbeatable combination of expertise and unmatched speed."
+    },
+    "endToEndRcm": {
+      "subHeading": "The Heartbeat of Your Revenue",
+      "heading": "End-to-End RCM",
+      "description": "Most vendors handle pieces of the puzzle. We run the whole board—end to end, from first appointment to cash in bank. Our all-inclusive RCM outsourcing works across the entire flow: patient scheduling and real-time eligibility, precision medical coding, pre-submission auditing and clean claim submission, payment reconciliation, and denial recovery.",
+      "cleanClaims": "Clean Claims",
+      "netCollections": "Net Collections",
+      "reductionInAR": "Reduction in A/R",
+      "footerNote": "These are real operational results from field deployments — not hypothetical projections."
+    },
+    "strategicConsulting": {
+      "headingPart1": "Strategic Consulting for",
+      "headingPart2": "Compliance & Operational Growth",
+      "description": "Navigate accreditation and compliance with confidence. Our consultants deliver gap analyses, CDI training, and RCM improvement programs tailored to local payer rules and regulatory bodies across your markets—so operational excellence becomes a habit, not a milestone."
+    },
+    "quietAutomationSection": {
+      "headingPart1": "Quiet Automation,",
+      "headingPart2": "Loud Results",
+      "description": "Invisible, on-purpose automation that lifts every workflow",
+      "greenBox": "Clinicians lead. Autopilot Automation powers performance.",
+      "longButton_text": "Which solution fits your operation?",
+      "longButton_title": "Find Out Now"
+    },
+    "fromHeadachesToSuccess": {
+      "headingPart1": "From Operational Headaches to",
+      "headingPart2": "Celebrated Successes",
+      "description": "A leading polyclinic in Riyadh was struggling with over 40% claim rejections and stagnant revenue. Within months of partnering with Accelon Health, they saw a 25% monthly revenue uplift and a 50% reduction in backlog. Staff workload eased; patient access improved.",
+      "benchmarks": "Benchmarks We Deliver:",
+      "benchmark_list": [
+        "Net Collection Rate: 95%+",
+        "Clean Claim Ratio: 99%+",
+        "Monthly Revenue Increase: ~25%+"
+      ]
+    },
+    "experienceAcrossBorders": {
+      "part1": "Experience",
+      "part2": "Across Borders"
+    },
+    "poweredByInnovation": {
+      "part1": "Powered By Innovation",
+      "part2": "Backed By Compliance"
+    },
+    "readyToLeap": {
+      "heading": "Ready to Leap Beyond Limits of Traditional Healthcare Operations?",
+      "subHeading": "Stop settling for incremental fixes. Build the engine—once and for all.",
+      "description": "Your teams and patients will feel the difference immediately.",
+      "button1": "Speak with Our Solutions Team Today",
+      "button2": "Book Your Free Operational Health Scan"
+    }
+  },
+  "footer": {
+    "brand": {
+      "tagline": "Leap Beyond Limits",
+      "description": "Our precision-crafted solutions reshape workflows, enrich patient experiences, and unlock effortless performance for providers in Saudi Arabia, the GCC, Egypt, and the US. Trust deeper. Rise higher."
+    },
+    "locations": {
+      "heading": "WHERE TO FIND US?",
+      "ksa": {
+        "office": "KSA Office (Riyadh)",
+        "address": "3279 Al-Amir Mamdouh bin Abdulaziz, Riyadh 7273, KSA"
+      },
+      "usa": {
+        "office": "USA Office",
+        "address": "254 Chapman Rd, Ste 208, Newark, DE 19702"
+      },
+      "egypt": {
+        "office": "Egypt Office",
+        "address": "41 Ahmed Tayseer, Nasr City, Cairo 11757"
+      }
+    },
+    "connect": {
+      "heading": "LET’S CONNECT",
+      "text": "Ready to Leap Beyond Limits? Tell us what you're building, solving, or imagining – we’ll help you go further, faster.",
+      "directLines": "Direct Lines",
+      "phones": {
+        "ksa": "+966 59 869 8532",
+        "usa": "+1 (551) 312-7257",
+        "egypt": "+20 110 200 1134"
+      },
+      "email": "contact@accelonhealth.com"
+    },
+    "resources": {
+      "heading": "RESOURCES",
+      "professionalSolutions": {
+        "heading": "Professional Solutions",
+        "links": {
+          "revenue": "Revenue Cycle Management",
+          "healthCare": "Healthcare Consulting",
+          "contactCenter": "Medical Contact Center"
+        }
+      },
+      "technologySolutions": {
+        "heading": "Technology Solutions",
+        "links": {
+          "notes": "AccelonNotes",
+          "code": "AccelonCode",
+          "audit": "AccelonAudit",
+          "voice": "AccelonVoice",
+          "beauty": "AccelonBeauty"
+        }
+      },
+      "company": {
+        "heading": "Company",
+        "links": {
+          "about": "About Us",
+          "contact": "Contact Us"
+        }
+      }
+    }
+  },
+  "navbar": {
+    "home": "Home",
+    "professionalSolutions": "Professional Solutions",
+    "revenueCycleManagement": "Revenue Cycle Management",
+    "healthcareConsulting": "Healthcare Consulting",
+    "medicalContactCenter": "Medical Contact Center",
+    "technologySolutions": "Technology Solutions",
+    "accelonNotes": "AccelonNotes",
+    "accelonCode": "AccelonCode",
+    "accelonAudit": "AccelonAudit",
+    "accelonVoice": "AccelonVoice",
+    "accelonBeauty": "AccelonBeauty",
+    "aboutUs": "About Us",
+    "caseStudies": "Case Studies",
+    "contactUs": "Contact Us",
+    "bookDemo": "Book a Demo"
+  },
+  "revenueCycle": {
+    "headerSection": {
+      "heading": "Your Complete Revenue Cycle, Mastered. Your Margins, Transformed.",
+      "subheading": "Leap beyond traditional outsourcing. Our all-inclusive RCM model operates as your strategic command center—from first patient call to cash in bank. We deliver measurable financial lift, not just task coverage.",
+      "buttonTitle": "Stop Revenue Leakage. Start Here."
+    },
+    "blueprintSection": {
+      "heading": "Accelon’s Blueprint for Flawless Revenue Operations All-Inclusive, End-to-End.",
+      "description": "We don’t “cover tasks.” We own outcomes. One subscription. One accountable team. One operating rhythm.",
+      "cards": [
+        {
+          "heading": "Patient Scheduling & Front Office Support — smoother starts, happier patients",
+          "description": "From day one, we handle appointments and registrations to stabilize flow and improve first-touch satisfaction"
+        },
+        {
+          "heading": "Real-Time Insurance Eligibility & Pre-Authorizations — stop denials at the door",
+          "description": "Instant verification and swift pre-approvals speed care, build trust, and protect your revenue potential before care is delivered."
+        },
+        {
+          "heading": "Expert Medical Coding & Charge Capture — precision in, reimbursement out",
+          "description": "Certified coders across ICD-10-CM/AM, SBS/ACHI, CPT/HCPCS, AR-DRG/IR-DRG ensure accurate documentation and full, compliant capture—preventing undercoding and avoidable denials."
+        },
+        {
+          "heading": "Real-Time Medical & Technical Auditing — perfection before submission",
+          "description": "Pre-submission audits check diagnosis/procedure crosswalks, medical necessity, plan rules, and local payer policies—so claims leave clean."
+        },
+        {
+          "heading": "Denial Management & A/R Follow-up leak proof cash acceleration",
+          "description": "We monitor denial patterns, appeal intelligently, and pursue balances with discipline—turning stuck claims into cleared cash and shrinking your A/R."
+        },
+        {
+          "heading": "Payment Reconciliation & Intelligence — total financial clarity",
+          "description": "Every payment accounted for. Dashboards show what’s billed, what’s paid, and what’s pending—so leaders act with confidence"
+        }
+      ],
+      "longButton": {
+        "buttonTitle": "Get a custom solution",
+        "text": "Which challenge is costing you most?"
+      }
+    },
+    "outsourcingSection": {
+      "heading": "Outsourcing That Breaks You vs Partnership That Builds You.",
+      "description": "Other firms talk strategy. We build capability.",
+      "cards": [
+        {
+          "title": "Old Way",
+          "description": "Cut a few costs, add a few handoffs, watch collections slip through the cracks. Savings on paper. Leakage in practice."
+        },
+        {
+          "title": "Accelon way",
+          "description": "One accountable backbone that turns chaos into cash, noise into clarity, and effort into outcomes."
+        }
+      ]
+    },
+    "investmentSection": {
+      "heading": "Why we’re an investment, not an added cost.",
+      "cards": [
+        {
+          "heading": "Full-Cycle RCM, Zero Hassle",
+          "description": "We run the entire revenue engine so clinicians can focus on care. That’s capacity and quality you feel immediately."
+        },
+        {
+          "heading": "Flexible Subscription → Faster ROI",
+          "description": "Predictable cost structure, measurable lift: higher collections, fewer denials, quicker cycles."
+        },
+        {
+          "heading": "Seamless & Scalable",
+          "description": "From single clinics to multi-site networks, the operating discipline stays consistent as you grow."
+        }
+      ]
+    },
+    "caseStudySection": {
+      "heading": "Proof is in Performance A Story from Riyadh.",
+      "description": "Case Highlight: Saudi Polyclinic",
+      "cards": [
+        {
+          "title": "The Challenge",
+          "description": "High claim rejections, inaccurate coding, delayed reimbursements."
+        },
+        {
+          "title": "What We Did",
+          "description": "End-to-end RCM with real-time eligibility, precise medical coding, and a strategic denials management approach."
+        },
+        {
+          "title": "Results In 90 Days",
+          "description": [
+            "40% fewer coding-related denials.",
+            "25% monthly revenue uplift.",
+            "50% reduction in backlog.",
+            "Improved staff satisfaction & patient retention."
+          ]
+        },
+        {
+          "title": "Benchmarks We’ll Hit—Together",
+          "description": [
+            "Net Collection Rate: 95%+",
+            "Clean Claim Ratio: 99%+",
+            "Significant Revenue Increase: ~25%"
+          ]
+        }
+      ]
+    },
+    "ctaSection": {
+      "heading": "Ready to Turn Your Revenue Cycle into Your Strongest Asset?",
+      "description": "Stop letting admin drag steal your growth. Partner with a team that’s fluent in healthcare—and native to your market’s rules—to turn complexity into cash and clarity.",
+      "buttonTitle": "Speak to Our RCM Director"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Let’s Build a Healthier, Stronger Future—Together",
+      "description": "Wherever you are in your growth journey, we’ll help you leap forward. The first step toward transformation is a conversation.",
+      "bookCall": "Book a Transformation Call",
+      "sendMessage": "Send a Message"
+    },
+    "reachUs": {
+      "title": "Reach Us",
+      "highlight": "Your Way"
+    },
+    "info": {
+      "mainLine": "Main Line",
+      "generalEmail": "General Email",
+      "sendEmail": "Send Email",
+      "businessHours": "Business Hours",
+      "hours": "Sunday–Thursday, 8:00–18:00 (local)",
+      "responseTime": "Response Time",
+      "responseDesc": "We reply within 1 business day"
+    },
+    "offices": {
+      "title": "Our",
+      "highlight": "Offices",
+      "ksa": {
+        "title": "KSA Office (Riyadh)",
+        "addressLine1": "3279 Al-Amir Mamdouh bin Abdulaziz",
+        "addressLine2": "Riyadh 7273, KSA"
+      },
+      "usa": {
+        "title": "USA Office",
+        "addressLine1": "254 Chapman Rd, Ste 208",
+        "addressLine2": "Newark, DE 19702"
+      },
+      "egypt": {
+        "title": "Egypt Office",
+        "addressLine1": "41 Ahmed Tayseer, Nasr City",
+        "addressLine2": "Cairo 11757"
+      }
+    },
+    "ready": {
+      "title": "Ready To Leap Beyond Limits",
+      "bookStrategy": "Book a 30 Minutes Strategy Call"
+    },
+    "expect": {
+      "title": "What To",
+      "highlight": "Expect",
+      "listeningEar": {
+        "title": "A Listening Ear",
+        "desc": "we start with your context, not our pitch"
+      },
+      "expertInsight": {
+        "title": "Expert Insight",
+        "desc": "Honest assessment and clear recommendations"
+      },
+      "tailoredSolutions": {
+        "title": "Tailored Solutions",
+        "desc": "Right-sized for your organization and market"
+      },
+      "ongoingPartnership": {
+        "title": "Ongoing Partnership",
+        "desc": "measurable outcomes, not one-off fixes"
+      }
+    },
+    "resources": {
+      "notReady": "Not Ready To Talk?",
+      "start": "Start with a resource",
+      "caseStudies": "Outcomes & Case Studies",
+      "checklist": "Performance Checklist",
+      "compare": "Compare Your KPIs to Peers",
+      "explore": "Explore Case Studies"
+    }
+  },
+  "caseStudies": {
+    "hero": {
+      "title": "These Providers Were Losing 30-40% of Revenue to Broken Operations. Then They Called Us.",
+      "description": "From Riyadh clinics to Cairo hospital groups, these are real stories of organizations that stopped managing revenue problems and started building engines for profitable growth.",
+      "button": "Start Your Transformation Now"
+    },
+    "riyadh": {
+      "title": "How a Riyadh Polyclinic Achieved ",
+      "highlight": "40% Revenue Growth in 6 Months",
+      "data1": {
+        "val1": "Claim rejection rate draining revenue",
+        "val2": "Reimbursement cycles straining cash flow",
+        "title3": "Staff overwhelmed",
+        "val3": "by manual processes",
+        "title4": "CHI Accreditation Deadlines",
+        "val4": "Upcoming"
+      },
+      "results": {
+        "heading": "Results In 6 Months",
+        "val1": "Revenue increase",
+        "val2": "Claim rejection rate dropped",
+        "val3": "Reimbursement cycles shortened",
+        "title4": "Achieved 2 Months Early",
+        "val4": "Successful CHI accreditation",
+        "val5": "Staff satisfaction"
+      },
+      "quote": "“ Accelon Health didn't feel like another conventional vendor—they felt like part of our team. They understood Saudi healthcare challenges better than we did! “",
+      "author": "Dr. Abdullah Al Mamun, Managing Director"
+    },
+    "uae": {
+      "title": "UAE Premier Hospital Network:",
+      "highlight": "$1.8M Recovered, 5 Locations Standardized",
+      "challenge": {
+        "description": "A multi-site network across Abu Dhabi and Dubai"
+      },
+      "whatWeDid": {
+        "point1": "Built a centralized RCM/ops command center.",
+        "point2": "Standardized compliant coding and documentation protocols system wide.",
+        "point3": "Launched patient journey improvements (access, reminders, follow-ups)",
+        "point4": "Trained leadership on operational governance and KPIs"
+      },
+      "results": {
+        "heading": "Results In 12 Months"
+      },
+      "quote": "“ We maintained quality while scaling. Accelon Health is a true strategic partner.“",
+      "author": "Group CEO, UAE",
+      "data2": {
+        "val1": "Leaking annually due to coding inconsistencies",
+        "title2": "Denial cascades",
+        "title3": "Fragmented processes",
+        "title4": "Below-benchmark patient satisfaction"
+      },
+      "results2": {
+        "val1": "Recovered revenue (≈78% leakage eliminated)",
+        "val2": "Across Sites",
+        "val3": "Patient satisfaction",
+        "title4": "Expanded To 2 New Cities",
+        "val4": "without quality slippage.",
+        "title5": "Operational Costs −25%",
+        "val5": "Via standardization",
+        "val6": "Staff satisfaction"
+      }
+    },
+    "cairo": {
+      "title": "Cairo Hospital Group ",
+      "highlight": "30% Cost Reduction While Scaling",
+      "challenge": {
+        "description": "A multi-site network across Cairo"
+      },
+      "whatWeDid": {
+        "point1": "Full healthcare operations outsourcing tuned to local regulatory requirements.",
+        "point2": "Automated eligibility checks and pre-authorizations",
+        "point3": "BI dashboards with predictive analytics for forecasting"
+      },
+      "results": {
+        "heading": "Results In 90 Days"
+      },
+      "data3": {
+        "val1": "Local insurance complexity and manual reconcilaition",
+        "title2": "Growth plans delayed due to resource constraints."
+      },
+      "results3": {
+        "val1": "Administrative costs",
+        "val2": "Billing capacity",
+        "title3": "Opened 2 new facilities",
+        "val3": "With existing team.",
+        "val4": "Revenue cycle"
+      }
+    },
+    "challenge": {
+      "heading": "The Challenge",
+      "description1": "A respected 20-physician clinic faced mounting operational pressures"
+    },
+    "whatWeDid": {
+      "heading": "What We Did",
+      "point1": "End-to-end RCM outsourcing with region-specific expertise.",
+      "point2": "AccelonCode for autonomous, high-accuracy coding",
+      "point3": "Accreditation preparation (policies, mock surveys) and targeted training",
+      "point4": "Real-time performance dashboards for continuous improvement"
+    },
+    "card": {
+      "heading": "Stop Managing Revenue Problems. Start Driving Profitability.",
+      "description": "These aren’t outliers—they’re the repeatable outcomes of rebuilding broken operations with a partner who’s done it across KSA, the GCC, Egypt, and the U.S. In healthcare, there’s no steady state—either grow or decline. Choose growth.",
+      "buttonText": "Schedule Your Strategy Session"
+    }
+  },
+  "aboutUs": {
+    "hero": {
+      "title": "The Heartbeat of Modern Healthcare, Powered by Partnership.",
+      "description": "Behind every great provider is a partner who turns operational complexity into clinical clarity. That’s Accelon Health—the living healthcare engine that blends full-cycle RCM, consulting, and technology so revenue flows and care teams can finally breathe again.",
+      "button": "Book Your Complimentary Strategy Session"
+    },
+    "story": {
+      "highlight": "Our Story",
+      "title": "Born To Transform Healthcare’s Operating System.",
+      "paragraph1": "At Accelon Health, we know the pressure you carry. One day it’s regulatory nuance; the next it’s unforgiving rules and shifting requirements. We saw an engine that should fuel growth—Revenue Cycle Management—weighing down leaders with cost and complexity instead of delivering clarity and momentum.",
+      "paragraph2": "So, we rebuilt the way healthcare runs. We’re not another conventional vendor; we’re healthcare strategists, certified RCM professionals, and consulting experts who redesigned the operating model from the ground up. RCM is the heart, yes—but it beats inside a bigger body: scalable operations, disciplined advisory, patient experience that actually connects, and Autopilot Automation under the hood that makes every workflow cleaner and faster.",
+      "paragraph3": "Purpose, in one line: turn operations into financial resilience and everyday excellence."
+    },
+    "blueprint": {
+      "heading": "We’re Healthcare Architects Building Your Foundation for Growth",
+      "description": "Our blueprint rests on four pillars:"
+    },
+    "cards": {
+      "engine": {
+        "heading": "The Revenue Engine: End-to-End RCM & BPO",
+        "description": "This is our heartbeat. We manage your entire revenue cycle, from the first patient call to cash in bank, with scalable, all-inclusive outsourcing. Our teams are certified across ICD-10-CM/AM, CPT/HCPCS, SBS/ACHI, and AR-DRG/IR-DRG—so reimbursement is maximized, and denials are minimized."
+      },
+      "compass": {
+        "heading": "The Strategic Compass: Consulting & Compliance",
+        "description": "We are your navigators in the complex regulatory landscape of healthcare regulations. From CHI accreditation in Saudi Arabia to US regulatory rules, our consultants provide the roadmap for quality, compliance, and continuous improvement."
+      },
+      "connection": {
+        "heading": "The Human Connection: Patient-Centric Solutions",
+        "description": "Healthcare is human. With AccelonVoice (multilingual, Arabic/English), every touchpoint—from scheduling to follow-up—feels effortless, reduces no-shows, and deepens loyalty, so outcomes improve and capacity grows."
+      },
+      "advantage": {
+        "heading": "The Intelligent Advantage: Smart Automation",
+        "description": "AccelonCode, AccelonAudit, and AccelonNotes act as force multipliers. They work behind the scenes to eliminate errors, prevent claim rejections, and free your staff from repetitive tasks. We don’t just sell technology; we supercharge human expertise to deliver unmatched accuracy and efficiency."
+      }
+    },
+    "leadership": {
+      "heading": "Our Leadership",
+      "ceo": {
+        "name": "Ayman Ibrahim",
+        "title": "CEO"
+      },
+      "coo": {
+        "name": "Dr Ahmed Osama",
+        "title": "COO"
+      },
+      "email": "Send Email",
+      "linkedin": "View LinkedIn"
+    },
+    "localGlobal": {
+      "title": "Deeply Local, Truly Global Your Partner Across Borders.",
+      "description": "A great healthcare partner must understand the unique pulse of every market. Our expertise isn't generic; it's specifically tailored to the regulations, cultures, and payer landscapes where you operate.",
+      "button": "Speak to a Solutions Expert"
+    },
+    "regions": {
+      "saudi": {
+        "heading": "Saudi Arabia & GCC",
+        "description": "We possess deep, firsthand knowledge of the Saudi Council for Health Insurance (CHI) regulations, NPHIES, and SBS coding. We don't just follow rules; we master them, ensuring your operations are compliant by design."
+      },
+      "us": {
+        "heading": "United States",
+        "description": "We translate global best practices into the U.S. context, guiding providers through a complex billing ecosystem with clarity, consistency, and control."
+      },
+      "egypt": {
+        "heading": "Egypt",
+        "description": "As a key delivery hub, we operate with an intimate understanding of the Egyptian healthcare market and UHIA regulations—delivering cost-effective excellence without compromising quality."
+      }
+    },
+    "promises": {
+      "heading": "The Accelon Promise",
+      "description": "We’re an investment in your growth, not an added cost. Streamlined operations accelerate profit. Strong compliance protects your reputation. Elevated engagement compounds lifetime value. Less friction. Smarter workflows. Happier patients.",
+      "bold": "You will experience the Accelon difference through:",
+      "financial": {
+        "heading": "Financial Resilience",
+        "description": "Significant revenue uplift and accelerated cash flow."
+      },
+      "operational": {
+        "heading": "Operational Serenity",
+        "description": "Streamlined workflows that reduce stress and errors."
+      },
+      "strategic": {
+        "heading": "Strategic Clarity",
+        "description": "Data-driven insights that guide your smartest decisions."
+      }
+    },
+    "ready": {
+      "title": "Ready to Build a Healthier, More Profitable Future Together?",
+      "description": "Your next chapter of growth begins with a conversation. Let us show you what a true partnership can achieve.",
+      "button": "Book Your Complementary Strategy Session",
+      "bold": "Accelon Health. Leap Beyond Limits."
+    }
+  },
+  "healthCare": {
+    "hero": {
+      "title": "Expert Consulting That Builds Stronger, More Profitable Healthcare Organizations",
+      "description": "Accreditation. Compliance. Revenue optimization. Navigate it all with confidence. Accelon Consulting delivers the strategic blueprint and hands-on execution to future-proof your operations.",
+      "button": "From Use Case to ROI — Request a Strategy Session"
+    },
+    "compliance": {
+      "title": "The Compliance Maze Is Complex.",
+      "highlight": "Your Success Shouldn’t Be.",
+      "description": "Keeping pace with evolving standards and payer rules is a full-time job—one that steals focus from care. Missteps mean delays, penalties, and leakage. We turn regulatory hurdles into growth momentum."
+    },
+    "blueprint": {
+      "heading": "Your Blueprint for Operational Excellence",
+      "description": "We don’t just advise—we embed capability. Our portfolio is designed to build resilience, drive efficiency, and make compliance a habit across your organization."
+    },
+    "cards": {
+      "mappingServices": {
+        "title": "Mapping Services",
+        "subtitle": "From internal Codes to Payer-perfect Clarity",
+        "description": "Translate internal service codes into compliant SBS / ACHI / CPT/HCPCS structures and align with ICD-10-CM/AM and DRG frameworks. Result: cleaner charges, fewer reworks, faster adjudication."
+      },
+      "chiPrep": {
+        "title": "Saudi CHI Accreditation Preparation",
+        "subtitle": "Achieve Accreditation with Confidence",
+        "description": "From gap analysis and mock surveys to full readiness plans, we guide you step-by-step through CHI requirements. Reduce preparation time, avoid costly setbacks, and build a culture of quality."
+      },
+      "rcmPrograms": {
+        "title": "RCM Improvement Programs",
+        "subtitle": "Optimize Revenue, Minimize Leakage",
+        "description": "Go beyond basic billing. We analyze your end-to-end revenue cycle, targeting performance, Case Mix Index (CMI) optimization, and denial reduction to unlock hidden revenue streams."
+      },
+      "cdiTraining": {
+        "title": "Clinical Documentation Improvement (CDI) Training",
+        "subtitle": "Empower Your Clinicians, Elevate Your Outcomes",
+        "description": "Clinician-friendly training that supports medical necessity, accurate coding, and quality metrics—so every patient story is documented clearly and compliantly."
+      },
+      "businessIntelligence": {
+        "title": "Business Intelligence Integration",
+        "subtitle": "Data-Driven Decisions, Predictable Growth",
+        "description": "Claims analytics and role-based dashboards to track trends, spot friction, and guide action—from reactive to predictive."
+      },
+      "lms": {
+        "title": "Learning Management System (LMS)",
+        "subtitle": "Continuous Learning, Lifelong Compliance",
+        "description": "24/7 courses localized for KSA/GCC, Egypt, and U.S. contexts. Keep teams current without pulling them off the floor."
+      }
+    },
+    "expertise": {
+      "heading": "Expertise That Feels Like An Extension of Your Team",
+      "description": "Other firms talk strategy. We build capability.",
+      "cards": [
+        {
+          "title": "Deeply Local, Globally Informed",
+          "description": "We speak the language of local regulatory & payer rules—because we work with them every day."
+        },
+        {
+          "title": "Tech-enabled, expertise-driven",
+          "description": "· Smart tools accelerate analysis; seasoned consultants drive outcomes."
+        },
+        {
+          "title": "We Measure Our Success by Yours",
+          "description": "Tangible outcomes—faster accreditation, higher revenue, fewer denials—are what we deliver."
+        }
+      ]
+    },
+    "hospitalStory": {
+      "heading": "From Uncertainty to Accreditation A Riyadh Hospital’s Story",
+      "cardTitle": "Facing a CHI audit with inconsistent documentation and coding errors, a leading hospital partnered with us.",
+      "role": "Our Role",
+      "roleDescription": "CDI training + RCM system renovation + compliance mapping.",
+      "result": "The Result",
+      "resultDescription": "Successful accreditation, 20% faster reimbursement, and a team empowered for long-term excellence."
+    },
+    "ready": {
+      "title": "Ready to Lead—Not Just Comply?",
+      "description": "Trade uncertainty for operating confidence. Whether you’re preparing for CHI accreditation, aligning to UHIA, or optimizing U.S. operations, let’s build a foundation that grows with you.",
+      "button": "Book a Free Consultation Now"
+    }
+  },
+  "contactCenter": {
+    "header": {
+      "heading": "Every Unanswered Call Is a Patient Choosing Your Competitor",
+      "subheading": "Your phone rings. Nobody answers. That patient books elsewhere—lifetime value & revenue gone because the front desk was busy. Accelon Health’s medical contact center answers every time—multilingual, 24/7/365.",
+      "button": "See Patient Experience in Action"
+    },
+    "hero": {
+      "title": "Your Patients Can’t Wait. Your Competitors Won’t.",
+      "description": "As you read this, potential patients in your area are reaching out to providers. The ones who answer first win. The ones who don’t often lose them for good.",
+      "description2": "Your front desk is slammed. Appointment requests stack up. Insurance questions interrupt clinical work. Follow-ups never happen. No-shows climb. Patient reviews start saying “hard to reach” more than “great care.”",
+      "bold": "Every missed call risks meaningful lifetime revenue. Multiply that by the calls you miss each week, and a material slice of annual revenue drifts to whoever simply picked up."
+    },
+    "mainCard": {
+      "heading": "More Than a Call Center Your Frontline for Patient Care",
+      "description1": "We set up a",
+      "highlight": "niche, medically trained contact center",
+      "description2": "that operates as an extension of your brand and workflows—so patients get answers, and your teams get their time back.",
+      "point1": { "bold": "Local, dedicated numbers", "text": "and IVR tailored to your market." },
+      "point2": { "bold": "Multilingual medical representatives", "text": "for clinical and administrative calls." },
+      "point3": { "bold": "Seamless integration", "text": "with your systems—natural extension of your brand and processes" },
+      "button": "Speak to a Solutions Expert"
+    },
+    "cards": {
+      "visit": { "heading": "Visit Scheduling & Management — smoother days, fewer no-shows", "description": "End-to-end booking, confirmations, and smart reminders that stabilize calendars and reclaim lost visits." },
+      "inquiries": { "heading": "Live Patient Inquiries — instant answers that build confidence", "description": "Round-the-clock coverage for clinical and administrative questions, with adaptive scripts and clear escalation paths." },
+      "education": { "heading": "Patient Education & Follow-ups — care beyond your walls", "description": "Empathetic post-visit calls, instructions, results notifications, and adherence follow-ups delivered in the patient’s dialect." },
+      "experience": { "heading": "Experience Optimization — every touchpoint builds loyalty", "description": "We capture feedback, resolve concerns, and surface insights to improve access and retention—without adding headcount." }
+    },
+    "impact": {
+      "noShows": { "heading": "No-shows fall noticeably", "description": "With intelligent reminder sequences." },
+      "satisfaction": { "heading": "Patient satisfaction rises", "description": "Because someone always answers—and actually helps." },
+      "focus": { "heading": "Clinicians get their focus back", "description": "Fewer interruptions, more time for medicine" },
+      "revenue": { "heading": "Revenue lifts", "description": "Through fuller schedules, better utilization, and reactivated patients" }
+    },
+    "support": {
+      "serviceAwareness": { "heading": "Service awareness campaigns", "description": "For new clinics, specialties, and services." },
+      "targetedOutreach": { "heading": "Targeted outreach", "description": "To re-engage inactive patients and close care gaps." },
+      "adherence": { "heading": "Adherence and refills", "description": "Reminders that keep care on track." }
+    },
+    "difference": {
+      "medically": { "heading": "Medically informed conversations", "description": "Handled with empathy and accuracy." },
+      "fluency": { "heading": "Deep local fluency", "description": "Cultural nuance and communication styles built in" },
+      "leverage": { "heading": "Operational leverage, not overhead", "description": "Strategic investment in retention and growth" }
+    },
+    "section1": { "heading": "Comprehensive Support.", "highlight": "Exceptional Experience." },
+    "section2": { "heading": "What Happens When We Take Over", "highlight": "Patient Communication", "button": "Get Your Patient Communication Plan" },
+    "section3": { "heading": "From Patient Support to", "highlight": "Practice Growth", "description": "We don’t just answer calls—we fill your schedule." },
+    "section4": { "heading": "The Accelon Difference", "highlight": "Expertise You Can Hear", "description": "We don’t just answer calls—we fill your schedule.", "button": "See Patient Experience in Action" },
+    "faq": {
+      "heading": "FAQ's",
+      "items": {
+        "languages": {
+          "heading": "Arabic and English?",
+          "description": "Yes—multilingual reps with dialect personalization."
+        },
+        "timeline": {
+          "heading": "Launch timeline?",
+          "description": "A fast, low-risk rollout measured in weeks, not months."
+        },
+        "systems": {
+          "heading": "Will this work with our systems?",
+          "description": "Yes—Any EHR/HIS, CRM, IVR, WhatsApp, and SMS."
+        },
+        "uptime": {
+          "heading": "Uptime?",
+          "description": "24/7/365 with enterprise-grade availability."
+        },
+        "compliance": {
+          "heading": "Compliance?",
+          "description": "Built with privacy and HIPAA compliance appropriate for healthcare environments."
+        }
+      },
+      "button": "See Patient Experience in Action"
+    },
+    "footer": { "title": "Stop Funding Your Competitors’ Growth", "description": "Every day without a professional patient communication layer, you’re handing momentum to competitors who answer faster. Or—you can let the team with proven cross-markets expertise handle it for you.", "button": "Speak to a Solutions Expert" }
+  },
+  "notes": {
+    "hero": {
+      "heading": {
+        "before": "Your Physicians Spend",
+        "highlight": "Their Day Writing Notes. We End That."
+      },
+      "subheading": "Imagine finishing each visit with documentation already done. AccelonNotes transforms real conversations into structured, accurate medical notes—freeing hours of clinician time and restoring focus to care.",
+      "button": "Reclaim Your Time"
+    },
+
+    "documentation": {
+      "heading": "The Invisible Cost of Clinical Documentation",
+      "description": "While you want to focus on patient care, clinical documentation steals your time, energy, and focus leading to burnout, inconsistencies, and delayed insurance approvals. But what if your notes wrote themselves, with perfect accuracy and compliance?",
+      "footer": "We turn documentation from a burden into an operating advantage."
+    },
+
+    "flow": {
+      "heading": {
+        "before": "Conversation In.",
+        "highlight": "Perfect Notes Out. Zero Effort."
+      },
+      "description": "AccelonNotes slips into your day as a silent, reliable partner—capturing, structuring, and syncing the clinical story."
+    },
+
+    "features": {
+      "preVisit": {
+        "heading": "Pre Visit Abstract : Walk In Already Prepared",
+        "description": "Automatically summarizes patient history and records before the visit letting you understand the full context from the first handshake, enabling more personalized and efficient care."
+      },
+      "fullVisit": {
+        "heading": "Full Visit Transcription & Generation : Every Word Captured, Every Detail Perfected",
+        "description": "Conversation and physician dictation are captured with clinical nuance (Arabic dialects, English, and 20+ languages), then drafted into comprehensive notes with clear sections (HPI, ROS, PE, A/P, orders)."
+      },
+      "integration": {
+        "heading": "Seamless HIS Integration : Notes Where You Work",
+        "description": "Generated documentation populates directly into your EMR/HIS, aligned with regulatory and coding standards."
+      },
+      "humanLoop": {
+        "heading": "Human in the Loop : Your Judgment, Preserved",
+        "description": "Review & sign. Smart highlights flag gaps and required-field enforce minimum data set completeness—no save/submit until mandatory fields are complete."
+      }
+    },
+
+    "benefits": {
+      "headingBefore": "More Than Time Saved—Care,",
+      "headingAfter": "Cash flow, and Calm",
+      "time": {
+        "heading": "Physicians reclaim 2+ hours daily",
+        "description": "See 20-30% more patients with the same team. Or let them leave on time once."
+      },
+      "insurance": {
+        "heading": "Insurance approvals accelerate",
+        "description": "Submitting complete documentation instantly means pre-authorizations are approved 40% faster."
+      },
+      "coding": {
+        "heading": "Coding accuracy jump",
+        "description": "Notes capture clinical specificity that supports proper coding, reducing denials and maximizing reimbursement."
+      },
+      "burnout": {
+        "heading": "Lower burnout, higher satisfaction",
+        "description": "Clinicians practice medicine, not paperwork."
+      }
+    },
+
+    "aiSection": {
+      "heading": {
+        "before": "Built for Healthcare,",
+        "highlight": "Powered by AI"
+      },
+      "description": "Unlike generic transcription tools, AccelonNotes understands healthcare’s unique needs"
+    },
+
+    "ai": {
+      "clinical": {
+        "heading": "Clinical Intelligence",
+        "description": "Recognizes 1,000+ medical entities and clinical terminology."
+      },
+      "compliance": {
+        "heading": "Compliance Ready",
+        "description": "Aligns with HIPAA & global healthcare standards."
+      },
+      "multilingual": {
+        "heading": "Multilingual Mastery",
+        "description": "Fluent in Arabic Dialects, English & 20+ languages."
+      },
+      "integration": {
+        "heading": "Seamless Integration",
+        "description": "Works within your existing EHR/HIS infrastructure"
+      }
+    },
+
+    "cta": {
+      "heading": {
+        "before": "Stop Paying",
+        "highlight": "Doctors to Be Typists"
+      },
+      "description": "Every hour spent on clinical notes is an hour not spent on patient care. Give your clinicians their day back—and give your operations cleaner claims and faster approvals",
+      "button": "Schedule Your AccelonNotes Demo"
+    },
+
+    "common": {
+      "reclaimTime": "Reclaim Your Time"
+    }
+  },
+  "code": {
+    "hero": {
+      "title": {
+        "before": "Medical Coding That Never Sleeps. ",
+        "highlight": "Accuracy You Can Trust"
+      },
+      "description": {
+        "before": "Charts coded in seconds—clean, consistent, and compliant with ICD-10, CPT, and regional payer rules—so your experts can focus on the toughest cases. AccelonCode turns clinical documentation into revenue-ready codes, 24/7, across ",
+        "highlight": "KSA/GCC, Egypt, the U.S., and beyond."
+      },
+      "button": "Start Autonomous Medical Coding"
+    },
+    "shift": {
+      "title": "The Moment You Feel the Shift",
+      "description": "Backlogs stop breathing down your neck. Rejections stop ping-ponging. Cash stops waiting for medical coding delays.",
+      "subTitle": "The work doesn’t get louder—it gets cleaner.",
+      "footer": "That’s the AccelonCode effect."
+    },
+    "expertise": {
+      "title": {
+        "before": "Accuracy Shaped by Healthcare Experts. ",
+        "highlight": "Speed Scaled by AI"
+      },
+      "description": "AccelonCode blends deep healthcare expertise with cutting-edge AI—so routine charts code themselves and your team handles exceptions."
+    },
+    "cards": [
+      {
+        "heading": "Zero Human Intervention, Maximum Accuracy",
+        "description": "95%+ accuracy with up to 1000x faster turnaround. 85%+ of charts are auto coded with zero manual review needed."
+      },
+      {
+        "heading": "Built for Your Region, Ready for the World",
+        "description": "Pre-loaded with ICD-10-AM/CM, SBS, CPT/HCPCS coding guidelines. Fully aligned to CMS, NPHIES & global requirements."
+      },
+      {
+        "heading": "Full Specialty Coverage",
+        "description": "From outpatient encounters to inpatient stays—ready from day one."
+      }
+    ],
+    "partnershipTitle": {
+      "before": "More Than AI—A ",
+      "highlight": "Partnership in Precision"
+    },
+    "partnership": [
+      {
+        "heading": "125M+ medical records",
+        "description": "Used in training our top-notch models"
+      },
+      {
+        "heading": "Compliance built-in",
+        "description": "Saudi & U.S. coding standards, HIPAA compliant"
+      },
+      {
+        "heading": "Plug & play integration",
+        "description": "With all HIS/EHRs"
+      },
+      {
+        "heading": "Continuous learning",
+        "description": "Supervised by certified coders and clinical experts."
+      }
+    ],
+    "cta": {
+      "title": "Ready to Code at the Speed of Thought?",
+      "description": "Every day a claim sits in coding is a day you're voluntarily delaying your own cash flow. Every coding error is revenue you'll fight for months to recover.",
+      "button": "Schedule Your AccelonCode Demo"
+    }
+  },
+  "codingMetrics": {
+    "imageAlt": "Coding Metrics",
+    "title": {
+      "line1": "Coding Metrics That Transform",
+      "line2": "the Bottom Line"
+    },
+    "metrics": [
+      {
+        "value": "95%",
+        "description": "accuracy across coded charts"
+      },
+      {
+        "value": "1000X faster",
+        "description": "turnaround vs. manual coding"
+      },
+      {
+        "value": "85%+ auto-coded",
+        "description": "with zero human touch"
+      },
+      {
+        "value": "40%",
+        "description": "fewer coding-related denials"
+      },
+      {
+        "value": "30%",
+        "description": "faster reimbursement cycles"
+      }
+    ]
+  },
+  "audit": {
+    "hero": {
+      "title": "Turn Auditing Into a Revenue Protector",
+      "description": "Why wait for denials when you can prevent them? AccelonAudit checks each claim against medical and technical rules before submission—protecting revenue, safeguarding compliance, and bringing calm to your RCM.",
+      "button": "Eliminate Rejections Before They Happen"
+    },
+    "speed": {
+      "title": "Audit at the Speed of Thought.",
+      "highlight": "Trust-Grade Accuracy.",
+      "description": "Drop AccelonAudit into your workflow and it becomes an intelligent checkpoint—validating claims against clinical logic and payer requirements in real time.",
+      "checks": {
+        "heading": "What We Check in Real Time",
+        "one": "Diagnosis ↔ Procedure compatibility (crosswalks, sequencing)",
+        "two": "Diagnosis ↔ Medication alignment (contraindications, coverage logic)",
+        "three": "Procedure ↔ Procedure conflicts (mutual exclusivity, bundling)",
+        "four": "Age/Gender appropriateness checks",
+        "five": "Provider-specific billing rules",
+        "six": "Insurance contractual & technical rules"
+      }
+    },
+    "why": {
+      "title": "Why AccelonAudit Catches What",
+      "highlight": "Human Reviewers Miss",
+      "description": "Tools catch errors. We build assurance. AccelonAudit blends regional payer fluency with domain-trained AI—so your team sees fewer surprises and cleaner first-pass claims."
+    },
+    "stats": {
+      "reduction": { "title": "40%+ reduction", "desc": "in claim rejections" },
+      "reimbursement": { "title": "Faster reimbursement", "desc": "with cleaner claims" },
+      "compliance": { "title": "Full regulatory compliance", "desc": "built-in" },
+      "integration": { "title": "Seamless integration", "desc": "with your existing systems" },
+      "alerts": { "title": "Real-time alerts", "desc": "with actionable insights" }
+    },
+    "built": {
+      "title": "Built for",
+      "highlight": "Healthcare, Built For Now",
+      "market": {
+        "title": "Native By Market: KSA/GCC, Egypt, & U.S.",
+        "desc": "Commercial/Government Insurance Policies Compliance"
+      },
+      "security": {
+        "title": "Security & privacy",
+        "desc": "Healthcare-appropriate controls and encryption (HIPAA-aligned)"
+      },
+      "deploy": {
+        "title": "Deploy your way",
+        "desc": "Containerized options, private cloud/VPC, data-residency alignment."
+      }
+    },
+    "cta": {
+      "title": "Ready to Move From Reactive to Preventive?",
+      "description": "Stop letting denials decide your cashflow. Put a checkpoint in front of every claim—and keep revenue moving.",
+      "button": "Schedule Your AccelonAudit Demo"
+    }
+  },
+  "voice": {
+    "hero": {
+      "title": {
+        "main": "Your Clients Prefer to Talk.",
+        "highlight": "Now Your Business Can Listen—24/7."
+      },
+      "stat": {
+        "value": "70%",
+        "text": "of customers and patients still prefer voice over apps or chat."
+      },
+      "product": "AccelonVoice",
+      "description": {
+        "before": " picks up every time, understands Arabic and English dialects, books and confirms, follows up, and hands off complex issues to your team—",
+        "highlight": "day or night."
+      },
+      "button": "Experience AccelonVoice"
+    },
+
+    "gap": {
+      "title": "The Communication Gap",
+      "subtitle": "Silence Costs Revenue. We Bring Back the Voice.",
+      "description": "Missed calls and long holds translate into lost bookings, late follow-ups, and preventable customer attrition.",
+      "points": {
+        "calls": "Unanswered calls → lost appointments and sales",
+        "queries": "Repetitive queries → front-desk fatigue and higher costs",
+        "followup": "Weak follow-through → no-shows and low satisfaction"
+      }
+    },
+
+    "fluent": {
+      "title": {
+        "before": "Fluent in",
+        "business": "Business",
+        "middle": "Fluent in",
+        "culture": "Culture"
+      },
+      "subtitle": "Your 24/7 Multilingual Partner",
+      "description": "Hears the words, understands the meaning—intent, tone, urgency across Arabic dialects and English.",
+      "points": {
+        "dialect": { "title": "Dialect personalization", "text": "higher engagement and fewer hang-ups" },
+        "script": { "title": "Adaptive script engine", "text": "fewer escalations as the agent learns in real time" },
+        "logging": { "title": "Auto-logging + EHR/CRM sync", "text": "dramatically reduced admin time" },
+        "routing": { "title": "Predictive routing", "text": "faster answers, happier callers" },
+        "elastic": { "title": "Elastic availability", "text": "zero wait time, scales with demand" }
+      }
+    },
+
+    "useCases": {
+      "title": "Cross-Industry Use Cases",
+      "healthcare": {
+        "title": "Healthcare",
+        "points": {
+          "appointments": { "title": "Appointment scheduling & confirmations", "text": "reclaim missed visits." },
+          "medication": { "title": "Medication adherence & refills", "text": "personalized reminders that lift satisfaction and adherence." },
+          "insurance": { "title": "Insurance & authorization updates", "text": "handle repetitive status checks and questions." },
+          "postVisit": { "title": "Post-visit check-ins", "text": "empathetic follow-through that builds loyalty." }
+        }
+      },
+      "service": {
+        "title": "Service & Retail",
+        "points": {
+          "support": { "title": "Customer service & inquiry lines", "text": "instant answers, fewer queues" },
+          "delivery": { "title": "Order & delivery notifications", "text": "proactive voice call updates." },
+          "payment": { "title": "Payment & subscription reminders", "text": "reduced attrition and late payments" },
+          "public": { "title": "Public Services", "text": "automated citizen hotlines and emergency alerts" }
+        }
+      }
+    },
+
+    "team": {
+      "title": "Why AccelonVoice Feels Like Part of Your Team",
+      "subtitle": "Technology That Serves With Empathy",
+      "description": "AccelonVoice extends your team’s capacity without sacrificing the human touch.",
+      "points": "✅ 2–4-week plug-and-play implementation\n✅ Omnichannel integration\n✅ ISO 27001 & HIPAA compliance\n✅ 99.5% SLA uptime\n✅ 9× ROI in 3 months"
+    },
+
+    "cta": {
+      "title": "Answer Every Moment. With Zero Wait.",
+      "description": "When people feel heard, they choose you.",
+      "button": "Schedule Your AccelonVoice Demo"
+    }
+  },
+  "beauty": {
+    "hero": {
+      "title": {
+        "main": "Luxury Meets Intelligence.",
+        "highlight": "Beauty Becomes Belief"
+      },
+      "description": "Turn every mirror into a trusted advisor. AccelonBeauty blends AI diagnostics with AR try-on to deliver personalized purchase experiences and higher basket sizes—on smart mirrors and tablets, in-store or online.",
+      "button": "See AccelonBeauty Live"
+    },
+    "problem": {
+      "title": "The Empty Aisle Problem Every Retailer Faces",
+      "description": "Customers leave unsure. Returns stack up. Loyalty fades. In markets from Riyadh to Cairo to Dubai, beauty retail faces the same challenge: how to make every customer feel uniquely understood.",
+      "question": "We asked a better question: What if your store could become each customer's personal beauty advisor?"
+    },
+    "technologies": {
+      "title": {
+        "main": "Two Technologies,",
+        "highlight": "One Transformative Experience"
+      },
+      "ai": {
+        "title": {
+          "main": "AI Facial Skin Analysis — Science,",
+          "highlight": "Not Guesswork"
+        },
+        "points": [
+          "Instant diagnostics scan for 10+ skin concerns—pore visibility, hydration cues, texture and more.",
+          "Personalized product pathways aligned to each profile to move customers from 'maybe' to 'mine.'",
+          "Omni-journey continuity start at a smart mirror, continue on tablet—keep the routine, keep the sale.",
+          "Impact you can feel: higher trust → higher AOV and repeat visits."
+        ]
+      },
+      "ar": {
+        "title": {
+          "main": "AR Virtual Try-On —",
+          "highlight": "See It. Love It. Buy It."
+        },
+        "points": [
+          "Live try-on for makeup, jewelry, glasses & more—no mess, all wow.",
+          "Confident purchases reduce hesitation and cut returns.",
+          "Built for premium spaces elegant on smart mirrors and tablets."
+        ]
+      }
+    },
+    "results": {
+      "title": "Beauty Retail Solutions That Adds Zero Complexity, Only Results",
+      "cards": [
+        "75-90% Conversion Rate Increase",
+        "~40% Reduction In Product Returns",
+        "Higher Basket size and repeat sales.",
+        "Seconds, not minutes to integrate."
+      ]
+    },
+    "approach": {
+      "title": {
+        "main": "More Than Technology",
+        "highlight": "A Retail Revolution"
+      },
+      "description": "AccelonBeauty understands that beauty retail demands both technological sophistication and cultural nuance.",
+      "cards": [
+        { "heading": "Multilingual interface", "description": "Supporting Arabic and English" },
+        { "heading": "Cultural customization", "description": "For regional beauty preferences" },
+        { "heading": "Scalable from single stores", "description": "To multi-location chains" },
+        { "heading": "Luxury-grade experience", "description": "At accessible pricing" }
+      ]
+    },
+    "tech": {
+      "title": "Beauty Tech That Works as Hard as You Do",
+      "cards": [
+        { "heading": "Plug-and-play setup", "description": "For growing beauty empires" },
+        { "heading": "No extra hardware", "description": "Uses existing smart mirrors and tablets." },
+        { "heading": "Multi-store scalability", "description": "Live in days, not months." }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Transform Every Customer Visit into a Signature Beauty Experience?",
+      "description": "Put AI confidence and AR magic in front of every customer. AccelonBeauty makes your retail or clinic the place where beauty feels certain.",
+      "button": "Schedule Your AccelonBeauty Demo"
+    }
+  }
+}

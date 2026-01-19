@@ -1,41 +1,23 @@
 import React from "react";
 import { Row, Col, Card, Typography } from "antd";
+import { useTranslation } from "react-i18next";
 import "./CodingMatrix.scss";
 import metricsImage from "../assets/f280c70c-a13c-4e2f-85de-a631030acbf9.jpg";
 
 const { Title, Text } = Typography;
 
-const metrics = [
-  {
-    value: "95%",
-    description: "accuracy across coded charts",
-  },
-  {
-    value: "1000X faster",
-    description: "turnaround vs. manual coding",
-  },
-  {
-    value: "85%+ auto-coded",
-    description: "with zero human touch",
-  },
-  {
-    value: "40%",
-    description: "fewer coding-related denials",
-  },
-  {
-    value: "30%",
-    description: "faster reimbursement cycles",
-  },
-];
-
 const CodingMetrics = () => {
+  const { t } = useTranslation();
+
+  const metrics = t("codingMetrics.metrics", { returnObjects: true });
+
   return (
     <div className="codingMetricsWrapper">
       <Row gutter={[32, 32]} align="middle">
         {/* Left Image */}
         <Col xs={24} md={12}>
           <div className="imageWrapper">
-            <img src={metricsImage} alt="Coding Metrics" />
+            <img src={metricsImage} alt={t("codingMetrics.imageAlt")} />
           </div>
         </Col>
 
@@ -43,7 +25,8 @@ const CodingMetrics = () => {
         <Col xs={24} md={12}>
           <div className="metricsContent">
             <Title level={2}>
-              Coding Metrics That Transform <br /> the Bottom Line
+              {t("codingMetrics.title.line1")} <br />
+              {t("codingMetrics.title.line2")}
             </Title>
 
             <div className="metricsList">

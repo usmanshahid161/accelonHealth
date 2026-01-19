@@ -1,279 +1,184 @@
-import { Col, Row }       from 'antd';
-import React              from 'react';
+import { Col, Row } from 'antd';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 import "./HealthCare.scss";
-import backImg            from './assets/back.jpg';
-import ButtonComponent    from '../../components/button/Button';
-import CardComponent      from '../../components/cardsComponents/cardsComponents';
-import CardsWOBg          from '../../components/cardsWOBg/cardsWOBg';
-import ContentBox         from '../../components/contentBox/contentBox';
-import ContentImageBox    from '../../components/ContentImageBox/ContentImageBox';
+import backImg from './assets/back.jpg';
+import ButtonComponent from '../../components/button/Button';
+import CardComponent from '../../components/cardsComponents/cardsComponents';
+import CardsWOBg from '../../components/cardsWOBg/cardsWOBg';
+import ContentBox from '../../components/contentBox/contentBox';
+import ContentImageBox from '../../components/ContentImageBox/ContentImageBox';
 import HeadingDescription from '../../components/heading&description/heading&description';
 import image1 from "./assets/Business Inteelginace.png";
-import image2 from "./assets/CDI Training.JPG"
+import image2 from "./assets/CDI Training.JPG";
 import image3 from "./assets/LMS.JPG";
 import image4 from "./assets/CHI Accredetation .PNG";
 import image5 from "./assets/Mapping Service .PNG";
 import image6 from "./assets/wwwwwww.jpg";
-import hospitalImg from "./assets/s1 2.png"
+import hospitalImg from "./assets/s1 2.png";
 
 const HealthCare = () => {
+  const { t } = useTranslation();
+
   const cardsData = [
     {
-      heading: <div style={ {
-        color: 'var(--primary-color)',
-      } }>
-        Mapping Services
+      heading: <div style={{ color: 'var(--primary-color)' }}>
+        {t("healthCare.cards.mappingServices.title")}
         <br/>
-        <h5 style={ {
-          fontSize: '1.2rem',
-          marginBottom: 14,
-          marginTop: 10
-        } }>
-          From internal Codes to Payer-perfect Clarity
+        <h5 style={{ fontSize: '1.2rem', marginBottom: 14, marginTop: 10 }}>
+          {t("healthCare.cards.mappingServices.subtitle")}
         </h5>
       </div>,
-      description: "Translate internal service codes into compliant SBS / ACHI / CPT/HCPCS structures and align with ICD-10-CM/AM and DRG frameworks. Result: cleaner charges, fewer reworks, faster adjudication.",
+      description: t("healthCare.cards.mappingServices.description"),
       image: image5
     },
     {
-      heading: <div style={ {
-        color: 'var(--primary-color)',
-      } }>
-        Saudi CHI Accreditation Preparation
+      heading: <div style={{ color: 'var(--primary-color)' }}>
+        {t("healthCare.cards.chiPrep.title")}
         <br/>
-        <h5 style={ {
-          fontSize: '1.2rem',
-          marginBottom: 14,
-          marginTop: 10
-        } }>
-          Achieve Accreditation with Confidence
+        <h5 style={{ fontSize: '1.2rem', marginBottom: 14, marginTop: 10 }}>
+          {t("healthCare.cards.chiPrep.subtitle")}
         </h5>
       </div>,
-      description: "From gap analysis and mock surveys to full readiness plans, we guide you step-by-step through CHI requirements. Reduce preparation time, avoid costly setbacks, and build a culture of quality.",
+      description: t("healthCare.cards.chiPrep.description"),
       image: image4
     },
     {
-      heading: <div style={ {
-        color: 'var(--primary-color)',
-      } }>
-        RCM Improvement Programs
+      heading: <div style={{ color: 'var(--primary-color)' }}>
+        {t("healthCare.cards.rcmPrograms.title")}
         <br/>
-        <h5 style={ {
-          fontSize: '1.2rem',
-          marginBottom: 14,
-          marginTop: 10
-        } }>
-          Optimize Revenue, Minimize Leakage
+        <h5 style={{ fontSize: '1.2rem', marginBottom: 14, marginTop: 10 }}>
+          {t("healthCare.cards.rcmPrograms.subtitle")}
         </h5>
       </div>,
-      description: "Go beyond basic billing. We analyze your end-to-end revenue cycle, targeting performance, Case Mix Index (CMI) optimization, and denial reduction to unlock hidden revenue streams.",
+      description: t("healthCare.cards.rcmPrograms.description"),
       image: image6
     },
     {
-      heading: <div style={ {
-        color: 'var(--primary-color)',
-      } }>
-        Clinical Documentation Improvement (CDI) Training
+      heading: <div style={{ color: 'var(--primary-color)' }}>
+        {t("healthCare.cards.cdiTraining.title")}
         <br/>
-        <h5 style={ {
-          fontSize: '1.2rem',
-          marginBottom: 14,
-          marginTop: 10
-        } }>
-          Empower Your Clinicians, Elevate Your Outcomes
+        <h5 style={{ fontSize: '1.2rem', marginBottom: 14, marginTop: 10 }}>
+          {t("healthCare.cards.cdiTraining.subtitle")}
         </h5>
       </div>,
-      description: "Clinician-friendly training that supports medical necessity, accurate coding, and quality metrics—so every patient story is documented clearly and compliantly.",
+      description: t("healthCare.cards.cdiTraining.description"),
       image: image2
     },
     {
-      heading: <div style={ {
-        color: 'var(--primary-color)',
-      } }>
-        Business Intelligence Integration
+      heading: <div style={{ color: 'var(--primary-color)' }}>
+        {t("healthCare.cards.businessIntelligence.title")}
         <br/>
-        <h5 style={ {
-          fontSize: '1.2rem',
-          marginBottom: 14,
-          marginTop: 10
-        } }>
-          Data-Driven Decisions, Predictable Growth
+        <h5 style={{ fontSize: '1.2rem', marginBottom: 14, marginTop: 10 }}>
+          {t("healthCare.cards.businessIntelligence.subtitle")}
         </h5>
       </div>,
-      description: "Claims analytics and role-based dashboards to track trends, spot friction, and guide action—from reactive to predictive.",
+      description: t("healthCare.cards.businessIntelligence.description"),
       image: image1
     },
     {
-      heading: <div style={ {
-        color: 'var(--primary-color)',
-      } }>
-        Learning Management System (LMS)
+      heading: <div style={{ color: 'var(--primary-color)' }}>
+        {t("healthCare.cards.lms.title")}
         <br/>
-        <h5 style={ {
-          fontSize: '1.2rem',
-          marginBottom: 14,
-          marginTop: 10
-        } }>
-          Continuous Learning, Lifelong Compliance
+        <h5 style={{ fontSize: '1.2rem', marginBottom: 14, marginTop: 10 }}>
+          {t("healthCare.cards.lms.subtitle")}
         </h5>
       </div>,
-      description: "24/7 courses localized for KSA/GCC, Egypt, and U.S. contexts. Keep teams current without pulling them off the floor.",
+      description: t("healthCare.cards.lms.description"),
       image: image3
     }
-  ]
-  const data = [
-    {
-      heading: "Deeply Local, Globally Informed",
-      description: "We speak the language of local regulatory & payer rules—because we work with them every day."
-    },
-    {
-      heading: "Tech-enabled, expertise-driven",
-      description: "· Smart tools accelerate analysis; seasoned consultants drive outcomes."
-    },
-    {
-      heading: "We Measure Our Success by Yours",
-      description: "Tangible outcomes—faster accreditation, higher revenue, fewer denials—are what we deliver."
-    },
+  ];
 
-  ]
+  const data = t("healthCare.expertise.cards", { returnObjects: true });
 
   return <>
-    <ContentImageBox backImg={ backImg } fullHeight={ true } shaded={ true }>
-      <div className={ "endToEndRcm" }>
-        <h1>Expert Consulting That Builds Stronger, More Profitable Healthcare Organizations</h1>
-        <p>Accreditation. Compliance. Revenue optimization. Navigate it all with confidence. Accelon Consulting delivers
-          the strategic blueprint and hands-on execution to future-proof your operations.</p>
-        <ButtonComponent className={ "endToEndRcmBtn" }
-                         color={ "white" }
-                         size={ "large" }
-                         style={ {
-                           height: "60px",
-                           backgroundColor: "white",
-                           marginTop: 60,
-                           color: "var(--primary-color)"
-                         } }>From Use Case to ROI — Request a Strategy Session</ButtonComponent>
+    <ContentImageBox backImg={backImg} fullHeight={true} shaded={true}>
+      <div className="endToEndRcm">
+        <h1>{t("healthCare.hero.title")}</h1>
+        <p>{t("healthCare.hero.description")}</p>
+        <ButtonComponent className="endToEndRcmBtn"
+                         color="white"
+                         size="large"
+                         style={{ height: "60px", backgroundColor: "white", marginTop: 60, color: "var(--primary-color)" }}>
+          {t("healthCare.hero.button")}
+        </ButtonComponent>
       </div>
     </ContentImageBox>
+
     <ContentImageBox>
-      <div className={ "endToEndRcm" } style={ {
-        color: "var(--primary-text-color)"
-      } }>
-        <h1>The Compliance Maze Is Complex. <span
-          style={ { color: "var(--primary-color)" } }>Your Success Shouldn’t Be.</span>
-        </h1>
-        <p style={ {
-          fontWeight: 500,
-        } }>Keeping pace with evolving standards and payer rules is a full-time job—one that steals focus from care.
-          Missteps mean delays, penalties, and leakage. We turn regulatory hurdles into growth momentum.</p>
+      <div className="endToEndRcm" style={{ color: "var(--primary-text-color)" }}>
+        <h1>{t("healthCare.compliance.title")} <span style={{ color: "var(--primary-color)" }}>{t("healthCare.compliance.highlight")}</span></h1>
+        <p style={{ fontWeight: 500 }}>{t("healthCare.compliance.description")}</p>
       </div>
     </ContentImageBox>
-    <div style={ {
-      backgroundColor: "rgba(28, 36, 96, .05 )"
-    } }>
-      <div className={ "contentWrapper" }>
+
+    <div style={{ backgroundColor: "rgba(28, 36, 96, .05 )" }}>
+      <div className="contentWrapper">
         <HeadingDescription
-          heading={ "Your Blueprint for Operational Excellence" }
-          description={ "We don’t just advise—we embed capability. Our portfolio is designed to build resilience, drive efficiency, and make compliance a habit across your organization." }
+          heading={t("healthCare.blueprint.heading")}
+          description={t("healthCare.blueprint.description")}
         />
-        {
-          cardsData.map((card, index) => <CardComponent
-            heading={ card.heading }
-            description={ card.description }
-            image={ card.image }
-            index={ index }
-          />)
-        }
+        {cardsData.map((card, index) =>
+          <CardComponent
+            key={index}
+            heading={card.heading}
+            description={card.description}
+            image={card.image}
+            index={index}
+          />
+        )}
       </div>
     </div>
-    <div className={"marginFromTop"}/>
+
+    <div className="marginFromTop"/>
     <div>
       <HeadingDescription
-        heading={ <h1>Expertise That Feels Like An <span style={ {
-          color: 'var(--primary-color)',
-        } }>Extension of Your Team</span></h1> }
-        description={ "Other firms talk strategy. We build capability." }
+        heading={<h1>{t("healthCare.expertise.heading").split(' ')[0]} <span style={{ color: 'var(--primary-color)' }}>{t("healthCare.expertise.heading").split(' ').slice(1).join(' ')}</span></h1>}
+        description={t("healthCare.expertise.description")}
       />
-      <Row gutter={ [24, 24] } style={ {
-        width: "80%",
-        margin: "auto"
-      } }>
-        {
-          data.map((item, index) => <Col xs={ 24 } md={ 8 }><CardsWOBg
-            heading={ item.heading }
-            description={ item.description }
-          /></Col>)
-        }
+      <Row gutter={[24, 24]} style={{ width: "80%", margin: "auto" }}>
+        {data.map((item, index) => <Col xs={24} md={8} key={index}>
+          <CardsWOBg
+            heading={item.title}
+            description={item.description}
+          />
+        </Col>)}
       </Row>
     </div>
-    <div className={ "marginFromTop" }/>
-    <div style={ {
-      backgroundColor: "rgba(28, 36, 96, .05 )"
-    } }>
-      <div className={ "contentWrapper" }>
-        <div>
-          <HeadingDescription
-            heading={ <h1>From Uncertainty to Accreditation A <span style={ {
-              color: 'var(--primary-color)',
-            } }>Riyadh Hospital’s Story</span></h1> }
-          />
-          <CardComponent
-            heading={ <span style={ {
-              color: 'var(--primary-color)',
-            } }>Facing a CHI audit with inconsistent documentation and coding errors, a leading hospital partnered with us.</span> }
-            description={ <div style={ {
-              color: "var(--primary-text-color)",
-              marginTop: 40,
-            } }>
-              <h2>
-                Our Role
-              </h2>
-              <p style={ {
-                fontSize: "18px",
-                marginTop: 4
-              } }>
-                CDI training + RCM system renovation + compliance mapping.
-              </p>
 
-              <h2 style={ {
-                marginTop: 40
-              } }>
-                The Result
-              </h2>
-              <p style={ {
-                color: "var(--primary-text-color)",
-                fontSize: "18px",
-                marginTop: 4
-              } }>
-                Successful accreditation, 20% faster reimbursement, and a team empowered for long-term excellence.
-              </p>
-            </div> }
-            image={ hospitalImg }
-            index={ 0 }
-          />
-        </div>
+    <div className="marginFromTop"/>
+    <div style={{ backgroundColor: "rgba(28, 36, 96, .05 )" }}>
+      <div className="contentWrapper">
+        <HeadingDescription
+          heading={<h1>{t("healthCare.hospitalStory.heading").split(' ')[0]} <span style={{ color: 'var(--primary-color)' }}>{t("healthCare.hospitalStory.heading").split(' ').slice(1).join(' ')}</span></h1>}
+        />
+        <CardComponent
+          heading={<span style={{ color: 'var(--primary-color)' }}>{t("healthCare.hospitalStory.cardTitle")}</span>}
+          description={<div style={{ color: "var(--primary-text-color)", marginTop: 40 }}>
+            <h2>{t("healthCare.hospitalStory.role")}</h2>
+            <p style={{ fontSize: "18px", marginTop: 4 }}>{t("healthCare.hospitalStory.roleDescription")}</p>
+            <h2 style={{ marginTop: 40 }}>{t("healthCare.hospitalStory.result")}</h2>
+            <p style={{ color: "var(--primary-text-color)", fontSize: "18px", marginTop: 4 }}>{t("healthCare.hospitalStory.resultDescription")}</p>
+          </div>}
+          image={hospitalImg}
+          index={0}
+        />
       </div>
     </div>
+
     <ContentBox>
-      <div className={ "endToEndRcm" } style={ {
-        marginTop: 0,
-      } }>
-        <i><h1>Ready to Lead—Not Just Comply?</h1></i>
-        <p>
-          Trade uncertainty for operating confidence. Whether you’re preparing for CHI accreditation, aligning to UHIA,
-          or optimizing U.S. operations, let’s build a foundation that grows with you.
-        </p>
-        <ButtonComponent className={ "endToEndRcmBtn" }
-                         color={ "white" }
-                         size={ "large" }
-                         style={ {
-                           height: "60px",
-                           backgroundColor: "white",
-                           marginTop: 50,
-                           color: "var(--primary-color)"
-                         } }>Book a Free Consultation Now</ButtonComponent>
+      <div className="endToEndRcm" style={{ marginTop: 0 }}>
+        <i><h1>{t("healthCare.ready.title")}</h1></i>
+        <p>{t("healthCare.ready.description")}</p>
+        <ButtonComponent className="endToEndRcmBtn"
+                         color="white"
+                         size="large"
+                         style={{ height: "60px", backgroundColor: "white", marginTop: 50, color: "var(--primary-color)" }}>
+          {t("healthCare.ready.button")}
+        </ButtonComponent>
       </div>
     </ContentBox>
-  </>
-}
+  </>;
+};
 
 export default HealthCare;

@@ -18,8 +18,11 @@ import Voice                            from './modules/Voice/voice';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'aos/dist/aos.css';
 import AOS from "aos";
+import { useTranslation } from "react-i18next";
+
 
 function App() {
+  const { i18n } = useTranslation();
   useEffect(() => {
     AOS.init({
       duration: 900,
@@ -30,6 +33,14 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
 
   }, []);
+
+  useEffect(() => {
+    // Set direction based on current language
+    document.documentElement.dir = i18n.language === "ar" ? "rtl" : "ltr";
+
+    // Optional: change font if needed for Arabic
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
   return <BrowserRouter>
     <ScrollToTop/>
     <Navbar/>

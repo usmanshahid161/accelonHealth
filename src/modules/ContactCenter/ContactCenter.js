@@ -1,264 +1,151 @@
-import React              from 'react';
-import ButtonComponent    from '../../components/button/Button';
-import CardComponent      from '../../components/cardsComponents/cardsComponents';
-import CardsWOBg          from '../../components/cardsWOBg/cardsWOBg';
-import ContentBox         from '../../components/contentBox/contentBox';
-import ContentImageBox    from '../../components/ContentImageBox/ContentImageBox';
-import HeaderSection      from '../../components/header/HeaderSection';
+import React from 'react';
+import { Row, Col } from "antd";
+import ButtonComponent from '../../components/button/Button';
+import CardComponent from '../../components/cardsComponents/cardsComponents';
+import CardsWOBg from '../../components/cardsWOBg/cardsWOBg';
+import ContentBox from '../../components/contentBox/contentBox';
+import ContentImageBox from '../../components/ContentImageBox/ContentImageBox';
+import HeaderSection from '../../components/header/HeaderSection';
 import HeadingDescription from '../../components/heading&description/heading&description';
-import { Row, Col }       from "antd"
+import { useTranslation } from 'react-i18next';
+
 import image1 from "./assets/unnamed (2).jpg";
 import image2 from "./assets/unnamed (5).jpg";
 import "./ContactCenter.scss";
 
 const ContactCenter = () => {
-  const data = [{
-    heading: "Visit Scheduling & Management — smoother days, fewer no-shows",
-    description: "End-to-end booking, confirmations, and smart reminders that stabilize calendars and reclaim lost visits."
-  }, {
-    heading: "Live Patient Inquiries — instant answers that build confidence",
-    description: "Round-the-clock coverage for clinical and administrative questions, with adaptive scripts and clear escalation paths."
-  }, {
-    heading: "Patient Education & Follow-ups — care beyond your walls",
-    description: "Empathetic post-visit calls, instructions, results notifications, and adherence follow-ups delivered in the patient’s dialect."
-  }, {
-    heading: "Experience Optimization — every touchpoint builds loyalty",
-    description: "We capture feedback, resolve concerns, and surface insights to improve access and retention—without adding headcount."
-  },
+  const { t } = useTranslation();
 
-  ]
-  const data1 = [{
-    heading: "No-shows fall noticeably", description: "With intelligent reminder sequences."
-  }, {
-    heading: "Patient satisfaction rises", description: "Because someone always answers—and actually helps."
-  }, {
-    heading: "Clinicians get their focus back", description: "Fewer interruptions, more time for medicine"
-  }, {
-    heading: "Revenue lifts", description: "Through fuller schedules, better utilization, and reactivated patients"
-  },
+  const data = [
+    { heading: t("contactCenter.cards.visit.heading"), description: t("contactCenter.cards.visit.description") },
+    { heading: t("contactCenter.cards.inquiries.heading"), description: t("contactCenter.cards.inquiries.description") },
+    { heading: t("contactCenter.cards.education.heading"), description: t("contactCenter.cards.education.description") },
+    { heading: t("contactCenter.cards.experience.heading"), description: t("contactCenter.cards.experience.description") },
+  ];
 
-  ]
-  const data2 = [{
-    heading: "Service awareness campaigns", description: "For new clinics, specialties, and services."
-  }, {
-    heading: "Targeted outreach", description: "To re-engage inactive patients and close care gaps."
-  }, {
-    heading: "Adherence and refills", description: "Reminders that keep care on track."
-  }]
-  const data3 = [{
-    heading: "Medically informed conversations", description: "Handled with empathy and accuracy."
-  }, {
-    heading: "Deep local fluency", description: "Cultural nuance and communication styles built in"
-  }, {
-    heading: "Operational leverage, not overhead", description: "Strategic investment in retention and growth"
-  }]
-  const faqs = [{
-    heading: "Arabic and English?", description: "Yes—multilingual reps with dialect personalization."
-  }, {
-    heading: "Launch timeline?", description: "A fast, low-risk rollout measured in weeks, not months."
-  }, {
-    heading: "Will this work with our systems?", description: "Yes— Any EHR/HIS, CRM, IVR, WhatsApp, and SMS."
-  }, {
-    heading: "Uptime?", description: "24/7/365 with enterprise-grade availability."
-  }, {
-    heading: "Compliance?",
-    description: "Built with privacy and HIPPA compliance appropriate for healthcare environments."
-  },
+  const data1 = [
+    { heading: t("contactCenter.impact.noShows.heading"), description: t("contactCenter.impact.noShows.description") },
+    { heading: t("contactCenter.impact.satisfaction.heading"), description: t("contactCenter.impact.satisfaction.description") },
+    { heading: t("contactCenter.impact.focus.heading"), description: t("contactCenter.impact.focus.description") },
+    { heading: t("contactCenter.impact.revenue.heading"), description: t("contactCenter.impact.revenue.description") },
+  ];
 
-  ]
+  const data2 = [
+    { heading: t("contactCenter.support.serviceAwareness.heading"), description: t("contactCenter.support.serviceAwareness.description") },
+    { heading: t("contactCenter.support.targetedOutreach.heading"), description: t("contactCenter.support.targetedOutreach.description") },
+    { heading: t("contactCenter.support.adherence.heading"), description: t("contactCenter.support.adherence.description") },
+  ];
 
-  return <div className={"contactCenterContainer"}>
-    <HeaderSection
-      directionFromLeft={ true }
-      backImg={ image2 }
-      heading={ "Every Unanswered Call Is a Patient Choosing Your Competitor" }
-      subheading={ <p>Your phone rings. Nobody answers. That patient books elsewhere—lifetime value & revenue gone
-        because the front desk was busy.
-        <span style={ {
-          color: "var(--primary-color)",
-          fontWeight: 550
-        } }> Accelon Health’s medical contact center answers every time—multilingual, 24/7/365.</span></p> }
-      buttonTitle={ "See Patient Experience in Action" }
-    />
-    <ContentImageBox shaded={ true }>
-      <div className={ "endToEndRcm" }>
-        <h1>Your Patients Can’t Wait. Your Competitors Won’t.</h1>
-        <p>As you read this, potential patients in your area are reaching out to providers. The ones who answer first
-          win. The ones who don’t often lose them for good.</p>
-        <p>
-          Your front desk is slammed. Appointment requests stack up. Insurance questions interrupt clinical work. Follow-ups never happen. No-shows climb. Patient reviews start saying “hard to reach” more than “great care.”
-        </p>
-        <div className={"marginFromTop"}/>
-        <b>
-          Every missed call risk meaningful lifetime revenue. Multiply that by the calls you miss each week, and a
-          material slice of annual revenue drifts to whoever simply picked up.
-        </b>
+  const data3 = [
+    { heading: t("contactCenter.difference.medically.heading"), description: t("contactCenter.difference.medically.description") },
+    { heading: t("contactCenter.difference.fluency.heading"), description: t("contactCenter.difference.fluency.description") },
+    { heading: t("contactCenter.difference.leverage.heading"), description: t("contactCenter.difference.leverage.description") },
+  ];
+
+  const faqs = [
+    { heading: t("contactCenter.faq.items.languages.heading"), description: t("contactCenter.faq.items.languages.description") },
+    { heading: t("contactCenter.faq.items.timeline.heading"), description: t("contactCenter.faq.items.timeline.description") },
+    { heading: t("contactCenter.faq.items.systems.heading"), description: t("contactCenter.faq.items.systems.description") },
+    { heading: t("contactCenter.faq.items.uptime.heading"), description: t("contactCenter.faq.items.uptime.description") },
+    { heading: t("contactCenter.faq.items.compliance.heading"), description: t("contactCenter.faq.items.compliance.description") },
+  ];
+
+  return (
+    <div className={"contactCenterContainer"}>
+      <HeaderSection
+        directionFromLeft={true}
+        backImg={image2}
+        heading={t("contactCenter.header.heading")}
+        subheading={<p>{t("contactCenter.header.subheading")}</p>}
+        buttonTitle={t("contactCenter.header.button")}
+      />
+
+      <ContentImageBox shaded={true}>
+        <div className={"endToEndRcm"}>
+          <h1>{t("contactCenter.hero.title")}</h1>
+          <p>{t("contactCenter.hero.description")}</p>
+          <p>{t("contactCenter.hero.description2")}</p>
+          <div className={"marginFromTop"}/>
+          <b>{t("contactCenter.hero.bold")}</b>
+        </div>
+      </ContentImageBox>
+
+      <div style={{ backgroundColor: "rgba(28, 36, 96, .05 )", padding: "10px 0px 80px 0px" }}>
+        <div className={"contentWrapper"}>
+          <CardComponent
+            image={image1}
+            heading={<span style={{ color: "var(--primary-color)" }}>{t("contactCenter.mainCard.heading")}</span>}
+            description={<>
+              <p>{t("contactCenter.mainCard.description1")} <span style={{ color: "var(--primary-color)" }}>{t("contactCenter.mainCard.highlight")}</span> {t("contactCenter.mainCard.description2")}</p>
+              <ul style={{ paddingLeft: "1.2rem" }}>
+                <li><strong>{t("contactCenter.mainCard.point1.bold")}</strong> {t("contactCenter.mainCard.point1.text")}</li>
+                <li><strong>{t("contactCenter.mainCard.point2.bold")}</strong> {t("contactCenter.mainCard.point2.text")}</li>
+                <li><strong>{t("contactCenter.mainCard.point3.bold")}</strong> {t("contactCenter.mainCard.point3.text")}</li>
+              </ul>
+            </>}
+            buttonText={t("contactCenter.mainCard.button")}
+            index={0}
+          />
+        </div>
       </div>
-    </ContentImageBox>
-    <div style={ {
-      backgroundColor: "rgba(28, 36, 96, .05 )",
-      padding: "10px 0px 80px 0px"
-    } }>
-      <div className={ "marginFromTop" }/>
-      <div className={ "contentWrapper" }>
-        <CardComponent
-          image={ image1 }
-          heading={ <span style={ {
-            color: "var(--primary-color)"
-          } }>More Than a Call Center Your Frontline for Patient Care</span> }
-          description={ <>
-            <p>
-              We set up a <span style={ {
-              color: "var(--primary-color)"
-            } }>niche, medically trained contact center</span> that operates as an extension of your brand and
-              workflows—so patients get answers, and your teams get their time back.
-            </p>
-            <ul style={ { paddingLeft: "1.2rem" } }>
-              <li>
-                <strong>
-                  Local, dedicated numbers
-                </strong> and IVR tailored to your market.
-              </li>
-              <li>
-                <strong>
-                  Multilingual medical representatives</strong> for clinical and administrative calls.
-              </li>
-              <li>
-                <strong>Seamless integration</strong> with your systems—natural extension of your brand and processes
-              </li>
-            </ul>
-          </> }
-          buttonText={ "Speak to a Solutions Expert" }
-          index={ 0 }
+
+
+      <div className={"contentWrapper"}>
+        <HeadingDescription
+          heading={<h1>{t("contactCenter.section1.heading")} <span style={{ color: "var(--primary-color)" }}>{t("contactCenter.section1.highlight")}</span></h1>}
         />
+        <Row gutter={[24, 24]} className={"filledCards"} style={{ margin: "auto", justifyContent: "center" }}>
+          {data.map((card, index) => <Col xs={24} md={12}><CardsWOBg heading={card.heading} description={card.description} background={true}/></Col>)}
+        </Row>
       </div>
+
+
+      <div className={"contentWrapper"}>
+        <div className={"centerEveryThing"}>
+          <HeadingDescription heading={<h1>{t("contactCenter.section2.heading")} <span style={{ color: "var(--primary-color)" }}>{t("contactCenter.section2.highlight")}</span></h1>} />
+          <Row gutter={[24, 24]} style={{ justifyContent: "center" }}>
+            {data1.map((card, index) => <Col xs={24} md={8}><CardsWOBg heading={card.heading} description={card.description}/></Col>)}
+          </Row>
+          <div style={{ marginTop: "1rem" }}/>
+          <ButtonComponent>{t("contactCenter.section2.button")}</ButtonComponent>
+        </div>
+
+        <div>
+          <HeadingDescription heading={<h1>{t("contactCenter.section3.heading")} <span style={{ color: "var(--primary-color)" }}>{t("contactCenter.section3.highlight")}</span></h1>} description={t("contactCenter.section3.description")}/>
+          <Row gutter={[24, 24]} style={{ justifyContent: "center" }}>
+            {data2.map((card, index) => <Col xs={24} md={8}><CardsWOBg heading={card.heading} description={card.description}/></Col>)}
+          </Row>
+        </div>
+
+        <div className={"centerEveryThing"}>
+          <HeadingDescription heading={<h1>{t("contactCenter.section4.heading")} <span style={{ color: "var(--primary-color)" }}>{t("contactCenter.section4.highlight")}</span></h1>} description={t("contactCenter.section4.description")}/>
+          <Row gutter={[24, 24]} style={{ justifyContent: "center" }}>
+            {data3.map((card, index) => <Col xs={24} md={8}><CardsWOBg heading={card.heading} description={card.description}/></Col>)}
+          </Row>
+          <ButtonComponent>{t("contactCenter.section4.button")}</ButtonComponent>
+        </div>
+
+        <div className={"centerEveryThing"}>
+          <HeadingDescription heading={t("contactCenter.faq.heading")} />
+          <Row gutter={[24, 24]} className={"filledCards"} style={{ margin: "auto", justifyContent: "center" }}>
+            {faqs.map((card, index) => <Col xs={24} md={24}><CardsWOBg heading={card.heading} description={card.description} background={true}/></Col>)}
+          </Row>
+          <div style={{ marginTop: "3rem" }}/>
+          <ButtonComponent>{t("contactCenter.faq.button")}</ButtonComponent>
+        </div>
+      </div>
+
+      <ContentBox>
+        <div className={"endToEndRcm"}>
+          <i><h1>{t("contactCenter.footer.title")}</h1></i>
+          <p>{t("contactCenter.footer.description")}</p>
+          <ButtonComponent className={"endToEndRcmBtn"} color={"white"} size={"large"} style={{ height: "60px", backgroundColor: "white", marginTop: 60, color: "var(--primary-color)" }}>
+            {t("contactCenter.footer.button")}
+          </ButtonComponent>
+        </div>
+      </ContentBox>
     </div>
-    <div className={ "marginFromTop" }/>
-
-    <div className={ "contentWrapper" }>
-      <div>
-        <HeadingDescription
-          heading={ <h1>Comprehensive Support. <span style={ {
-            color: "var(--primary-color)"
-          } }>Exceptional Experience.</span></h1> }
-        />
-        <Row gutter={ [24, 24] } className={"filledCards"} style={ { margin: "auto",
-          justifyContent:"center"
-        } }>
-          { data.map((card, index) => <Col xs={ 24 } md={ 12 }><CardsWOBg
-            heading={ card.heading }
-            description={ card.description }
-            background={ true }
-          /></Col>) }
-        </Row>
-      </div>
-    </div>
-    <div className={"marginFromTop"}/>
-    <div className={ "contentWrapper" }>
-      <div className={ "centerEveryThing" }>
-        <HeadingDescription
-          heading={ <h1>What Happens When We Take Over <span style={ {
-            color: "var(--primary-color)"
-          } }>Patient Communication</span></h1> }
-        />
-        <Row gutter={ [24, 24] } style={{
-          justifyContent: "center"
-        }}>
-          { data1.map((card, index) => <Col xs={ 24 } md={ 8 }><CardsWOBg
-            heading={ card.heading }
-            description={ card.description }
-          /></Col>) }
-        </Row>
-        <div style={ {
-          marginTop: "1rem"
-        } }/>
-        <ButtonComponent>
-          Get Your Patient Communication Plan
-        </ButtonComponent>
-      </div>
-
-      <div>
-        <HeadingDescription
-          heading={ <h1>From Patient Support to <span style={ {
-            color: "var(--primary-color)"
-          } }>Practice Growth</span></h1> }
-          description={ "We don’t just answer calls—we fill your schedule." }
-        />
-        <Row gutter={ [24, 24] } style={{
-          justifyContent:"center"
-        }}>
-          { data2.map((card, index) => <Col xs={ 24 } md={ 8 }><CardsWOBg
-            heading={ card.heading }
-            description={ card.description }
-          /></Col>) }
-        </Row>
-      </div>
-
-      <div className={ "centerEveryThing" }>
-        <HeadingDescription
-          heading={ <h1>The Accelon Difference <span style={ {
-            color: "var(--primary-color)"
-          } }>Expertise You Can Hear</span></h1> }
-          description={ "We don’t just answer calls—we fill your schedule." }
-        />
-        <Row gutter={ [24, 24] } style={{
-          justifyContent:"center"
-        }}>
-          { data3.map((card, index) => <Col xs={ 24 } md={ 8 }><CardsWOBg
-            heading={ card.heading }
-            description={ card.description }
-          /></Col>) }
-        </Row>
-        <ButtonComponent>
-          See Patient Experience in Action
-        </ButtonComponent>
-      </div>
-      <div className={ "centerEveryThing" }>
-        <HeadingDescription
-          heading={ "FAQ's" }
-        />
-        <Row gutter={ [24, 24] }
-             className={"filledCards"}
-             style={ {
-          margin: "auto",
-               justifyContent: "center"
-        } }>
-          { faqs.map((card, index) => <Col xs={ 24 } md={ 24 }>
-            <CardsWOBg
-              heading={ card.heading }
-              description={ card.description }
-              background={ true }
-            />
-          </Col>) }
-        </Row>
-
-        <div style={ {
-          marginTop: "3rem"
-        } }/>
-        <ButtonComponent>
-          See Patient Experience in Action
-        </ButtonComponent>
-      </div>
-    </div>
-    <div className={"marginFromTop" }/>
-    <ContentBox>
-      <div className={ "endToEndRcm" }>
-        <i><h1>Stop Funding Your Competitors’ Growth</h1></i>
-        <p>
-          Every day without a professional patient communication layer, you’re handing momentum to competitors who
-          answer faster. Or—you can let the team with proven cross-markets expertise handle it for you. </p>
-
-
-        <ButtonComponent className={ "endToEndRcmBtn" }
-                         color={ "white" }
-                         size={ "large" }
-
-                         style={ {
-                           height: "60px", backgroundColor: "white", marginTop: 60, color: "var(--primary-color)"
-                         } }>Speak to a Solutions Expert</ButtonComponent>
-      </div>
-    </ContentBox>
-  </div>
-}
+  );
+};
 
 export default ContactCenter;
