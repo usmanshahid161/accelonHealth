@@ -18,6 +18,7 @@ import nine               from "../../../assets/images/nine.png";
 import ten                from "../../../assets/images/10.png";
 import eleven             from "../../../assets/images/11.png";
 import twelve             from "../../../assets/images/12.png";
+import { useTranslation } from "react-i18next";
 
 const LogoSlider = () => {
   const logos = [
@@ -34,6 +35,9 @@ const LogoSlider = () => {
     { img: eleven, link: "https://www.shc.gov.sa" },           // Saudi Health Council
     { img: twelve, link: "https://uhia.gov.eg/" },          // UAE Health Insurance Authority (UHIA)
   ];
+
+  const { i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
   return (
     <div className="logos-wrapper">
       <Swiper
@@ -45,11 +49,13 @@ const LogoSlider = () => {
         autoplay={{
           delay: 0,
           disableOnInteraction: true,
+          reverseDirection: isRTL, // important for RTL
         }}
         navigation={{
           nextEl: ".logo-next",
           prevEl: ".logo-prev",
         }}
+        dir={isRTL ? "rtl" : "ltr"} // sets RTL visually
         breakpoints={{
           0: { slidesPerView: 2 },
           768: { slidesPerView: 3 },
@@ -57,33 +63,25 @@ const LogoSlider = () => {
         }}
       >
         {logos.map((item, index) => (
-          <SwiperSlide key={index} style={{
-            display:"flex",
-            justifyContent:"center",
-          }}>
-            <a
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <SwiperSlide key={index} style={{ display:"flex", justifyContent:"center" }}>
+            <a href={item.link} target="_blank" rel="noopener noreferrer">
               <Image
                 preview={false}
                 src={item.img}
                 className="logo-img"
                 height={160}
-                style={{
-                  background:"white"
-                }}
+                style={{ background:"white" }}
               />
             </a>
           </SwiperSlide>
         ))}
       </Swiper>
 
+
       {/* Controls */}
       <div className="logo-controls">
-        <button className="logo-prev">‹</button>
-        <button className="logo-next">›</button>
+        <button className="logo-prev"> {!isRTL ? "‹" : "›" } </button>
+        <button className="logo-next">{isRTL ? "‹" : "›" }</button>
       </div>
     </div>
   );
