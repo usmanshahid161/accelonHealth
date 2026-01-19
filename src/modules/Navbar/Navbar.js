@@ -3,7 +3,7 @@ import { Menu, Button, Drawer } from "antd";
 import { MenuOutlined }         from "@ant-design/icons";
 import { Link, useLocation }    from "react-router-dom";
 import "./Navbar.scss";
-import logoBlue                 from "../../assets/logo/logo.PNG";
+import logoBlue                 from "../../assets/logo/logo.png";
 
 
 const menuItems = [
