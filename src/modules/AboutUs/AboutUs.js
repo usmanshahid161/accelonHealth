@@ -78,7 +78,7 @@ const AboutUs = () => {
     </ContentImageBox>
     <ContentImageBox>
       <div className={ "endToEndRcm" } style={ {
-        color: "black"
+        color: "var(--primary-text-color)"
       } }>
         <h1><span style={ {
           color: 'var(--primary-color)',

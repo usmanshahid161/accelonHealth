@@ -73,7 +73,7 @@ const Audit = () => {
         </h1> }
         description={
           <div style={{
-            color:"black"
+            color:"var(--primary-text-color)"
           }}>
             <p>
               Drop AccelonAudit into your workflow and it becomes an intelligent

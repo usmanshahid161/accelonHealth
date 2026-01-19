@@ -147,7 +147,7 @@ const ContactUsPage = () => {
         } }>
           <EnvironmentFilled style={ { color: "#FFB800", fontSize: 24 } }/>
           <Title level={ 3 } style={ { marginTop: 8, fontWeight: "bold" } }>
-            Our <span style={ { color: "#1C2460" } }>Offices</span>
+            Our <span style={ { color: "var(--primary-color)" } }>Offices</span>
           </Title>
         </div>
 

@@ -3,7 +3,7 @@ import { Menu, Button, Drawer } from "antd";
 import { MenuOutlined }         from "@ant-design/icons";
 import { Link, useLocation }    from "react-router-dom";
 import "./Navbar.scss";
-import logoBlue                 from "../../assets/logo/logo blue.png";
+import logoBlue                 from "../../assets/logo/logo.PNG";
 
 
 const menuItems = [
@@ -101,7 +101,7 @@ const Navbar = () => {
           style={ {
             height: 48,
             width: 180,
-            background: "linear-gradient(to right, #1C2460, #0077C7)",
+            background: "linear-gradient(to right, var(--primary-color), #0077C7)",
           } }>
           Book a Demo
         </Button>
@@ -151,7 +151,7 @@ const Navbar = () => {
             style={ {
               height: 48,
               width: "100%",
-              background: "linear-gradient(to right, #1C2460, #0077C7)",
+              background: "linear-gradient(to right, var(--primary-color), #0077C7)",
             } }>
             Book a Demo
           </Button>

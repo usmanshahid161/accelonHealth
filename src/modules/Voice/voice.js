@@ -56,7 +56,7 @@ const Voice = () => {
     </ContentImageBox>
     <ContentImageBox>
       <div className={ "endToEndRcm" } style={ {
-        color: "black"
+        color: "var(--primary-text-color)"
       } }>
         <h1>Fluent in <span style={ { color: "var(--primary-color)" } }>Business</span>, Fluent in <span
           style={ { color: "var(--primary-color)" } }>Culture</span>
@@ -157,13 +157,13 @@ const Voice = () => {
         description={ <div>
           <p>Technology That Serves With Empathy</p>
           <p style={ {
-            color: "black",
+            color: "var(--primary-text-color)",
             fontSize: "1rem"
           } }>While others can sell automation, we deliver empathy at scale. AccelonVoice extends your team’s capacity
             without sacrificing the human touch.</p>
           <br/>
           <p style={ {
-            color: "black",
+            color: "var(--primary-text-color)",
             fontWeight: 500,
           } }>
             ✅ 2–4-week plug-and-play implementation <br/> ✅ Omnichannel integration (EHR, CRM, WhatsApp, SMS) <br/> ✅

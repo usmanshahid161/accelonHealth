@@ -156,7 +156,7 @@ const HealthCare = () => {
     </ContentImageBox>
     <ContentImageBox>
       <div className={ "endToEndRcm" } style={ {
-        color: "black"
+        color: "var(--primary-text-color)"
       } }>
         <h1>The Compliance Maze Is Complex. <span
           style={ { color: "var(--primary-color)" } }>Your Success Shouldn’t Be.</span>
@@ -221,7 +221,7 @@ const HealthCare = () => {
               color: 'var(--primary-color)',
             } }>Facing a CHI audit with inconsistent documentation and coding errors, a leading hospital partnered with us.</span> }
             description={ <div style={ {
-              color: "black",
+              color: "var(--primary-text-color)",
               marginTop: 40,
             } }>
               <h2>
@@ -240,7 +240,7 @@ const HealthCare = () => {
                 The Result
               </h2>
               <p style={ {
-                color: "black",
+                color: "var(--primary-text-color)",
                 fontSize: "18px",
                 marginTop: 4
               } }>

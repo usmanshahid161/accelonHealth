@@ -24,7 +24,7 @@ const HeaderSection = ({ backImg, heading, subheading, buttonFunc, buttonTitle, 
           style={ {
             height: 60,
             width: "100%",
-            background: "linear-gradient(to right, #1C2460, #0077C7)"
+            background: "linear-gradient(to right, var(--primary-color), #0077C7)"
           } }>
           { buttonTitle }
         </ButtonComponent>

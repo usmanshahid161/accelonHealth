@@ -115,7 +115,7 @@ const RevenueCycle = () => {
           <Col xs={ 24 } md={ 12 }><CardsWOBg
             alignLeft={ true }
             heading={ <h2 style={ {
-              color: "black",
+              color: "var(--primary-text-color)",
               fontSize: "2rem"
             } }>Old Way</h2> }
             description={ "Cut a few costs, add a few handoffs, watch collections slip through the cracks. Savings on paper. Leakage in practice." }
@@ -210,7 +210,7 @@ const RevenueCycle = () => {
               alignLeft={ true }
               heading={ <h1 style={ {
                 fontSize: "2rem",
-                color: "black"
+                color: "var(--primary-text-color)"
               } }>Benchmarks We’ll Hit—Together</h1> }
               description={
                 <ul>

@@ -6,7 +6,7 @@ const ButtonComponent = ({
                            type = "primary",
                            size = "large",
                            shape = "round",
-                           color = "linear-gradient(to right, #1C2460, #0077C7)",
+                           color = "linear-gradient(to right, var(--primary-color), #0077C7)",
                            height = 60,
                            children,
                            actionFunc,

@@ -5,7 +5,7 @@ import {
   MailOutlined,
 }                                      from "@ant-design/icons";
 import "./Footer.scss";
-import logo                            from "../../assets/logo/logo blue.png";
+import logo                            from "../../assets/logo/logoNew.png";
 import { ReactComponent as LinkedIn }  from '../AboutUs/assets/linkedIn.svg';
 import { Link }                        from 'react-router-dom';
 import { ReactComponent as Saudi }     from '../../assets/flags/saudi.svg';

@@ -172,7 +172,7 @@ const Notes = () => {
           index={ 0 }
           buttonText={ "Schedule Your AccelonNotes Demo" }
           buttonStyle={ {
-            background: "linear-gradient(to right, #1C2460, #0077C7)",
+            background: "linear-gradient(to right, var(--primary-color), #0077C7)",
             width: "100%",
             height: 60
           } }
