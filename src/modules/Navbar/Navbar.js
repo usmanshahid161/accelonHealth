@@ -1,10 +1,12 @@
-import { useState, useEffect }  from "react";
-import { Menu, Button, Drawer } from "antd";
-import { MenuOutlined }         from "@ant-design/icons";
-import { Link, useLocation }    from "react-router-dom";
-import { useTranslation }       from "react-i18next";
+import { useState, useEffect }     from "react";
+import { Menu, Button, Drawer }    from "antd";
+import { MenuOutlined }            from "@ant-design/icons";
+import { Link, useLocation }       from "react-router-dom";
+import { useTranslation }          from "react-i18next";
 import "./Navbar.scss";
-import logoBlue                 from "../../assets/logo/logo.png";
+import logoBlue                    from "../../assets/logo/logo.png";
+import { ReactComponent as Saudi } from '../../assets/flags/saudi.svg';
+import { ReactComponent as USA }   from '../../assets/flags/usa.svg';
 
 const Navbar = () => {
   const location = useLocation();
@@ -65,10 +67,31 @@ const Navbar = () => {
     { key: "/contact", label: t("navbar.contactUs") },
     {
       key: "/language",
-      label: `${ language }`,
+      label: <div style={{
+        display: "flex",
+        alignItems: "center",
+        gap:6
+      }}>
+        {
+          language === "English" ? <USA/> : <Saudi/>
+        }
+        {
+          language
+        }
+      </div> ,
       children: [
-        { key: "en", label: "English" },
-        { key: "ar", label: "العربية" }
+        {
+          key: "en", label: <div style={ {
+            display: "flex",
+            alignItems: "center",
+            gap: 10
+          } }><USA/> English</div>
+        },
+        { key: "ar", label: <div style={ {
+            display: "flex",
+            alignItems: "center",
+            gap: 10
+          } }><Saudi/> العربية</div> }
       ],
     }
   ];
