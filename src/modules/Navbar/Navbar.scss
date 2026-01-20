@@ -23,7 +23,6 @@
       gap: 10px;
       font-weight: 700;
       color: #0a1f44;
-      width: 100%;
 
       img {
         height: 60px;
@@ -132,5 +131,16 @@
   }
   to {
     transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .navbarHeader {
+    .navbar {
+      .logo {
+        width: 100%;
+      }
+    }
   }
 }
