@@ -10,7 +10,7 @@ import HeadingDescription from '../../components/heading&description/heading&des
 import { useTranslation } from 'react-i18next';
 
 import image1 from "./assets/unnamed (2).jpg";
-import image2 from "./assets/unnamed (5).jpg";
+import image2 from "./assets/Image_4K.jpg";
 import "./ContactCenter.scss";
 
 const ContactCenter = () => {

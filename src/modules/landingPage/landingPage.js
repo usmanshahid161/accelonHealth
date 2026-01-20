@@ -18,9 +18,9 @@ import sixteen            from "../../assets/images/16.png";
 import contentImg         from "../../assets/images/ContentImageBg.png";
 import image1             from "./assets/Profit Killer.png";
 import image2             from "./assets/2 1.jpg";
-import image3             from "./assets/3 1.jpg";
-import successImage       from "./assets/Celebrated Success.PNG";
-import LogoSlider         from './logoWrapper/LogoWrapper';
+import image3       from "./assets/3 1.jpg";
+import successImage from "./assets/celebratedSuccess.jpeg";
+import LogoSlider   from './logoWrapper/LogoWrapper';
 import Counter            from '../../components/Counter/Counter';
 
 const LandingPage = () => {
@@ -139,7 +139,7 @@ const LandingPage = () => {
               <p>{ t('landingPage.endToEndRcm.netCollections') }</p>
             </div>
             <div>
-              <Counter end={ 40 } suffix={ <Counter end={ 50 } suffix="%"/> } addBetween=" - "/>
+              <Counter end={ 40 } suffix={ <Counter end={ 50 } suffix="%"/> } addBetween="-"/>
               <p>{ t('landingPage.endToEndRcm.reductionInAR') }</p>
             </div>
           </div>

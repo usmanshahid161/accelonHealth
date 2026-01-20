@@ -42,10 +42,17 @@ const Counter = ({ end, suffix, duration = 1000, addBetween }) => {
   };
 
   return (
-    <h3 ref={ref} style={{ display: "flex" }}>
-      {count}
-      {addBetween || ""}
-      {suffix || ""}
+    <h3 ref={ ref } style={ { display: "flex" } }>
+      { count }
+      {
+        (
+          addBetween && <span style={ {
+          marginLeft: 8,
+          marginRight: 8,
+        } }> { addBetween } </span>
+        ) || ""
+      }
+      { suffix || "" }
     </h3>
   );
 };
