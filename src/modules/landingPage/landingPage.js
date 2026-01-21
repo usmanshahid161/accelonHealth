@@ -8,6 +8,7 @@ import ContentBox         from '../../components/contentBox/contentBox';
 import ContentImageBox    from '../../components/ContentImageBox/ContentImageBox';
 import HeadingDescription from '../../components/heading&description/heading&description';
 import LongButton         from '../../components/longButton/LongButton';
+import Seo                from '../../components/SEO/Seo';
 import ContactUs          from './ContactUs/ContactUs';
 import HeroSection        from './heroSection/heroSection';
 import "./landingPage.scss";
@@ -107,202 +108,214 @@ const LandingPage = () => {
   ];
 
   return (
-    <div className="landingPageContainer">
-      <HeroSection/>
+    <>
+      <Seo
+        description={ "Accelon Health | Automate Revenue & Claims Efficiently" }
+        title={ "Accelon Health helps healthcare providers automate claims and revenue cycle management, reducing errors and increasing efficiency." }
+      />
+      <meta property="og:title" content="Accelon Health | Automate Revenue & Claims Efficiently"/>
+      <meta property="og:description"
+            content="Accelon Health helps healthcare providers automate claims and revenue cycle management, reducing errors and increasing efficiency."/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:url" content="https://accelonhealth.com/"/>
+      <meta property="og:image" content="https://accelonhealth.com/og-image.jpg"/>
+      <div className="landingPageContainer">
+        <HeroSection/>
 
-      <div className="contentWrapper" style={ { marginTop: 80, marginBottom: 80 } }>
-        <div className="cardComponentContainer">
-          { cardsData.map((card, index) => (
-            <CardComponent
-              heading={ card.heading }
-              description={ card.description }
-              image={ card.image }
-              index={ index }
-            />
-          )) }
-        </div>
-      </div>
-
-      <ContentBox>
-        <div className="endToEndRcm">
-          <h5>{ t('landingPage.endToEndRcm.subHeading') }</h5>
-          <h1>{ t('landingPage.endToEndRcm.heading') }</h1>
-          <p>{ t('landingPage.endToEndRcm.description') }</p>
-
-          <div className="numbers">
-            <div>
-              <Counter end={ 99 } suffix="+"/>
-              <p>{ t('landingPage.endToEndRcm.cleanClaims') }</p>
-            </div>
-            <div>
-              <Counter end={ 95 } suffix="%+"/>
-              <p>{ t('landingPage.endToEndRcm.netCollections') }</p>
-            </div>
-            <div>
-              <Counter end={ 40 } suffix={ <Counter end={ 50 } suffix="%"/> } addBetween="-"/>
-              <p>{ t('landingPage.endToEndRcm.reductionInAR') }</p>
-            </div>
-          </div>
-
-          <div className="marginFromTop"/>
-          <i>{ t('landingPage.endToEndRcm.footerNote') }</i>
-        </div>
-      </ContentBox>
-
-      <ContentImageBox backImg={ contentImg }>
-        <div className="endToEndRcm">
-          <h1 style={ { color: "var(--primary-text-color)" } }>
-            { t('landingPage.strategicConsulting.headingPart1') }{ ' ' }
-            <span style={ { color: 'var(--primary-color)' } }>
-              { t('landingPage.strategicConsulting.headingPart2') }
-            </span>
-          </h1>
-          <p style={ { color: "var(--secondary-text-color)", fontWeight: 400 } }>
-            { t('landingPage.strategicConsulting.description') }
-          </p>
-        </div>
-      </ContentImageBox>
-
-      <div className="marginFromTop"/>
-      <div className="contentWrapper">
-        <div>
-          <HeadingDescription
-            heading={
-              <h1>
-                { t('landingPage.quietAutomationSection.headingPart1') }{ ' ' }
-                <span style={ { color: 'var(--primary-color)' } }>
-                  { t('landingPage.quietAutomationSection.headingPart2') }
-                </span>
-              </h1>
-            }
-            description={ t('landingPage.quietAutomationSection.description') }
-          />
-          <div className="quiteAutomationContainer">
-            { quiteAutomation.map(item => (
-              <CardsWOBg heading={ item.heading } description={ item.description }/>
-            )) }
-          </div>
-          <div style={ {
-            color: "#008925",
-            backgroundColor: "#BFFFE1",
-            borderRadius: 10,
-            margin: "auto",
-            padding: "10px",
-            width: "fit-content",
-            marginTop: 60
-          } }>
-            { t('landingPage.quietAutomationSection.greenBox') }
-          </div>
-          <LongButton
-            text={ t('landingPage.quietAutomationSection.longButton_text') }
-            buttonTitle={ t('landingPage.quietAutomationSection.longButton_title') }
-          />
-        </div>
-      </div>
-
-      <ContactUs/>
-      <div className="contentWrapper" style={ { marginBottom: 80 } }>
-        <div>
-          <HeadingDescription
-            heading={
-              <h1>
-                { t('landingPage.whyUs.headingWoSpan') } {/* Optional if you want static title */ }
-                <span style={ { color: 'var(--primary-color)' } }>
-                  { t('landingPage.whyUs.headingWSpan') }
-                </span>
-              </h1>
-            }
-          />
-          <div className="quiteAutomationContainer" style={ { justifyContent: "center" } }>
-            { whyUs.map(item => (
-              <CardsWOBg background={ true } heading={ item.heading } description={ item.description }/>
+        <div className="contentWrapper" style={ { marginTop: 80, marginBottom: 80 } }>
+          <div className="cardComponentContainer">
+            { cardsData.map((card, index) => (
+              <CardComponent
+                heading={ card.heading }
+                description={ card.description }
+                image={ card.image }
+                index={ index }
+              />
             )) }
           </div>
         </div>
 
-        <CardComponent
-          heading={
-            <h1>
-              { t('landingPage.fromHeadachesToSuccess.headingPart1') }{ ' ' }
-              <span style={ { color: 'var(--primary-color)' } }>
-                { t('landingPage.fromHeadachesToSuccess.headingPart2') }
-              </span>
-            </h1>
-          }
-          description={
-            <div>
-              { t('landingPage.fromHeadachesToSuccess.description') }
+        <ContentBox>
+          <div className="endToEndRcm">
+            <h5>{ t('landingPage.endToEndRcm.subHeading') }</h5>
+            <h1>{ t('landingPage.endToEndRcm.heading') }</h1>
+            <p>{ t('landingPage.endToEndRcm.description') }</p>
+
+            <div className="numbers">
               <div>
-                <br/>
-                <b style={ { color: 'var(--primary-text-color)', fontWeight: 500 } }>
-                  { t('landingPage.fromHeadachesToSuccess.benchmarks') }
-                </b>
-                <ul style={ { color: 'var(--primary-text-color)', fontWeight: 500 } }>
-                  { t('landingPage.fromHeadachesToSuccess.benchmark_list', { returnObjects: true }).map((item, idx) => (
-                    <li key={ idx }>{ item }</li>
-                  )) }
-                </ul>
+                <Counter end={ 99 } suffix="+"/>
+                <p>{ t('landingPage.endToEndRcm.cleanClaims') }</p>
+              </div>
+              <div>
+                <Counter end={ 95 } suffix="%+"/>
+                <p>{ t('landingPage.endToEndRcm.netCollections') }</p>
+              </div>
+              <div>
+                <Counter end={ 40 } suffix={ <Counter end={ 50 } suffix="%"/> } addBetween="-"/>
+                <p>{ t('landingPage.endToEndRcm.reductionInAR') }</p>
               </div>
             </div>
-          }
-          image={ successImage }
-          index={ 0 }
-        />
 
-        <div>
-          <HeadingDescription
-            heading={
-              <h1>
-                { t('landingPage.experienceAcrossBorders.part1') }{ ' ' }
-                <span style={ { color: 'var(--primary-color)' } }>
-    { t('landingPage.experienceAcrossBorders.part2') }
-  </span>
-              </h1>
-            }
-          />
-          <LogoSlider/>
-        </div>
+            <div className="marginFromTop"/>
+            <i>{ t('landingPage.endToEndRcm.footerNote') }</i>
+          </div>
+        </ContentBox>
 
-        <div>
-          <HeadingDescription
-            heading={
-              <h1>
-                { t('landingPage.poweredByInnovation.part1') }{ ' ' }
-                <span style={ { color: 'var(--primary-color)' } }>
-    { t('landingPage.poweredByInnovation.part2') }
-  </span>
-              </h1>
-            }
-          />
-          <div className="logos">
-            { secondLogos.map((item, idx) => (
-              <a key={ idx } href={ item.link } target="_blank" rel="noreferrer"
-                 style={ { display: "flex", justifyContent: idx === 0 ? "end" : "start" } }>
-                <Image preview={ false } src={ item.img }
-                       style={ { padding: "10px", height: 120, objectFit: "contain" } }/>
-              </a>
-            )) }
+        <ContentImageBox backImg={ contentImg }>
+          <div className="endToEndRcm">
+            <h1 style={ { color: "var(--primary-text-color)" } }>
+              { t('landingPage.strategicConsulting.headingPart1') }{ ' ' }
+              <span style={ { color: 'var(--primary-color)' } }>
+              { t('landingPage.strategicConsulting.headingPart2') }
+            </span>
+            </h1>
+            <p style={ { color: "var(--secondary-text-color)", fontWeight: 400 } }>
+              { t('landingPage.strategicConsulting.description') }
+            </p>
+          </div>
+        </ContentImageBox>
+
+        <div className="marginFromTop"/>
+        <div className="contentWrapper">
+          <div>
+            <HeadingDescription
+              heading={
+                <h1>
+                  { t('landingPage.quietAutomationSection.headingPart1') }{ ' ' }
+                  <span style={ { color: 'var(--primary-color)' } }>
+                  { t('landingPage.quietAutomationSection.headingPart2') }
+                </span>
+                </h1>
+              }
+              description={ t('landingPage.quietAutomationSection.description') }
+            />
+            <div className="quiteAutomationContainer">
+              { quiteAutomation.map(item => (
+                <CardsWOBg heading={ item.heading } description={ item.description }/>
+              )) }
+            </div>
+            <div style={ {
+              color: "#008925",
+              backgroundColor: "#BFFFE1",
+              borderRadius: 10,
+              margin: "auto",
+              padding: "10px",
+              width: "fit-content",
+              marginTop: 60
+            } }>
+              { t('landingPage.quietAutomationSection.greenBox') }
+            </div>
+            <LongButton
+              text={ t('landingPage.quietAutomationSection.longButton_text') }
+              buttonTitle={ t('landingPage.quietAutomationSection.longButton_title') }
+            />
           </div>
         </div>
-      </div>
 
-      <ContentBox>
-        <div className="endToEndRcm">
-          <h1><i>{ t('landingPage.readyToLeap.heading') }</i></h1>
-          <h2>{ t('landingPage.readyToLeap.subHeading') }</h2>
-          <p>{ t('landingPage.readyToLeap.description') }</p>
+        <ContactUs/>
+        <div className="contentWrapper" style={ { marginBottom: 80 } }>
+          <div>
+            <HeadingDescription
+              heading={
+                <h1>
+                  { t('landingPage.whyUs.headingWoSpan') } {/* Optional if you want static title */ }
+                  <span style={ { color: 'var(--primary-color)' } }>
+                  { t('landingPage.whyUs.headingWSpan') }
+                </span>
+                </h1>
+              }
+            />
+            <div className="quiteAutomationContainer" style={ { justifyContent: "center" } }>
+              { whyUs.map(item => (
+                <CardsWOBg background={ true } heading={ item.heading } description={ item.description }/>
+              )) }
+            </div>
+          </div>
 
-          <ButtonComponent className="endToEndRcmBtn" size="large" color="rgba(255,255,255,.2)"
-                           style={ { marginTop: 100 } }>
-            { t('common.buttons.speakWithTeam') }
-          </ButtonComponent>
-          <ButtonComponent className="endToEndRcmBtn" color="white" size="large"
-                           style={ { marginTop: 10, color: "var(--primary-color)" } }>
-            { t('common.buttons.bookScan') }
-          </ButtonComponent>
+          <CardComponent
+            heading={
+              <h1>
+                { t('landingPage.fromHeadachesToSuccess.headingPart1') }{ ' ' }
+                <span style={ { color: 'var(--primary-color)' } }>
+                { t('landingPage.fromHeadachesToSuccess.headingPart2') }
+              </span>
+              </h1>
+            }
+            description={
+              <div>
+                { t('landingPage.fromHeadachesToSuccess.description') }
+                <div>
+                  <br/>
+                  <b style={ { color: 'var(--primary-text-color)', fontWeight: 500 } }>
+                    { t('landingPage.fromHeadachesToSuccess.benchmarks') }
+                  </b>
+                  <ul style={ { color: 'var(--primary-text-color)', fontWeight: 500 } }>
+                    { t('landingPage.fromHeadachesToSuccess.benchmark_list', { returnObjects: true }).map((item, idx) => (
+                      <li key={ idx }>{ item }</li>
+                    )) }
+                  </ul>
+                </div>
+              </div>
+            }
+            image={ successImage }
+            index={ 0 }
+          />
+
+          <div>
+            <HeadingDescription
+              heading={
+                <h1>
+                  { t('landingPage.experienceAcrossBorders.part1') }{ ' ' }
+                  <span style={ { color: 'var(--primary-color)' } }>
+    { t('landingPage.experienceAcrossBorders.part2') }
+  </span>
+                </h1>
+              }
+            />
+            <LogoSlider/>
+          </div>
+
+          <div>
+            <HeadingDescription
+              heading={
+                <h1>
+                  { t('landingPage.poweredByInnovation.part1') }{ ' ' }
+                  <span style={ { color: 'var(--primary-color)' } }>
+    { t('landingPage.poweredByInnovation.part2') }
+  </span>
+                </h1>
+              }
+            />
+            <div className="logos">
+              { secondLogos.map((item, idx) => (
+                <a key={ idx } href={ item.link } target="_blank" rel="noreferrer"
+                   style={ { display: "flex", justifyContent: idx === 0 ? "end" : "start" } }>
+                  <Image preview={ false } src={ item.img }
+                         style={ { padding: "10px", height: 120, objectFit: "contain" } }/>
+                </a>
+              )) }
+            </div>
+          </div>
         </div>
-      </ContentBox>
-    </div>
+
+        <ContentBox>
+          <div className="endToEndRcm">
+            <h1><i>{ t('landingPage.readyToLeap.heading') }</i></h1>
+            <h2>{ t('landingPage.readyToLeap.subHeading') }</h2>
+            <p>{ t('landingPage.readyToLeap.description') }</p>
+
+            <ButtonComponent className="endToEndRcmBtn" size="large" color="rgba(255,255,255,.2)"
+                             style={ { marginTop: 100 } }>
+              { t('common.buttons.speakWithTeam') }
+            </ButtonComponent>
+            <ButtonComponent className="endToEndRcmBtn" color="white" size="large"
+                             style={ { marginTop: 10, color: "var(--primary-color)" } }>
+              { t('common.buttons.bookScan') }
+            </ButtonComponent>
+          </div>
+        </ContentBox>
+      </div>
+    </>
   );
 };
 
