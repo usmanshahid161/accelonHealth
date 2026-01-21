@@ -9,7 +9,8 @@ import HeaderSection       from '../../components/header/HeaderSection';
 import HeadingDescription  from '../../components/heading&description/heading&description';
 import CodingMetrics       from './CodingMatrix/CodingMatrix';
 import image1              from "./assets/db5b08d6-1d4d-467a-8465-cf18a62a1986 (1).png";
-import image2              from "./assets/unnamed (11).JPG";
+import image2 from "./assets/unnamed (11).JPG";
+import SEO    from '../../components/SEO/Seo';
 
 const Code = () => {
   const { t } = useTranslation();
@@ -18,7 +19,14 @@ const Code = () => {
   const partnership = t("code.partnership", { returnObjects: true });
 
   return (
-    <div className="codeContainer">
+    <>
+      <SEO
+        title={"Accelon Health Code | Expert Healthcare Automation Solutions"}
+        description={"Discover how Accelon Health leverages cutting-edge coding and technology to deliver fast, compliant, and secure healthcare automation solutions."}
+        ogURL={"/technology/code"}
+      />
+
+      <div className="codeContainer">
       <HeaderSection
         backImg={ image2 }
         heading={
@@ -141,6 +149,7 @@ const Code = () => {
         </div>
       </ContentBox>
     </div>
+      </>
   );
 };
 

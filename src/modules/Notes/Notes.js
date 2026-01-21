@@ -9,6 +9,7 @@ import ContentImageBox from '../../components/ContentImageBox/ContentImageBox';
 import HeaderSection from '../../components/header/HeaderSection';
 import backImg from '../../assets/images/herosection.png';
 import HeadingDescription from '../../components/heading&description/heading&description';
+import SEO from '../../components/SEO/Seo';
 import image1 from "./assets/unnamed.jpg";
 import image2 from "./assets/unnamed (1).jpg";
 
@@ -72,8 +73,14 @@ const Notes = () => {
     }
   ];
 
-  return (
-    <div className={"notesContainer"}>
+  return ( <>
+      <SEO
+        title={"Accelon Health Notes | Streamline Clinical Documentation & Improve Efficiency"}
+        description={"Accelon Health Notes helps healthcare providers streamline clinical documentation, improve coding accuracy, and save time with AI-assisted solutions."}
+        ogURL={"/technology/notes"}
+      />
+
+      <div className={"notesContainer"}>
       <HeaderSection
         backImg={image2}
         heading={
@@ -198,6 +205,7 @@ const Notes = () => {
         </div>
       </div>
     </div>
+      </>
   );
 };
 

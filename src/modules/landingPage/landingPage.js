@@ -8,7 +8,7 @@ import ContentBox         from '../../components/contentBox/contentBox';
 import ContentImageBox    from '../../components/ContentImageBox/ContentImageBox';
 import HeadingDescription from '../../components/heading&description/heading&description';
 import LongButton         from '../../components/longButton/LongButton';
-import Seo                from '../../components/SEO/Seo';
+import SEO                from '../../components/SEO/Seo';
 import ContactUs          from './ContactUs/ContactUs';
 import HeroSection        from './heroSection/heroSection';
 import "./landingPage.scss";
@@ -109,16 +109,11 @@ const LandingPage = () => {
 
   return (
     <>
-      <Seo
+      <SEO
         description={ "Accelon Health | Automate Revenue & Claims Efficiently" }
         title={ "Accelon Health helps healthcare providers automate claims and revenue cycle management, reducing errors and increasing efficiency." }
+        ogURL={"/"}
       />
-      <meta property="og:title" content="Accelon Health | Automate Revenue & Claims Efficiently"/>
-      <meta property="og:description"
-            content="Accelon Health helps healthcare providers automate claims and revenue cycle management, reducing errors and increasing efficiency."/>
-      <meta property="og:type" content="website"/>
-      <meta property="og:url" content="https://accelonhealth.com/"/>
-      <meta property="og:image" content="https://accelonhealth.com/og-image.jpg"/>
       <div className="landingPageContainer">
         <HeroSection/>
 

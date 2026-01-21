@@ -6,6 +6,7 @@ import CardsWOBg                          from '../../components/cardsWOBg/cards
 import ContentBox                         from '../../components/contentBox/contentBox';
 import ContentImageBox                    from '../../components/ContentImageBox/ContentImageBox';
 import HeadingDescription                 from '../../components/heading&description/heading&description';
+import SEO                                from '../../components/SEO/Seo';
 import ChallengeCard                      from '../CaseStudies/ChallengeCard/ChallengeCard';
 import image1                             from "./assets/HeroImage.jpg"
 import Ceo                                from "./assets/CEO.jpeg";
@@ -66,181 +67,187 @@ const AboutUs = () => {
     },
   ];
 
-  return (
-    <div className={ "aboutUsContainer" }>
-      <ContentImageBox backImg={ image1 } shaded={ true } fullHeight={ true }>
-        <div className={ "endToEndRcm" }>
-          <h1>{ t("aboutUs.hero.title") }</h1>
-          <p>{ t("aboutUs.hero.description") }</p>
-          <ButtonComponent className={ "endToEndRcmBtn" }
-                           color={ "white" }
-                           style={ { marginTop: 60, color: "var(--primary-color)" } }>
-            { t("aboutUs.hero.button") }
-          </ButtonComponent>
-        </div>
-      </ContentImageBox>
+  return (<>
+      <SEO
+        description={ "About Accelon Health | Innovative Healthcare Automation" }
+        title={ "Learn about Accelon Health’s leadership, mission, and global impact. We innovate healthcare automation for efficient revenue cycle management." }
+        ogURL={"/about"}
+      />
+      <div className={ "aboutUsContainer" }>
+        <ContentImageBox backImg={ image1 } shaded={ true } fullHeight={ true }>
+          <div className={ "endToEndRcm" }>
+            <h1>{ t("aboutUs.hero.title") }</h1>
+            <p>{ t("aboutUs.hero.description") }</p>
+            <ButtonComponent className={ "endToEndRcmBtn" }
+                             color={ "white" }
+                             style={ { marginTop: 60, color: "var(--primary-color)" } }>
+              { t("aboutUs.hero.button") }
+            </ButtonComponent>
+          </div>
+        </ContentImageBox>
 
-      <ContentImageBox>
-        <div className={ "endToEndRcm" } style={ { color: "var(--primary-text-color)" } }>
-          <h1><span
-            style={ { color: 'var(--primary-color)', fontStyle: "italic" } }>{ t("aboutUs.story.highlight") }</span>
-          </h1>
-          <h1 style={ { fontStyle: "italic" } }>{ t("aboutUs.story.title") }</h1>
-          <p style={ { fontWeight: 400 } }>{ t("aboutUs.story.paragraph1") }</p>
-          <p style={ { fontWeight: 400 } }>{ t("aboutUs.story.paragraph2") }</p>
-          <p style={ { fontWeight: 500, fontStyle: "italic" } }>{ t("aboutUs.story.paragraph3") }</p>
-        </div>
-      </ContentImageBox>
+        <ContentImageBox>
+          <div className={ "endToEndRcm" } style={ { color: "var(--primary-text-color)" } }>
+            <h1><span
+              style={ { color: 'var(--primary-color)', fontStyle: "italic" } }>{ t("aboutUs.story.highlight") }</span>
+            </h1>
+            <h1 style={ { fontStyle: "italic" } }>{ t("aboutUs.story.title") }</h1>
+            <p style={ { fontWeight: 400 } }>{ t("aboutUs.story.paragraph1") }</p>
+            <p style={ { fontWeight: 400 } }>{ t("aboutUs.story.paragraph2") }</p>
+            <p style={ { fontWeight: 500, fontStyle: "italic" } }>{ t("aboutUs.story.paragraph3") }</p>
+          </div>
+        </ContentImageBox>
 
-      <div className={ "marginFromTop" }/>
+        <div className={ "marginFromTop" }/>
 
-      <div className={ "contentWrapper" }>
-        <div>
-          <HeadingDescription
-            heading={ <h1>{ t("aboutUs.blueprint.heading") }</h1> }
-            description={ t("aboutUs.blueprint.description") }
-          />
-          <Row gutter={ [24, 24] }>
-            { data.map(card => (
+        <div className={ "contentWrapper" }>
+          <div>
+            <HeadingDescription
+              heading={ <h1>{ t("aboutUs.blueprint.heading") }</h1> }
+              description={ t("aboutUs.blueprint.description") }
+            />
+            <Row gutter={ [24, 24] }>
+              { data.map(card => (
+                <Col xs={ 24 } md={ 12 }>
+                  <CardsWOBg
+                    heading={ card.heading }
+                    description={ card.description }
+                    background={ true }
+                  />
+                </Col>
+              )) }
+            </Row>
+          </div>
+
+          <div>
+            <HeadingDescription
+              heading={ <h1 style={ { color: 'var(--primary-color)' } }>{ t("aboutUs.leadership.heading") }</h1> }/>
+            <Row gutter={ [24, 24] } className={ "filledCards" } style={ { margin: "auto" } }>
               <Col xs={ 24 } md={ 12 }>
-                <CardsWOBg
-                  heading={ card.heading }
-                  description={ card.description }
-                  background={ true }
-                />
-              </Col>
-            )) }
-          </Row>
-        </div>
-
-        <div>
-          <HeadingDescription
-            heading={ <h1 style={ { color: 'var(--primary-color)' } }>{ t("aboutUs.leadership.heading") }</h1> }/>
-          <Row gutter={ [24, 24] } className={ "filledCards" } style={ { margin: "auto" } }>
-            <Col xs={ 24 } md={ 12 }>
-              <ChallengeCard
-                heading={ t("aboutUs.leadership.ceo.name") }
-                description={ t("aboutUs.leadership.ceo.title") }
-                backImg={ Ceo }
-                height={ 400 }
-                points={
-                  <div className="profileCard">
-                    <div className="contactRow">
-                      <a href="mailto:ayman.i@accelonhealth.com" target="_blank" rel="noopener noreferrer"
-                         title={ t("aboutUs.leadership.email") }>
-                        <EmailIcon/>
-                      </a>
-                      <a href="https://www.linkedin.com/in/ayman-ibrahim-b2040421" target="_blank"
-                         rel="noopener noreferrer" title={ t("aboutUs.leadership.linkedin") }>
-                        <LinkedInIcon style={ { height: 44, width: 34 } }/>
-                      </a>
+                <ChallengeCard
+                  heading={ t("aboutUs.leadership.ceo.name") }
+                  description={ t("aboutUs.leadership.ceo.title") }
+                  backImg={ Ceo }
+                  height={ 400 }
+                  points={
+                    <div className="profileCard">
+                      <div className="contactRow">
+                        <a href="mailto:ayman.i@accelonhealth.com" target="_blank" rel="noopener noreferrer"
+                           title={ t("aboutUs.leadership.email") }>
+                          <EmailIcon/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ayman-ibrahim-b2040421" target="_blank"
+                           rel="noopener noreferrer" title={ t("aboutUs.leadership.linkedin") }>
+                          <LinkedInIcon style={ { height: 44, width: 34 } }/>
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                }
-              />
-            </Col>
-            <Col xs={ 24 } md={ 12 }>
-              <ChallengeCard
-                heading={ t("aboutUs.leadership.coo.name") }
-                description={ t("aboutUs.leadership.coo.title") }
-                backImg={ Coo }
-                height={ 400 }
-                points={
-                  <div className="profileCard">
-                    <div className="contactRow">
-                      <a href="mailto:ahmed.o@accelonhealth.com" target="_blank" rel="noopener noreferrer"
-                         title={ t("aboutUs.leadership.email") }>
-                        <EmailIcon/>
-                      </a>
-                      <a href="https://www.linkedin.com/in/ahmed-osama-bab0b1162" target="_blank"
-                         rel="noopener noreferrer" title={ t("aboutUs.leadership.linkedin") }>
-                        <LinkedInIcon style={ { height: 44, width: 34 } }/>
-                      </a>
+                  }
+                />
+              </Col>
+              <Col xs={ 24 } md={ 12 }>
+                <ChallengeCard
+                  heading={ t("aboutUs.leadership.coo.name") }
+                  description={ t("aboutUs.leadership.coo.title") }
+                  backImg={ Coo }
+                  height={ 400 }
+                  points={
+                    <div className="profileCard">
+                      <div className="contactRow">
+                        <a href="mailto:ahmed.o@accelonhealth.com" target="_blank" rel="noopener noreferrer"
+                           title={ t("aboutUs.leadership.email") }>
+                          <EmailIcon/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ahmed-osama-bab0b1162" target="_blank"
+                           rel="noopener noreferrer" title={ t("aboutUs.leadership.linkedin") }>
+                          <LinkedInIcon style={ { height: 44, width: 34 } }/>
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                }
-              />
-            </Col>
-          </Row>
-        </div>
-      </div>
-      <div className={ "marginFromTop" }/>
-      <ContentBox>
-        <div className={ "endToEndRcm" }>
-          <h1>{ t("aboutUs.localGlobal.title") }</h1>
-          <p>{ t("aboutUs.localGlobal.description") }</p>
-          <Row gutter={ [24, 24] } style={ { marginTop: 80 } }>
-            { data1.map(card => (
-              <Col xs={ 24 } md={ 8 }>
-                <CardsWOBg
-                  heading={ <div style={ { fontSize: "1.7rem", fontWeight: 550 } }>{ card.heading }</div> }
-                  description={ card.description }
-                  background={ true }
-                  backgroundClr={ "rgba(255,255,255,.1)" }
-                  color={ "white" }
+                  }
                 />
               </Col>
-            )) }
-          </Row>
-          <ButtonComponent className={ "endToEndRcmBtn" }
-                           color={ "white" }
-                           size={ "large" }
-                           style={ {
-                             height: "60px",
-                             backgroundColor: "white",
-                             marginTop: 60,
-                             color: "var(--primary-color)"
-                           } }>
-            { t("aboutUs.localGlobal.button") }
-          </ButtonComponent>
+            </Row>
+          </div>
         </div>
-      </ContentBox>
+        <div className={ "marginFromTop" }/>
+        <ContentBox>
+          <div className={ "endToEndRcm" }>
+            <h1>{ t("aboutUs.localGlobal.title") }</h1>
+            <p>{ t("aboutUs.localGlobal.description") }</p>
+            <Row gutter={ [24, 24] } style={ { marginTop: 80 } }>
+              { data1.map(card => (
+                <Col xs={ 24 } md={ 8 }>
+                  <CardsWOBg
+                    heading={ <div style={ { fontSize: "1.7rem", fontWeight: 550 } }>{ card.heading }</div> }
+                    description={ card.description }
+                    background={ true }
+                    backgroundClr={ "rgba(255,255,255,.1)" }
+                    color={ "white" }
+                  />
+                </Col>
+              )) }
+            </Row>
+            <ButtonComponent className={ "endToEndRcmBtn" }
+                             color={ "white" }
+                             size={ "large" }
+                             style={ {
+                               height: "60px",
+                               backgroundColor: "white",
+                               marginTop: 60,
+                               color: "var(--primary-color)"
+                             } }>
+              { t("aboutUs.localGlobal.button") }
+            </ButtonComponent>
+          </div>
+        </ContentBox>
 
-      <div style={ { backgroundColor: "rgba(28, 36, 96, .05 )" } }>
-        <div className="contentWrapper">
-          <HeadingDescription
-            heading={ t("aboutUs.promises.heading") }
-            description={ t("aboutUs.promises.description") }
-          />
-          <b className={ "centerEveryThing" } style={ { fontSize: "1.2rem" } }>
-            { t("aboutUs.promises.bold") }
-          </b>
-          <Row gutter={ [24, 24] } style={ { marginBottom: 40 } }>
-            { data2.map(card => (
-              <Col xs={ 24 } md={ 8 }>
-                <CardsWOBg
-                  heading={ card.heading }
-                  description={ card.description }
-                  background={ true }
-                  backgroundClr={ "rgba(255,255,255)" }
-                />
-              </Col>
-            )) }
-          </Row>
+        <div style={ { backgroundColor: "rgba(28, 36, 96, .05 )" } }>
+          <div className="contentWrapper">
+            <HeadingDescription
+              heading={ t("aboutUs.promises.heading") }
+              description={ t("aboutUs.promises.description") }
+            />
+            <b className={ "centerEveryThing" } style={ { fontSize: "1.2rem" } }>
+              { t("aboutUs.promises.bold") }
+            </b>
+            <Row gutter={ [24, 24] } style={ { marginBottom: 40 } }>
+              { data2.map(card => (
+                <Col xs={ 24 } md={ 8 }>
+                  <CardsWOBg
+                    heading={ card.heading }
+                    description={ card.description }
+                    background={ true }
+                    backgroundClr={ "rgba(255,255,255)" }
+                  />
+                </Col>
+              )) }
+            </Row>
+          </div>
         </div>
+
+        <ContentBox>
+          <div className={ "endToEndRcm" }>
+            <i><h1>{ t("aboutUs.ready.title") }</h1></i>
+            <p>{ t("aboutUs.ready.description") }</p>
+            <ButtonComponent className={ "endToEndRcmBtn" }
+                             color={ "white" }
+                             size={ "large" }
+                             style={ {
+                               height: "60px",
+                               backgroundColor: "white",
+                               marginTop: 50,
+                               color: "var(--primary-color)"
+                             } }>
+              { t("aboutUs.ready.button") }
+            </ButtonComponent>
+            <b style={ { fontSize: "1rem", marginTop: 40 } }>
+              { t("aboutUs.ready.bold") }
+            </b>
+          </div>
+        </ContentBox>
       </div>
-
-      <ContentBox>
-        <div className={ "endToEndRcm" }>
-          <i><h1>{ t("aboutUs.ready.title") }</h1></i>
-          <p>{ t("aboutUs.ready.description") }</p>
-          <ButtonComponent className={ "endToEndRcmBtn" }
-                           color={ "white" }
-                           size={ "large" }
-                           style={ {
-                             height: "60px",
-                             backgroundColor: "white",
-                             marginTop: 50,
-                             color: "var(--primary-color)"
-                           } }>
-            { t("aboutUs.ready.button") }
-          </ButtonComponent>
-          <b style={ { fontSize: "1rem", marginTop: 40 } }>
-            { t("aboutUs.ready.bold") }
-          </b>
-        </div>
-      </ContentBox>
-    </div>
+    </>
   );
 }
 

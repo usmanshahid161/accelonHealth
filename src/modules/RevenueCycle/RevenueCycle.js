@@ -10,6 +10,7 @@ import ContentBox from '../../components/contentBox/contentBox';
 import HeaderSection from '../../components/header/HeaderSection';
 import HeadingDescription from '../../components/heading&description/heading&description';
 import LongButton from '../../components/longButton/LongButton';
+import SEO from '../../components/SEO/Seo';
 
 import image2 from "./assets/unnamed (2).jpg";
 import image3 from "./assets/unnamed (1).jpg";
@@ -30,6 +31,12 @@ const RevenueCycle = () => {
 
   return (
     <>
+      <SEO
+        title="Accelon Health Revenue Cycle | Optimize Financial Performance"
+        description="Accelon Health Revenue Cycle services improve billing accuracy, streamline operations, and maximize revenue for healthcare organizations."
+        ogURL="/professional/revenue"
+      />
+
       {/* Header Section */}
       <HeaderSection
         heading={

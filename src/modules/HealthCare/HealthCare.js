@@ -2,6 +2,7 @@ import { Col, Row } from 'antd';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import "./HealthCare.scss";
+import SEO from '../../components/SEO/Seo';
 import backImg from './assets/back.jpg';
 import ButtonComponent from '../../components/button/Button';
 import CardComponent from '../../components/cardsComponents/cardsComponents';
@@ -92,6 +93,12 @@ const HealthCare = () => {
   const data = t("healthCare.expertise.cards", { returnObjects: true });
 
   return <>
+    <SEO
+      title={"Accelon Health Healthcare Solutions | Optimize Hospital Operations & Compliance"}
+      description={"Discover how Accelon Health improves hospital operations, compliance, and revenue management through advanced healthcare automation solutions and expert services."}
+      ogURL={"/professional/healthCare"}
+    />
+
     <ContentImageBox backImg={backImg} fullHeight={true} shaded={true}>
       <div className="endToEndRcm">
         <h1>{t("healthCare.hero.title")}</h1>

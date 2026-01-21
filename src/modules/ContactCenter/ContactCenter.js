@@ -12,6 +12,7 @@ import { useTranslation } from 'react-i18next';
 import image1 from "./assets/unnamed (2).jpg";
 import image2 from "./assets/Image_4K.jpg";
 import "./ContactCenter.scss";
+import SEO from '../../components/SEO/Seo';
 
 const ContactCenter = () => {
   const { t } = useTranslation();
@@ -51,7 +52,14 @@ const ContactCenter = () => {
   ];
 
   return (
-    <div className={"contactCenterContainer"}>
+    <>
+      <SEO
+        title={"Accelon Health Contact Center | Patient Engagement & Support Solutions"}
+        description={"Learn how Accelon Health's contact center solutions improve patient engagement, streamline inquiries, and optimize healthcare operations."}
+        ogURL={"/professional/contactCenter"}
+      />
+
+      <div className={"contactCenterContainer"}>
       <HeaderSection
         directionFromLeft={true}
         backImg={image2}
@@ -145,6 +153,7 @@ const ContactCenter = () => {
         </div>
       </ContentBox>
     </div>
+    </>
   );
 };
 

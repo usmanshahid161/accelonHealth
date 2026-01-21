@@ -11,7 +11,8 @@ import HeadingDescription  from '../../components/heading&description/heading&de
 import image1              from "./assets/unnamed (1).jpg";
 import image2              from "./assets/unnamed (3).JPG";
 import image3              from "./assets/unnamed (5).JPG";
-import image4              from "./assets/unnamed (7).jpg";
+import image4 from "./assets/unnamed (7).jpg";
+import SEO    from '../../components/SEO/Seo';
 
 const Beauty = () => {
   const { t } = useTranslation();
@@ -24,6 +25,12 @@ const Beauty = () => {
 
   return (
     <>
+      <SEO
+        title={ "Accelon Health Beauty Tech | AI & AR Solutions for Skincare" }
+        description={ "Discover Accelon Health’s AI and AR beauty technology solutions. Enhance skincare results, personalized treatments, and innovative beauty experiences." }
+        ogURL={"/technology/beauty"}
+      />
+
       <HeaderSection
         backImg={ image2 }
         heading={
