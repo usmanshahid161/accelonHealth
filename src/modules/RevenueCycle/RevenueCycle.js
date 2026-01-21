@@ -55,7 +55,7 @@ const RevenueCycle = () => {
               key={index}
               heading={<span style={{ color: 'var(--primary-color)' }}>{card.heading}</span>}
               description={card.description}
-              image={[image2, image3, image4, image5, image7, image8][index]}
+              image={[image4, image2, image3, image5, image7, image8][index]}
               index={index}
             />
           ))}
