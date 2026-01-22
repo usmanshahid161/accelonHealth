@@ -2,7 +2,6 @@
   "name": "accelonhealth",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
   "dependencies": {
     "@ant-design/icons": "6.x",
     "@testing-library/dom": "^10.4.1",
@@ -54,7 +53,9 @@
     "sass": "^1.95.0"
   },
   "reactSnap": {
-    "inlineCss": true,
+    "inlineCss": false,
+    "puppeteerArgs": ["--no-sandbox"],
+    "source": "build",
     "include": [
       "/",
       "/about",
