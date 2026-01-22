@@ -11,6 +11,7 @@ const SEO = ({ title, description, ogURL }) => (
       <meta property="og:description" content={ description }/>
       <meta property="og:type" content="website"/>
       <meta property="og:url" content={ `https://accelonhealth.com${ ogURL }` }/>
+      <meta property="og:image" content="https://accelonhealth.com/og/favicon.ico"/>
       <meta name="twitter:title" content={ title }/>
       <meta name="twitter:description" content={ description }/>
     </Helmet>
