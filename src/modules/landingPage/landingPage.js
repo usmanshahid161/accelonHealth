@@ -110,8 +110,8 @@ const LandingPage = () => {
   return (
     <>
       <SEO
-        description={ "Accelon Health | Automate Revenue & Claims Efficiently" }
-        title={ "Accelon Health helps healthcare providers automate claims and revenue cycle management, reducing errors and increasing efficiency." }
+        description={ "Accelon Health | End-to-End Healthcare Solutions & Precision RCM Partner" }
+        title={ "Leap beyond limits. Accelon Health fuses full-cycle RCM, BPO, consulting, and technology solutions to unlock revenue, ensure compliance, and scale operational excellence across KSA, the U.S., Egypt, and beyond. Book a demo." }
         ogURL={"/"}
       />
       <div className="landingPageContainer">

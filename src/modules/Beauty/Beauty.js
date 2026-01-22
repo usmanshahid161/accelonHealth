@@ -26,8 +26,8 @@ const Beauty = () => {
   return (
     <>
       <SEO
-        title={ "Accelon Health Beauty Tech | AI & AR Solutions for Skincare" }
-        description={ "Discover Accelon Health’s AI and AR beauty technology solutions. Enhance skincare results, personalized treatments, and innovative beauty experiences." }
+        title={ "AI Beauty Retail Solutions | Virtual Try-On & Skin Analysis | AccelonBeauty" }
+        description={ "Transform beauty retail with AI skin analysis & virtual try-on. Lift conversions and reduce returns while delivering a premium, science-backed experience. Book a demo." }
         ogURL={"/technology/beauty"}
       />
 

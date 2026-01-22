@@ -69,8 +69,8 @@ const CaseStudies = () => {
   return (
     <>
       <SEO
-        title={"Accelon Health Case Studies | Healthcare Automation Success Stories"}
-        description={"Explore Accelon Health’s case studies from Riyadh, UAE, and Cairo. See how our healthcare automation solutions improved efficiency, compliance, and revenue management."}
+        title={"Healthcare Success Stories KSA, GCC, Egypt | Case Studies | Accelon Health"}
+        description={"Real healthcare transformations across Saudi Arabia, GCC, and Egypt. 25–40% revenue uplift, rejections cut from 35% to 5%, faster cash cycles, and scalable operations for polyclinics and corporate hospital networks."}
         ogURL={"/case-studies"}
       />
       <div className={ "caseStudiesContainer" }>

@@ -48,8 +48,8 @@ const ContactUsPage = () => {
 
   return <>
     <SEO
-      title={ "Accelon Health Contact Us | Schedule a Consultation & Connect with Our Team" }
-      description={ "Get in touch with Accelon Health. Schedule a consultation, connect with our team, and learn how our healthcare automation solutions can optimize your operations." }
+      title={ "Contact Accelon Health | Transform Your Healthcare Business" }
+      description={ "Ready to elevate your healthcare business? Connect with our experts to start your journey toward greater efficiency, growth, and excellence." }
       ogURL={ "/contact" }
     />
 

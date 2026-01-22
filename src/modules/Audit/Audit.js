@@ -31,8 +31,8 @@ const Audit = () => {
 
   return (<>
       <SEO
-        title={ "Accelon Health Audit | Fast & Compliant Healthcare Automation" }
-        description={ "Accelon Health Audit automates healthcare claims, ensuring faster processing, full compliance, and secure revenue management." }
+        title={ "Pre-Submission Claim Auditing | Stop Rejections Before They Happen | Accelon Health" }
+        description={ "Autonomous pre-submission auditing that checks complex medical and technical rules in real time. AccelonAudit prevents rejections, strengthens compliance, and accelerates reimbursement. Get a free demo." }
         ogURL={"/technology/audit"}
       />
 

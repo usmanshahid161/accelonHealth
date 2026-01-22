@@ -19,8 +19,8 @@ const Voice = () => {
   return (
     <>
       <SEO
-        title="Accelon Health Voice Solutions | AI-Powered Healthcare & Service Calls"
-        description="Accelon Health Voice Solutions improve patient engagement, streamline service calls, and enhance operational efficiency."
+        title="AI Voice Agent for Healthcare & Business | Multilingual Customer Engagement | AccelonVoice"
+        description="AI Voice Agents fluent in Arabic and English dialects. Automate calls, bookings, and follow-ups across healthcare, retail, and service sectors. HIPAA-aligned. Omnichannel integrations. Go live in weeks."
         ogURL="/technology/voice"
       />
       <div className="voiceContainer">

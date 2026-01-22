@@ -75,8 +75,8 @@ const Notes = () => {
 
   return ( <>
       <SEO
-        title={"Accelon Health Notes | Streamline Clinical Documentation & Improve Efficiency"}
-        description={"Accelon Health Notes helps healthcare providers streamline clinical documentation, improve coding accuracy, and save time with AI-assisted solutions."}
+        title={"Autonomous Clinical Documentation | Save Hours, See More Patients | Accelon Health"}
+        description={"AI-powered clinical documentation that writes itself. AccelonNotes turns clinician–patient conversations into accurate, structured notes—cutting admin time, improving specificity, and speeding approvals. See how it works."}
         ogURL={"/technology/notes"}
       />
 

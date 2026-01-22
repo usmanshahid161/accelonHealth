@@ -94,8 +94,8 @@ const HealthCare = () => {
 
   return <>
     <SEO
-      title={"Accelon Health Healthcare Solutions | Optimize Hospital Operations & Compliance"}
-      description={"Discover how Accelon Health improves hospital operations, compliance, and revenue management through advanced healthcare automation solutions and expert services."}
+      title={"Healthcare Consulting Services | Accreditation, Compliance & RCM Optimization | Accelon Health"}
+      description={"Healthcare consulting services, RCM optimization, CDI training, BI dashboards, and LMS programs. Transform operations with  Accelon’s proven methodologies. Schedule a consultation."}
       ogURL={"/professional/healthCare"}
     />
 

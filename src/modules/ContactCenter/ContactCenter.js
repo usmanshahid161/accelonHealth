@@ -54,8 +54,8 @@ const ContactCenter = () => {
   return (
     <>
       <SEO
-        title={"Accelon Health Contact Center | Patient Engagement & Support Solutions"}
-        description={"Learn how Accelon Health's contact center solutions improve patient engagement, streamline inquiries, and optimize healthcare operations."}
+        title={"Medical Contact Center Services | Patient Support & Experience | Accelon Health"}
+        description={"Meta Description: Stop losing patients to unanswered calls. Multilingual medical contact center for Saudi Arabia, GCC, Egypt & US. 24/7 scheduling, inquiries, follow-ups and more. Book your demo now."}
         ogURL={"/professional/contactCenter"}
       />
 

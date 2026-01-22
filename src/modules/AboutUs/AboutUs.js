@@ -69,8 +69,8 @@ const AboutUs = () => {
 
   return (<>
       <SEO
-        description={ "About Accelon Health | Innovative Healthcare Automation" }
-        title={ "Learn about Accelon Health’s leadership, mission, and global impact. We innovate healthcare automation for efficient revenue cycle management." }
+        description={ "Meet Accelon Health—the operating backbone behind high-performing providers. We fuse end-to-end RCM, BPO, consulting, and Autopilot Automation to unlock revenue, ensure compliance, and scale operational excellence across KSA, the U.S., Egypt, and beyond. Discover our story." }
+        title={ "About Accelon Health | Your Precision Healthcare Solutions Partner" }
         ogURL={"/about"}
       />
       <div className={ "aboutUsContainer" }>

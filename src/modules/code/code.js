@@ -21,8 +21,8 @@ const Code = () => {
   return (
     <>
       <SEO
-        title={"Accelon Health Code | Expert Healthcare Automation Solutions"}
-        description={"Discover how Accelon Health leverages cutting-edge coding and technology to deliver fast, compliant, and secure healthcare automation solutions."}
+        title={"Autonomous Medical Coding | Lightning-Fast, High-Accuracy | Accelon Health"}
+        description={"Autonomous medical coding that completes in seconds. AccelonCode automates ICD-10-AM/CM, SBS/CPT/HCPCS\tcoding with 95%+ accuracy across all specialties cutting cost and accelerating reimbursement. Request a demo."}
         ogURL={"/technology/code"}
       />
 

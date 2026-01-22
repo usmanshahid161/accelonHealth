@@ -32,8 +32,8 @@ const RevenueCycle = () => {
   return (
     <>
       <SEO
-        title="Accelon Health Revenue Cycle | Optimize Financial Performance"
-        description="Accelon Health Revenue Cycle services improve billing accuracy, streamline operations, and maximize revenue for healthcare organizations."
+        title="End-to-End RCM Outsourcing Services | Maximize Revenue in Saudi, GCC, Egypt & US | Accelon Health"
+        description="All-inclusive RCM outsourcing. We manage everything from patient scheduling to final payment—uplifting collections and reducing denials. See your custom ROI path today."
         ogURL="/professional/revenue"
       />
 
