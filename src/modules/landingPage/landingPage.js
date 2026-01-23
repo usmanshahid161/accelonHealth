@@ -138,7 +138,7 @@ const LandingPage = () => {
 
             <div className="numbers">
               <div>
-                <Counter end={ 99 } suffix="%"/>
+                <Counter end={ 99 } suffix="%+"/>
                 <p>{ t('landingPage.endToEndRcm.cleanClaims') }</p>
               </div>
               <div>
