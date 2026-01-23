@@ -160,7 +160,14 @@ const ContactUs = () => {
             placeholder={ t("landingPage.contactUs.placeholders.message") }
           />
 
-          <ButtonComponent actionFunc={ submit } disabled={ isFormInvalid }>
+          <ButtonComponent
+            actionFunc={ submit }
+            disabled={ isFormInvalid }
+            style={{
+              background: isFormInvalid ? "lightGrey" : "linear-gradient(to right, var(--primary-color), #0077C7)",
+              color: isFormInvalid &&  "darkGrey"
+            }}
+          >
             { state.disable
               ? t("landingPage.contactUs.button.sending")
               : t("landingPage.contactUs.button.send") }
